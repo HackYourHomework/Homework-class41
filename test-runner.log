@@ -66,3 +66,8 @@ ex4-shoppingCart.js
 2022-10-31 04:14:41 info: ------------------------------------------------
 2022-10-31 04:14:41 warn: A unit test file was not provided.
 2022-10-31 04:14:45 info: All steps were completed successfully
+2022-10-31 04:46:41 info: -----------------------------------------
+2022-10-31 04:46:41 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-10-31 04:46:41 info: -----------------------------------------
+2022-10-31 04:46:41 warn: A unit test file was not provided.
+2022-10-31 04:46:44 info: All steps were completed successfully
