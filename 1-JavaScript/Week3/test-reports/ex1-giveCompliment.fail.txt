@@ -1,4 +1,0 @@
-
-*** Spell Checker Report ***
-
-ex1-giveCompliment.js:38:19 - Unknown word (Sergey)

@@ -11,3 +11,34 @@ ex1-giveCompliment.js:38:19 - Unknown word (Sergey)
 2022-10-31 12:39:20 info: ----------------------------------------
 2022-10-31 12:39:25 info: All unit tests passed.
 2022-10-31 12:39:32 info: All steps were completed successfully
+2022-10-31 02:15:21 info: -------------------------------------------
+2022-10-31 02:15:21 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-10-31 02:15:21 info: -------------------------------------------
+2022-10-31 02:15:27 info: All unit tests passed.
+2022-10-31 02:15:34 info: All steps were completed successfully
+2022-10-31 02:37:44 info: -------------------------------------------
+2022-10-31 02:37:44 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-10-31 02:37:44 info: -------------------------------------------
+2022-10-31 02:37:52 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a engineer in London, married to John with 1 kids.
+  Received: You will be an engineer in London, married to John with 1 child.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/Homework-class41/test-runner/CustomReporter.js"
+npm notice 
+npm notice New minor version of npm available! 8.15.0 -> 8.19.2
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v8.19.2>
+npm notice Run `npm install -g npm@8.19.2` to update!
+npm notice
+2022-10-31 02:41:14 info: -------------------------------------------
+2022-10-31 02:41:14 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-10-31 02:41:14 info: -------------------------------------------
+2022-10-31 02:41:20 info: All unit tests passed.
+2022-10-31 02:41:27 info: All steps were completed successfully
+2022-10-31 02:43:46 info: ----------------------------------------------
+2022-10-31 02:43:46 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-10-31 02:43:46 info: ----------------------------------------------
+2022-10-31 02:43:50 info: All unit tests passed.
+2022-10-31 02:43:58 info: All steps were completed successfully
