@@ -32,7 +32,6 @@ function addToShoppingCart(item) {
   for (const key of Object.keys(shoppingCart)) {
     message = message + shoppingCart[key] + ', ';
   }
-  console.log(message.slice(0, -2));
   return `You bought ${message.slice(0, -2)}!`;
 }
 
