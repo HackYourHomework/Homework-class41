@@ -1,0 +1,8 @@
+2022-10-31 12:06:59 info: ----------------------------------------------
+2022-10-31 12:06:59 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-10-31 12:06:59 info: ----------------------------------------------
+2022-10-31 12:07:05 info: All unit tests passed.
+2022-10-31 12:07:13 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:38:19 - Unknown word (Sergey)
+
