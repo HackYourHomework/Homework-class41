@@ -20,7 +20,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
 -----------------------------------------------------------------------------*/
 function giveCompliment(name/* TODO parameter(s) go here */) {
   const compliments = ['great','awesome','perfect','wonderful','fantastic','extraordinary','priceless','spectacular','significant','outstanding']
-  console.log("You are" + compliments[Math.random()*10+1] + name);
+  console.log("You are" + compliments[Math.floor(Math.random()*10+1] + name));
 
 
   // TODO complete this function
