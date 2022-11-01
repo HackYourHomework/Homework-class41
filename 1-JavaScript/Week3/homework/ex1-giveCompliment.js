@@ -26,7 +26,7 @@ function giveCompliment(name/* TODO parameter(s) go here */) {
   // TODO complete this function
 }
 
-giveCompliment(Muhammet Emin ALPER);
+giveCompliment('Muhammet Emin ALPER');
 
 function main() {
   // TODO substitute your own name for "HackYourFuture"
