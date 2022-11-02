@@ -1,0 +1,80 @@
+2022-11-01 04:50:30 info: ----------------------------------------------
+2022-11-01 04:50:30 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-01 04:50:30 info: ----------------------------------------------
+2022-11-01 04:50:34 info: All unit tests passed.
+2022-11-01 04:50:38 info: All steps were completed successfully
+2022-11-01 05:00:24 info: ----------------------------------------
+2022-11-01 05:00:24 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-11-01 05:00:24 info: ----------------------------------------
+2022-11-01 05:00:27 info: All unit tests passed.
+2022-11-01 05:00:31 info: All steps were completed successfully
+2022-11-01 05:24:24 info: -------------------------------------------
+2022-11-01 05:24:24 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-01 05:24:24 info: -------------------------------------------
+2022-11-01 05:24:27 info: All unit tests passed.
+2022-11-01 05:24:31 info: All steps were completed successfully
+2022-11-01 06:06:50 info: --------------------------------------------
+2022-11-01 06:06:50 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-01 06:06:50 info: --------------------------------------------
+2022-11-01 06:06:50 warn: A unit test file was not provided.
+2022-11-01 06:06:55 info: All steps were completed successfully
+2022-11-01 06:40:30 info: --------------------------------------------
+2022-11-01 06:40:30 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-01 06:40:30 info: --------------------------------------------
+2022-11-01 06:40:30 warn: A unit test file was not provided.
+2022-11-01 06:40:34 info: All steps were completed successfully
+2022-11-01 07:12:53 info: ------------------------------------------------
+2022-11-01 07:12:53 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-11-01 07:12:53 info: ------------------------------------------------
+2022-11-01 07:12:53 warn: A unit test file was not provided.
+2022-11-01 07:12:57 info: All steps were completed successfully
+2022-11-01 07:19:58 info: ------------------------------------------------
+2022-11-01 07:19:58 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-11-01 07:19:58 info: ------------------------------------------------
+2022-11-01 07:19:58 warn: A unit test file was not provided.
+2022-11-01 07:20:03 info: All steps were completed successfully
+2022-11-01 07:39:16 info: -----------------------------------------
+2022-11-01 07:39:16 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-11-01 07:39:16 info: -----------------------------------------
+2022-11-01 07:39:16 warn: A unit test file was not provided.
+2022-11-01 07:39:20 info: All steps were completed successfully
+2022-11-01 07:54:27 info: -------------------------------------------
+2022-11-01 07:54:27 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-11-01 07:54:27 info: -------------------------------------------
+2022-11-01 07:54:27 warn: A unit test file was not provided.
+2022-11-01 07:54:33 info: All steps were completed successfully
+2022-11-01 07:57:09 info: -------------------------------------------
+2022-11-01 07:57:09 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-11-01 07:57:09 info: -------------------------------------------
+2022-11-01 07:57:09 warn: A unit test file was not provided.
+2022-11-01 07:57:14 info: All steps were completed successfully
+2022-11-01 08:14:39 info: --------------------------------------------
+2022-11-01 08:14:39 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-01 08:14:39 info: --------------------------------------------
+2022-11-01 08:14:39 warn: A unit test file was not provided.
+2022-11-01 08:14:43 info: All steps were completed successfully
+2022-11-01 08:18:09 info: --------------------------------------------
+2022-11-01 08:18:09 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-01 08:18:09 info: --------------------------------------------
+2022-11-01 08:18:09 warn: A unit test file was not provided.
+2022-11-01 08:18:13 info: All steps were completed successfully
+2022-11-01 08:20:57 info: --------------------------------------------
+2022-11-01 08:20:57 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-01 08:20:57 info: --------------------------------------------
+2022-11-01 08:20:57 warn: A unit test file was not provided.
+2022-11-01 08:21:02 info: All steps were completed successfully
+2022-11-02 02:13:39 info: --------------------------------------------
+2022-11-02 02:13:39 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-02 02:13:39 info: --------------------------------------------
+2022-11-02 02:13:39 warn: A unit test file was not provided.
+2022-11-02 02:13:44 info: All steps were completed successfully
+2022-11-02 02:22:28 info: -------------------------------------------
+2022-11-02 02:22:28 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-02 02:22:28 info: -------------------------------------------
+2022-11-02 02:22:31 info: All unit tests passed.
+2022-11-02 02:22:35 info: All steps were completed successfully
+2022-11-02 02:27:04 info: -------------------------------------------
+2022-11-02 02:27:04 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-11-02 02:27:04 info: -------------------------------------------
+2022-11-02 02:27:04 warn: A unit test file was not provided.
+2022-11-02 02:27:09 info: All steps were completed successfully
