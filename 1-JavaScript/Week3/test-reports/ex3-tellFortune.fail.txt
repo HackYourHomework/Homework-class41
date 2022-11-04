@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+ex3-tellFortune.js:53:51 - Unknown word (Roze)

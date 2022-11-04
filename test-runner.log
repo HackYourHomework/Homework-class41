@@ -1,0 +1,139 @@
+2022-11-04 03:19:11 info: ----------------------------------------------
+2022-11-04 03:19:11 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-04 03:19:11 info: ----------------------------------------------
+2022-11-04 03:19:11 info: Exercise has not yet been modified
+2022-11-04 03:19:13 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should take a single parameter
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class41/test-runner/CustomReporter.js"
+2022-11-04 05:17:36 info: ----------------------------------------------
+2022-11-04 05:17:36 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-04 05:17:36 info: ----------------------------------------------
+2022-11-04 05:17:40 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class41/test-runner/CustomReporter.js"
+2022-11-04 05:17:42 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  22:7  warning  'compliment' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  35:7  warning  'x' is never reassigned. Use 'const' instead           no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-11-04 05:18:37 info: ----------------------------------------------
+2022-11-04 05:18:37 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-04 05:18:37 info: ----------------------------------------------
+2022-11-04 05:18:39 error: *** Unit Test Error Report ***
+
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class41/test-runner/CustomReporter.js"
+2022-11-04 05:18:41 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  22:7  warning  'compliments' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  35:7  warning  'x' is never reassigned. Use 'const' instead            no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-11-04 05:19:44 info: Disclaimer turned off
+2022-11-04 05:19:51 info: ----------------------------------------------
+2022-11-04 05:19:51 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-04 05:19:51 info: ----------------------------------------------
+2022-11-04 05:19:53 info: All unit tests passed.
+2022-11-04 05:19:54 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  22:7  warning  'compliments' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  34:7  warning  'x' is never reassigned. Use 'const' instead            no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-11-04 05:27:41 info: ----------------------------------------------
+2022-11-04 05:27:41 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-04 05:27:41 info: ----------------------------------------------
+2022-11-04 05:27:43 info: All unit tests passed.
+2022-11-04 05:27:44 error: *** ESLint Report ***
+
+ex1-giveCompliment.js
+  22:7  warning  'compliments' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  34:7  warning  'x' is never reassigned. Use 'const' instead            no-autofix/prefer-const
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-11-04 05:31:20 info: ----------------------------------------
+2022-11-04 05:31:20 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-11-04 05:31:20 info: ----------------------------------------
+2022-11-04 05:31:22 info: All unit tests passed.
+2022-11-04 05:31:25 info: All steps were completed successfully
+2022-11-04 06:44:21 info: -------------------------------------------
+2022-11-04 06:44:21 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-04 06:44:21 info: -------------------------------------------
+2022-11-04 06:44:24 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a Mechanic in Barcelona, married to Maze with 2 kids.
+  Received: You will be a Mechanic, in Barcelona, married to Maze with 2 kids
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class41/test-runner/CustomReporter.js"
+2022-11-04 06:44:25 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  37:7  warning  'x' is never reassigned. Use 'const' instead            no-autofix/prefer-const
+  42:7  warning  'numKid' is never reassigned. Use 'const' instead       no-autofix/prefer-const
+  43:7  warning  'partnerName' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  44:7  warning  'jobTitle' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+  45:7  warning  'location' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+
+✖ 5 problems (0 errors, 5 warnings)
+
+
+2022-11-04 06:44:27 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:53:51 - Unknown word (Roze)
+
+2022-11-04 06:45:22 info: -------------------------------------------
+2022-11-04 06:45:22 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-04 06:45:22 info: -------------------------------------------
+2022-11-04 06:45:24 info: All unit tests passed.
+2022-11-04 06:45:26 error: *** ESLint Report ***
+
+ex3-tellFortune.js
+  37:7  warning  'x' is never reassigned. Use 'const' instead            no-autofix/prefer-const
+  42:7  warning  'numKid' is never reassigned. Use 'const' instead       no-autofix/prefer-const
+  43:7  warning  'partnerName' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  44:7  warning  'jobTitle' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+  45:7  warning  'location' is never reassigned. Use 'const' instead     no-autofix/prefer-const
+
+✖ 5 problems (0 errors, 5 warnings)
+
+
+2022-11-04 06:45:28 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:53:51 - Unknown word (Roze)
+
+2022-11-04 06:46:47 info: -------------------------------------------
+2022-11-04 06:46:47 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-04 06:46:47 info: -------------------------------------------
+2022-11-04 06:46:49 info: All unit tests passed.
+2022-11-04 06:46:53 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:53:51 - Unknown word (Roze)
+
