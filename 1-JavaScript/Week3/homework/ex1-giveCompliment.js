@@ -2,7 +2,7 @@
 /* -----------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-1-you-are-amazing
 
-1. Complete the function named `giveCompliment`as follows:
+1. Complete the function named `giveCompliment)`as follows:
 
    - It should take a single parameter: `name`.
    - Its function body should include a variable that holds an array,
@@ -16,11 +16,32 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
 2. Call the function three times, giving each function call the same argument:
    your name.
    Use `console.log` each time to display the return value of the
-   `giveCompliment` function to the console.
+   `giveCompliment)` function to the console.
 -----------------------------------------------------------------------------*/
-function giveCompliment(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function giveCompliment(myName) {
+  const compliments = [
+    'great',
+    'awesome',
+    'handsome',
+    'smart',
+    'genius',
+    'perfect',
+    'cute',
+    'wise',
+    'best',
+    'nice',
+  ];
+  const complimentString =
+    'You are ' +
+    compliments[Math.floor(Math.random() * 10 + 1)] +
+    ', ' +
+    myName +
+    '!';
+  return complimentString;
 }
+console.log(giveCompliment('Andrei'));
+console.log(giveCompliment('Andrei'));
+console.log(giveCompliment('Andrei'));
 
 function main() {
   // TODO substitute your own name for "HackYourFuture"
