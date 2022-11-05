@@ -17,3 +17,8 @@ Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users
 2022-11-05 01:58:14 info: ----------------------------------------
 2022-11-05 01:58:17 info: All unit tests passed.
 2022-11-05 01:58:21 info: All steps were completed successfully
+2022-11-05 03:54:27 info: -------------------------------------------
+2022-11-05 03:54:27 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-05 03:54:27 info: -------------------------------------------
+2022-11-05 03:54:30 info: All unit tests passed.
+2022-11-05 03:54:34 info: All steps were completed successfully
