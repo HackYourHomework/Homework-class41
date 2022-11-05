@@ -1,0 +1,19 @@
+2022-11-05 10:45:20 info: ----------------------------------------------
+2022-11-05 10:45:20 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-05 10:45:20 info: ----------------------------------------------
+2022-11-05 10:45:24 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users/andrei/Desktop/Codes/Homework-class41/test-runner/CustomReporter.js"
+2022-11-05 10:51:23 info: ----------------------------------------------
+2022-11-05 10:51:23 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-05 10:51:23 info: ----------------------------------------------
+2022-11-05 10:51:26 info: All unit tests passed.
+2022-11-05 10:51:30 info: All steps were completed successfully
+2022-11-05 01:58:14 info: ----------------------------------------
+2022-11-05 01:58:14 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-11-05 01:58:14 info: ----------------------------------------
+2022-11-05 01:58:17 info: All unit tests passed.
+2022-11-05 01:58:21 info: All steps were completed successfully
