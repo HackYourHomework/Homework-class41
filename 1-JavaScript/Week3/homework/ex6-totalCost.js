@@ -1,4 +1,7 @@
 'use strict';
+
+const { sum } = require('lodash');
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-6-total-cost-is
 
@@ -21,22 +24,30 @@ instead!
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
 const cartForParty = {
-  // TODO complete this object
+  beer: 2.83,
+  coke: 2.5,
+  water: 1.5,
+  chips: 0.79,
+  cheese: 6,
 };
 
-function calculateTotalPrice(/* TODO parameter(s) go here */) {
-  // TODO replace this comment with your code
+function calculateTotalPrice(cart) {
+  let totalPrice = 0;
+  for (const item in cartForParty) {
+    totalPrice += cartForParty[item];
+  }
+  return 'Total: € ' + totalPrice;
 }
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  // TODO replace this comment with your code
+  calculateTotalPrice(cartForParty);
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  // TODO replace this comment with your code
+  calculateTotalPrice(cartForParty);
 }
 
 function test() {

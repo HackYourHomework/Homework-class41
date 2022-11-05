@@ -27,3 +27,23 @@ Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/Users
 2022-11-05 04:41:48 info: --------------------------------------------
 2022-11-05 04:41:48 warn: A unit test file was not provided.
 2022-11-05 04:41:52 info: All steps were completed successfully
+2022-11-05 09:07:48 info: ------------------------------------------------
+2022-11-05 09:07:48 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-11-05 09:07:48 info: ------------------------------------------------
+2022-11-05 09:07:48 warn: A unit test file was not provided.
+2022-11-05 09:07:54 info: All steps were completed successfully
+2022-11-05 10:03:40 info: -----------------------------------------
+2022-11-05 10:03:40 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-11-05 10:03:40 info: -----------------------------------------
+2022-11-05 10:03:40 warn: A unit test file was not provided.
+2022-11-05 10:03:43 error: *** ESLint Report ***
+
+ex6-totalCost.js
+   3:9   error    'sum' is assigned a value but never used              no-unused-vars
+  34:30  error    'cart' is defined but never used                      no-unused-vars
+  36:3   warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+
+✖ 3 problems (2 errors, 1 warning)
+
+
+2022-11-05 10:04:57 info: Disclaimer turned off
