@@ -33,35 +33,50 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+
+const numKids = ['1', '2', '3', '4', '5'];
+const partnerNames = ['John', 'Ahmed', 'Jankees', 'Peter', 'Len'];
+const locations = ['Paris', 'Amsterdam', 'Istanbul', 'Lisbon', 'Rome'];
+const jobTitles = ['teacher', 'developer', 'jurnalist', 'officer', 'sailor'];
+
+function selectRandomly() {
+  const rands = [];
+
+  const r = Math.floor(Math.random() * 4);
+  rands.push(r);
+
+  return rands;
 }
 
-function tellFortune(/* TODO add parameter(s) here */) {
-  // TODO complete this function
+function tellFortune() {
+  return (
+    'You will be a' +
+      jobTitles[selectRandomly()] +
+      'in' +
+      locations[selectRandomly()],
+    +'married to' +
+      partnerNames[selectRandomly()] +
+      'with' +
+      numKids[selectRandomly()] +
+      'kids.'
+  );
 }
 
 function main() {
-  const numKids = [
-    // TODO add elements here
-  ];
+  const numKids = ['1', '2', '3', '4', '5'];
 
-  const partnerNames = [
-    // TODO add elements here
-  ];
+  const partnerNames = ['John', 'Ahmed', 'Jankees', 'Peter', 'Len'];
 
-  const locations = [
-    // TODO add elements here
-  ];
+  const locations = ['Paris', 'Amsterdam', 'Istanbul', 'Lisbon', 'Rome'];
 
-  const jobTitles = [
-    // TODO add elements here
-  ];
+  const jobTitles = ['teacher', 'developer', 'jurnalist', 'officer', 'sailor'];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
 }
+
+main();
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
