@@ -36,18 +36,18 @@ function calculateTotalPrice(cart) {
   for (const item in cartForParty) {
     totalPrice += cartForParty[item];
   }
-  return 'Total: € ' + totalPrice;
+  return 'Total: € ' + totalPrice.toFixed(2);
 }
-
+calculateTotalPrice(cartForParty);
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('\nTest 1: calculateTotalPrice should take one parameter');
-  calculateTotalPrice(cartForParty);
+  console.assert(calculateTotalPrice.length === 1);
 }
 
 function test2() {
   console.log('\nTest 2: return correct output when passed cartForParty');
-  calculateTotalPrice(cartForParty);
+  console.assert(calculateTotalPrice(cartForParty) === 'Total: € 13.62');
 }
 
 function test() {
