@@ -35,16 +35,8 @@ body, this code is now written once only in a separated function.
 // a randomly selected element as its return value.
 
 function selectRandomly(arr) {
-  /* const rands = [];
-
-  const r = Math.floor(Math.random() * 4);
-  rands.push(r);
-
-  return rands;*/
-  const r = Math.floor(Math.random() * 4);
-  let el = arr[r];
-  //console.log(el);
-  return el;
+  const rands = Math.floor(Math.random() * 4);
+  return arr[rands];
 }
 
 function tellFortune(kids, partners, location, jobs) {
@@ -68,11 +60,11 @@ function main() {
 
   const locations = ['Paris', 'Amsterdam', 'Istanbul', 'Lisbon', 'Rome'];
 
-  const jobTitles = ['teacher', 'developer', 'jurnalist', 'officer', 'sailor'];
+  const jobTitles = ['teacher', 'developer', 'journalist', 'officer', 'sailor'];
 
   console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
-  // console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
-  // console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
+  console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
+  console.log(tellFortune(numKids, partnerNames, locations, jobTitles));
 }
 
 main();
