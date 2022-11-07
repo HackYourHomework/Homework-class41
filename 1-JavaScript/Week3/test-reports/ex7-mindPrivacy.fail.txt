@@ -1,0 +1,8 @@
+
+*** Spell Checker Report ***
+
+ex7-mindPrivacy.js:45:11 - Unknown word (personb)
+ex7-mindPrivacy.js:46:17 - Unknown word (personb)
+ex7-mindPrivacy.js:47:12 - Unknown word (personb)
+ex7-mindPrivacy.js:50:14 - Unknown word (personb)
+ex7-mindPrivacy.js:51:20 - Unknown word (personb)
