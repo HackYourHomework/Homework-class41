@@ -1,0 +1,181 @@
+2022-11-08 05:56:25 info: ----------------------------------------------
+2022-11-08 05:56:25 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-08 05:56:25 info: ----------------------------------------------
+2022-11-08 05:56:31 info: All unit tests passed.
+2022-11-08 05:56:39 info: All steps were completed successfully
+2022-11-08 05:56:58 info: ----------------------------------------
+2022-11-08 05:56:58 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-11-08 05:56:58 info: ----------------------------------------
+2022-11-08 05:57:01 error: *** Unit Test Error Report ***
+
+✕ calculateDogAge should give 7 dog years for 1 human year
+  Expected: Your doggie is 7 years old in dog years!
+  Received: Your doggie is 7 years old in dog years
+✕ calculateDogAge should give 14 dog years for 2 human years
+  Expected: Your doggie is 14 years old in dog years!
+  Received: Your doggie is 14 years old in dog years
+✕ calculateDogAge give 21 dog years for 3 human years
+  Expected: Your doggie is 21 years old in dog years!
+  Received: Your doggie is 21 years old in dog years
+
+
+Command failed: npx jest ex2-dogYears.test.js --colors --reporters="/Users/vladimir/Documents/Homework-class41/Homework-class41/test-runner/CustomReporter.js"
+2022-11-08 05:57:05 error: *** Spell Checker Report ***
+
+ex2-dogYears.js:20:9 - Unknown word (newage)
+ex2-dogYears.js:21:28 - Unknown word (newage)
+
+2022-11-08 05:58:13 info: Disclaimer turned off
+2022-11-08 05:58:21 info: ----------------------------------------
+2022-11-08 05:58:21 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-11-08 05:58:21 info: ----------------------------------------
+2022-11-08 05:58:24 info: All unit tests passed.
+2022-11-08 05:58:31 error: *** Spell Checker Report ***
+
+ex2-dogYears.js:20:9 - Unknown word (newage)
+ex2-dogYears.js:21:28 - Unknown word (newage)
+
+2022-11-08 05:59:51 info: ----------------------------------------
+2022-11-08 05:59:51 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-11-08 05:59:51 info: ----------------------------------------
+2022-11-08 05:59:53 info: All unit tests passed.
+2022-11-08 05:59:58 info: All steps were completed successfully
+2022-11-08 06:00:29 info: -------------------------------------------
+2022-11-08 06:00:29 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-08 06:00:29 info: -------------------------------------------
+2022-11-08 06:00:31 error: *** Unit Test Error Report ***
+
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a engineer in Amsterdam, married to Sofia with 0 kids.
+  Received: You will be a engineer in Amsterdam married to Sofia with 0 kids.
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/vladimir/Documents/Homework-class41/Homework-class41/test-runner/CustomReporter.js"
+2022-11-08 06:00:34 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:37:9 - Unknown word (newnumber)
+ex3-tellFortune.js:38:17 - Unknown word (newnumber)
+ex3-tellFortune.js:42:9 - Unknown word (newkids)
+ex3-tellFortune.js:43:9 - Unknown word (newpartner)
+ex3-tellFortune.js:44:9 - Unknown word (newlocation)
+ex3-tellFortune.js:45:9 - Unknown word (newjob)
+ex3-tellFortune.js:46:27 - Unknown word (newjob)
+ex3-tellFortune.js:46:40 - Unknown word (newlocation)
+ex3-tellFortune.js:46:66 - Unknown word (newpartner)
+ex3-tellFortune.js:46:85 - Unknown word (newkids)
+ex3-tellFortune.js:52:41 - Unknown word (Katya)
+ex3-tellFortune.js:52:57 - Unknown word (Cristof)
+
+2022-11-08 06:01:08 info: --------------------------------------------
+2022-11-08 06:01:08 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-08 06:01:08 info: --------------------------------------------
+2022-11-08 06:01:08 warn: A unit test file was not provided.
+2022-11-08 06:01:11 info: All steps were completed successfully
+2022-11-08 06:01:24 info: ------------------------------------------------
+2022-11-08 06:01:24 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-11-08 06:01:24 info: ------------------------------------------------
+2022-11-08 06:01:24 warn: A unit test file was not provided.
+2022-11-08 06:01:25 error: *** ESLint Report ***
+
+ex5-shoppingCartPure.js
+  25:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-11-08 06:01:27 error: *** Spell Checker Report ***
+
+ex5-shoppingCartPure.js:20:7 - Unknown word (newcart)
+ex5-shoppingCartPure.js:21:34 - Unknown word (newcart)
+ex5-shoppingCartPure.js:22:9 - Unknown word (newcart)
+ex5-shoppingCartPure.js:22:30 - Unknown word (newcart)
+ex5-shoppingCartPure.js:23:13 - Unknown word (newcart)
+
+2022-11-08 06:02:52 info: -----------------------------------------
+2022-11-08 06:02:52 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-11-08 06:02:52 info: -----------------------------------------
+2022-11-08 06:02:52 warn: A unit test file was not provided.
+2022-11-08 06:02:53 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  38:3   warning  Remove commented-out code  hyf/no-commented-out-code
+  53:52  error    Unnecessary semicolon      no-extra-semi
+
+✖ 2 problems (1 error, 1 warning)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-08 06:02:55 error: *** Spell Checker Report ***
+
+ex6-totalCost.js:27:3 - Unknown word (nori)
+ex6-totalCost.js:33:9 - Unknown word (cartarr)
+ex6-totalCost.js:34:7 - Unknown word (sumcart)
+ex6-totalCost.js:35:23 - Unknown word (cartarr)
+ex6-totalCost.js:36:5 - Unknown word (sumcart)
+ex6-totalCost.js:38:17 - Unknown word (sumcart)
+ex6-totalCost.js:39:22 - Unknown word (sumcart)
+
+2022-11-08 06:04:23 info: -------------------------------------------
+2022-11-08 06:04:23 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-11-08 06:04:23 info: -------------------------------------------
+2022-11-08 06:04:23 warn: A unit test file was not provided.
+2022-11-08 06:04:25 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  34:46  error    'gender' is defined but never used  no-unused-vars
+  34:54  error    'salary' is defined but never used  no-unused-vars
+  35:3   warning  Remove commented-out code           hyf/no-commented-out-code
+
+✖ 3 problems (2 errors, 1 warning)
+
+
+2022-11-08 06:04:26 error: *** Spell Checker Report ***
+
+ex7-mindPrivacy.js:34:9 - Unknown word (newemployee)
+ex7-mindPrivacy.js:34:65 - Unknown word (keepdata)
+ex7-mindPrivacy.js:34:79 - Unknown word (keepdata)
+ex7-mindPrivacy.js:34:120 - Unknown word (keepdata)
+ex7-mindPrivacy.js:35:32 - Unknown word (newemployee)
+ex7-mindPrivacy.js:36:10 - Unknown word (newemployee)
+
+2022-11-08 06:09:26 info: -------------------------------------------
+2022-11-08 06:09:26 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-08 06:09:26 info: -------------------------------------------
+2022-11-08 06:09:32 info: All unit tests passed.
+2022-11-08 06:09:40 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:37:9 - Unknown word (newnumber)
+ex3-tellFortune.js:38:17 - Unknown word (newnumber)
+ex3-tellFortune.js:42:9 - Unknown word (newkids)
+ex3-tellFortune.js:43:9 - Unknown word (newpartner)
+ex3-tellFortune.js:44:9 - Unknown word (newlocation)
+ex3-tellFortune.js:45:9 - Unknown word (newjob)
+ex3-tellFortune.js:46:27 - Unknown word (newjob)
+ex3-tellFortune.js:46:40 - Unknown word (newlocation)
+ex3-tellFortune.js:46:67 - Unknown word (newpartner)
+ex3-tellFortune.js:46:86 - Unknown word (newkids)
+ex3-tellFortune.js:52:41 - Unknown word (Katya)
+ex3-tellFortune.js:52:57 - Unknown word (Cristof)
+
+2022-11-08 06:10:54 info: -----------------------------------------
+2022-11-08 06:10:54 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-11-08 06:10:54 info: -----------------------------------------
+2022-11-08 06:10:54 warn: A unit test file was not provided.
+2022-11-08 06:10:56 error: *** ESLint Report ***
+
+ex6-totalCost.js
+  38:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-11-08 06:10:58 error: *** Spell Checker Report ***
+
+ex6-totalCost.js:27:3 - Unknown word (nori)
+ex6-totalCost.js:33:9 - Unknown word (cartarr)
+ex6-totalCost.js:34:7 - Unknown word (sumcart)
+ex6-totalCost.js:35:23 - Unknown word (cartarr)
+ex6-totalCost.js:36:5 - Unknown word (sumcart)
+ex6-totalCost.js:38:17 - Unknown word (sumcart)
+ex6-totalCost.js:39:22 - Unknown word (sumcart)
+
