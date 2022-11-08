@@ -1,0 +1,100 @@
+2022-11-08 12:53:23 info: ----------------------------------------------
+2022-11-08 12:53:23 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-08 12:53:23 info: ----------------------------------------------
+2022-11-08 12:53:33 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: you are great, HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\User\Desktop\H Y F\Homework-class41\test-runner\CustomReporter.js"
+2022-11-08 12:53:48 error: *** Spell Checker Report ***
+
+
+2022-11-08 12:54:51 info: Disclaimer turned off
+2022-11-08 12:56:21 info: ----------------------------------------------
+2022-11-08 12:56:21 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-08 12:56:21 info: ----------------------------------------------
+2022-11-08 12:56:30 info: All unit tests passed.
+2022-11-08 12:56:44 error: *** Spell Checker Report ***
+
+
+2022-11-08 12:57:20 info: ----------------------------------------
+2022-11-08 12:57:20 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-11-08 12:57:20 info: ----------------------------------------
+2022-11-08 12:57:31 info: All unit tests passed.
+2022-11-08 12:57:43 error: *** Spell Checker Report ***
+
+
+2022-11-08 12:59:18 info: -------------------------------------------
+2022-11-08 12:59:18 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-08 12:59:18 info: -------------------------------------------
+2022-11-08 12:59:28 info: All unit tests passed.
+2022-11-08 12:59:41 error: *** Spell Checker Report ***
+
+
+2022-11-08 01:00:46 info: --------------------------------------------
+2022-11-08 01:00:46 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-08 01:00:46 info: --------------------------------------------
+2022-11-08 01:00:46 warn: A unit test file was not provided.
+2022-11-08 01:00:59 error: *** Spell Checker Report ***
+
+
+2022-11-08 01:01:26 info: ------------------------------------------------
+2022-11-08 01:01:26 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-11-08 01:01:26 info: ------------------------------------------------
+2022-11-08 01:01:26 warn: A unit test file was not provided.
+2022-11-08 01:01:40 error: *** Spell Checker Report ***
+
+
+2022-11-08 01:33:41 info: ----------------------------------------------
+2022-11-08 01:33:41 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-08 01:33:41 info: ----------------------------------------------
+2022-11-08 01:33:52 info: All unit tests passed.
+2022-11-08 01:34:05 error: *** Spell Checker Report ***
+
+
+2022-11-08 01:36:27 info: ----------------------------------------------
+2022-11-08 01:36:27 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-08 01:36:27 info: ----------------------------------------------
+2022-11-08 01:36:37 info: All unit tests passed.
+2022-11-08 01:36:51 error: *** Spell Checker Report ***
+
+
+2022-11-08 01:37:50 info: -----------------------------------------
+2022-11-08 01:37:50 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-11-08 01:37:50 info: -----------------------------------------
+2022-11-08 01:37:50 warn: A unit test file was not provided.
+2022-11-08 01:38:03 error: *** Spell Checker Report ***
+
+
+2022-11-08 01:38:27 info: -------------------------------------------
+2022-11-08 01:38:27 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-11-08 01:38:27 info: -------------------------------------------
+2022-11-08 01:38:28 warn: A unit test file was not provided.
+2022-11-08 01:38:40 error: *** Spell Checker Report ***
+
+
+2022-11-08 01:39:24 info: ----------------------------------------------
+2022-11-08 01:39:24 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-08 01:39:24 info: ----------------------------------------------
+2022-11-08 01:39:35 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: you are great, HackYourFuture!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\User\Desktop\H Y F\Homework-class41\test-runner\CustomReporter.js"
+2022-11-08 01:39:49 error: *** Spell Checker Report ***
+
+
+2022-11-08 01:40:46 info: ----------------------------------------------
+2022-11-08 01:40:46 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-08 01:40:46 info: ----------------------------------------------
+2022-11-08 01:40:57 info: All unit tests passed.
+2022-11-08 01:41:09 error: *** Spell Checker Report ***
+
+
