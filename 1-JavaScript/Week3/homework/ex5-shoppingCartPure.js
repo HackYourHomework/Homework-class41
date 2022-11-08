@@ -23,7 +23,6 @@ it pure. Do the following:
 const initialCart = ['bananas', 'milk'];
 
 function addToShoppingCart(initialCart, newGroceryItem) {
-  // TODO complete this function
   if (initialCart.includes(newGroceryItem) === false) {
     initialCart.push(newGroceryItem);
     const currentGroceryList = initialCart;
