@@ -15,9 +15,19 @@ it pure. Do the following:
    spread syntax.
 5. Confirm that you function passes the provided unit tests.
 ------------------------------------------------------------------------------*/
+
 // ! Function under test
-function addToShoppingCart(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function addToShoppingCart(shoppingCart, groceryItem) {
+  let shoppingCartArray = [];
+  if (groceryItem) {
+    shoppingCartArray = [...shoppingCart, groceryItem];
+    if (shoppingCartArray.length > 3) {
+      shoppingCartArray.shift();
+    }
+  } else {
+    shoppingCartArray = [...shoppingCart];
+  }
+  return shoppingCartArray;
 }
 
 // ! Test functions (plain vanilla JavaScript)
@@ -33,9 +43,9 @@ function test2() {
   const initialCart = ['bananas', 'milk'];
   const result1 = addToShoppingCart(initialCart, 'chocolate');
   const result2 = addToShoppingCart(initialCart, 'chocolate');
-  console.assert(JSON.stringify(result1) === JSON.stringify(result2));
+  console.assert(JSON.stringify(result1) === JSON.stringify(result2)); //?
   console.assert(
-    JSON.stringify(initialCart) === JSON.stringify(['bananas', 'milk'])
+    JSON.stringify(initialCart) === JSON.stringify(['bananas', 'milk']) //?
   );
 }
 
@@ -43,16 +53,16 @@ function test3() {
   console.log('Test 3: `chocolate` should be added');
   const initialCart = ['bananas', 'milk'];
   const result = addToShoppingCart(initialCart, 'chocolate');
-  console.assert(result.length === 3);
-  console.assert(result.includes('chocolate'));
+  console.assert(result.length === 3); //?
+  console.assert(result.includes('chocolate')); //?
 }
 
 function test4() {
   console.log('Test 4: `waffles` should be added');
   const initialCart = ['bananas', 'milk', 'chocolate'];
   const result = addToShoppingCart(initialCart, 'waffles');
-  console.assert(result.length === 3);
-  console.assert(result.includes('waffles'));
+  console.assert(result.length === 3); //?
+  console.assert(result.includes('waffles')); //?
 }
 
 function test() {
