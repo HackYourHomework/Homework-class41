@@ -1,6 +1,5 @@
 'use strict';
 
-const { N } = require('html-validate/dist/cjs/core');
 
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-5-improved-shopping-at-the-supermarket
