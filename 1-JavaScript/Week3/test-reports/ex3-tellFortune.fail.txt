@@ -1,0 +1,12 @@
+*** Unit Test Error Report ***
+
+✕ tellFortune should have all TODO comments removed
+✕ tellFortune should tell the fortune by randomly selecting array values
+  Expected: You will be a software developer in Groningen, married to Ella with 4 kids.
+  Received: You will be a software developer in Groningen, married to Ella with 4 kids. 
+
+
+Command failed: npx jest ex3-tellFortune.test.js --colors --reporters="/Users/hackyourfuture/hackYourHomeWork/Homework-class41/test-runner/CustomReporter.js"
+*** Spell Checker Report ***
+
+ex3-tellFortune.js:56:32 - Unknown word (Kobani)
