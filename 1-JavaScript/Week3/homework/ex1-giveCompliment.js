@@ -32,7 +32,7 @@ function giveCompliment(name /* TODO parameter(s) go here */) {
     'outstanding',
   ];
   console.log(
-    'You are' + compliments[Math.floor(Math.random() * 10 + 1)] + ' ' + name
+    'You are ' + compliments[Math.floor(Math.random() * 10 + 1)] + ' ' + name
   );
 }
 
