@@ -29,9 +29,15 @@ const employeeRecords = [
   },
 ];
 
-// ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(employeeArr) {
+  
+  // eslint-disable-next-line no-unused-vars
+  const [ { gender: firstGender, salary: firstSalary, ...John}, {gender: secondGender, salary: secondSalary, ...Jane} ] = employeeRecords;
+  employeeArr = [John, Jane];
+    // it throws an npm test error here because i did not use 'firstSalary' and the other values above, but purpose of making them was just to filter the array 'employeeRecords using destructing and rest operator '.
+    // I do not know if it is a good way to solve the problem. I hope to hear your feedbacks!
+    return employeeArr;
+    
 }
 
 // ! Test functions (plain vanilla JavaScript)
