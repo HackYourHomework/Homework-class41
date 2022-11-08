@@ -1,4 +1,7 @@
 'use strict';
+
+const { N } = require('html-validate/dist/cjs/core');
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-5-improved-shopping-at-the-supermarket
 
@@ -16,8 +19,16 @@ it pure. Do the following:
 5. Confirm that you function passes the provided unit tests.
 ------------------------------------------------------------------------------*/
 // ! Function under test
-function addToShoppingCart(/* TODO parameter(s) go here */) {
+
+const initialCart = ['bananas', 'milk'];
+
+function addToShoppingCart(initialCart, newGroceryItem) {
   // TODO complete this function
+  if (initialCart.includes(newGroceryItem) === false) {
+    initialCart.push(newGroceryItem);
+    const currentGroceryList = initialCart;
+    return currentGroceryList;
+  }
 }
 
 // ! Test functions (plain vanilla JavaScript)
