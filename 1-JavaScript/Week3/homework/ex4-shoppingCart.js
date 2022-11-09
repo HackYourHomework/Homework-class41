@@ -23,13 +23,20 @@ you have more than 3 items in your shopping cart the first item gets taken out.
 const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
-function addToShoppingCart(newGroceryItem) {
-  shoppingCart.push(newGroceryItem);
+
+const groceryItem = ['newGroceryItem1', 'newGroceryItem2'];
+
+// ! Function to be tested
+function addToShoppingCart(groceryItem) {
+  shoppingCart.push(...groceryItem);
+  console.log(shoppingCart);
   if (shoppingCart.length > 3) {
-    const boughtItem = shoppingCart.shift();
-    return 'you bought' + boughtItem.join(', ') + '.';
+    shoppingCart.shift();
+    console.log('you bought ' + shoppingCart.shift(', ') + '.');
   }
 }
+
+addToShoppingCart(groceryItem);
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
