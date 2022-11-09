@@ -33,10 +33,11 @@ const employeeRecords = [
 function filterPrivateData(records) {
   const result = [];
   for (const key of Object.keys(records)) {
-    const empName = records[key].name,
-      empJob = records[key].occupation,
-      empEmail = records[key].email;
-    result.push({ name: empName, occupation: empJob, email: empEmail });
+    const copy = records[key];
+    delete copy.salary;
+    delete copy.gender;
+    const { name, occupation, email } = records[key];
+    result.push({ name: name, occupation: occupation, email: email });
   }
   return result;
 }
