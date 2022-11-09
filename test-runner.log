@@ -447,3 +447,8 @@ npm notice
 2022-11-09 01:40:42 info: ------------------------------------------
 2022-11-09 01:40:50 info: All unit tests passed.
 2022-11-09 01:41:01 info: All steps were completed successfully
+2022-11-09 03:27:57 info: --------------------------------------
+2022-11-09 03:27:57 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-09 03:27:57 info: --------------------------------------
+2022-11-09 03:28:03 info: All unit tests passed.
+2022-11-09 03:28:11 info: All steps were completed successfully
