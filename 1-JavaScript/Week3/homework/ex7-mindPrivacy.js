@@ -42,14 +42,14 @@ function filterPrivateData(records) {
     email: `${personaEmail}`,
   };
   const {
-    name: personbName,
-    occupation: personbOccupation,
-    email: personbEmail,
+    name: personBName,
+    occupation: personBOccupation,
+    email: personBEmail,
   } = records[1];
   const dataB = {
-    name: `${personbName}`,
-    occupation: `${personbOccupation}`,
-    email: `${personbEmail}`,
+    name: `${personBName}`,
+    occupation: `${personBOccupation}`,
+    email: `${personBEmail}`,
   };
   const dataC = [dataA, dataB];
   return dataC;

@@ -31,7 +31,7 @@ const cartForParty = {
 function calculateTotalPrice(basket) {
   let totalCost = 0;
   // eslint-disable-next-line no-restricted-syntax
-  for (let key in basket) {
+  for (const key in basket) {
     console.log(basket[key]);
     totalCost = totalCost + basket[key];
   }
