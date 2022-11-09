@@ -442,3 +442,8 @@ npm notice
 2022-11-09 12:25:42 info: -------------------------------------------------
 2022-11-09 12:25:46 info: All unit tests passed.
 2022-11-09 12:25:53 info: All steps were completed successfully
+2022-11-09 01:40:42 info: ------------------------------------------
+2022-11-09 01:40:42 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-09 01:40:42 info: ------------------------------------------
+2022-11-09 01:40:50 info: All unit tests passed.
+2022-11-09 01:41:01 info: All steps were completed successfully
