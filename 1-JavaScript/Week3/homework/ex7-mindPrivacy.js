@@ -28,7 +28,8 @@ const employeeRecords = [
     salary: 60000,
   },
 ];
-function filterPrivateData(employeeArr) {
+
+ function filterPrivateData(employeeArr) {
   const newEmployeeArr = [];
   for (const element of employeeArr) {
   const {name, occupation, email} = element;
@@ -36,7 +37,6 @@ function filterPrivateData(employeeArr) {
   }
   return newEmployeeArr;
 } 
-
 
 
 
