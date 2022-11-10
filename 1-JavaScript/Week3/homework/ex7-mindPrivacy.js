@@ -28,11 +28,18 @@ const employeeRecords = [
     salary: 60000,
   },
 ];
+function filterPrivateData(employeeArr) {
+  const newEmployeeArr = [];
+  for (const element of employeeArr) {
+  const {name, occupation, email} = element;
+  newEmployeeArr.push({name, occupation, email});
+  }
+  return newEmployeeArr;
+} 
 
-// ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
+
+
+
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
