@@ -18,15 +18,15 @@ it pure. Do the following:
 // ! Function under test
 const shoppingCart = ['bananas', 'milk'];
 
-function addToShoppingCart(NewShoppingCart,item) {
-  let NewShoppingCart = [...addToShoppingCart];
+function addToShoppingCart(ShoppingCartArray,item) {
+  let NewShoppingCart = [...ShoppingCartArray];
   NewShoppingCart.push(item);
   if( NewShoppingCart.length > 4){
     NewShoppingCart.shift();
   };
 
 }
-addToShoppingCart();
+addToShoppingCart(shoppingCart,'chocolate');
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {

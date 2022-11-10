@@ -31,7 +31,7 @@ function addToShoppingCart(item) {
   }
   return `you bought ${shoppingCart} !`;
 }
-addToShoppingCart();
+addToShoppingCart('chocolate');
  
 // ! Test functions (plain vanilla JavaScript)
 function test1() {

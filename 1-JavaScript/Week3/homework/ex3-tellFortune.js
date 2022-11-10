@@ -60,19 +60,15 @@ function selectRandomly(randomArray) {
     case numKids:
       const randomAumKids = numKids[Math.floor(Math.random() *numKids.length)];
       return randomAumKids;
-      break;
       case partnerNames:
         const randomPartnerNames = partnerNames[Math.floor(Math.random() *partnerNames.length)];
       return randomPartnerNames;
-        break;
       case locations:
         const randomLocations = locations[Math.floor(Math.random() *locations.length)];
       return randomLocations;
-        break;
         case jobTitles:
           const randomJobTitles = jobTitles[Math.floor(Math.random() *jobTitles.length)]
       return randomJobTitles ;
-          break;
         default:
           alert('array name is not correct'  );
   }
