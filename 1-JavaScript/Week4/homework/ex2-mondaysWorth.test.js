@@ -1,5 +1,6 @@
 'use strict';
 
+// eslint-disable-next-line no-unused-vars
 const { duration } = require('moment');
 
 /*------------------------------------------------------------------------------
@@ -34,6 +35,7 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
+// eslint-disable-next-line no-unused-vars
 function computeEarnings(dayTasks, rate) {
   const workingMinutes = dayTasks.reduce(
     (hours, taskTime) => hours + taskTime.duration,
