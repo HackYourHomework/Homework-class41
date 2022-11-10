@@ -27,7 +27,16 @@ function addToShoppingCart(groceryItem/* parameters go here */) {
   // TODO complete this function
   shoppingCart.push(groceryItem)
   if (shoppingCart.length > 3) {
-    shoppingCart.shift();
+   function addToShoppingCart(groceryItem/* parameters go here */) {
+        if(groceryItem){
+              shoppingCart.push(groceryItem)
+               if (shoppingCart.length > 3) {
+                 shoppingCart.shift();
+               }
+        }
+      return `You bought ${shoppingCart.join(', ')}!`;
+
+}
   } if (!groceryItem) {
   shoppingCart.pop();
 }
