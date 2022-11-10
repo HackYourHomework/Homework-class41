@@ -12,6 +12,8 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
 4. Return the new array as the return value of the function.
 5. Run the exercise and verify that it passes all the unit tests.
 ------------------------------------------------------------------------------*/
+
+// ! Function under test
 const employeeRecords = [
   {
     name: 'John',
@@ -29,10 +31,13 @@ const employeeRecords = [
   },
 ];
 
+
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
+function filterPrivateData() {
+ let [a ={name,occupation,email},b={name,occupation,email},] = employeeRecords;
+ return [a,b];
+};
+filterPrivateData();
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
