@@ -19,18 +19,13 @@ it pure. Do the following:
 function addToShoppingCart(shoppingCart, groceryItem) {
   const newShoppingCart = [...shoppingCart, groceryItem];
   if (newShoppingCart.length > 3) {
-      newShoppingCart.shift();
-    return newShoppingCart;
-  } else if (groceryItem === undefined) {
-      newShoppingCart.pop();
-  return newShoppingCart;
-  } else {
-    return newShoppingCart;
-  }
-  
+    newShoppingCart.shift();
+  } if (!groceryItem) {
+  newShoppingCart.pop();
 }
+return newShoppingCart;
 
-
+}
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log('Test 1: addToShoppingCart should take two parameters');

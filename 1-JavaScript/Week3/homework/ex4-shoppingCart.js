@@ -28,15 +28,13 @@ function addToShoppingCart(groceryItem/* parameters go here */) {
   shoppingCart.push(groceryItem)
   if (shoppingCart.length > 3) {
     shoppingCart.shift();
-    return `You bought ${shoppingCart.join(', ')}!`;
-  } else if (groceryItem === undefined) {
+  } if (!groceryItem) {
   shoppingCart.pop();
-  return `You bought ${shoppingCart.join(', ')}!`;
-  } else {
-    return `You bought ${shoppingCart.join(', ')}!`;
-  }
-  
 }
+return `You bought ${shoppingCart.join(', ')}!`;
+
+}
+
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
   console.log(
