@@ -25,7 +25,7 @@ const shoppingCart = ['bananas', 'milk'];
 // ! Function to be tested
 function addToShoppingCart(groceryItem) {
   shoppingCart.push(groceryItem);
-  if (groceryItem === undefined) {
+  if (!groceryItem) {
     shoppingCart.pop();
   }
 
