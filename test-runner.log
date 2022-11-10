@@ -1,0 +1,520 @@
+2022-11-01 04:50:30 info: ----------------------------------------------
+2022-11-01 04:50:30 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-01 04:50:30 info: ----------------------------------------------
+2022-11-01 04:50:34 info: All unit tests passed.
+2022-11-01 04:50:38 info: All steps were completed successfully
+2022-11-01 05:00:24 info: ----------------------------------------
+2022-11-01 05:00:24 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-11-01 05:00:24 info: ----------------------------------------
+2022-11-01 05:00:27 info: All unit tests passed.
+2022-11-01 05:00:31 info: All steps were completed successfully
+2022-11-01 05:24:24 info: -------------------------------------------
+2022-11-01 05:24:24 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-01 05:24:24 info: -------------------------------------------
+2022-11-01 05:24:27 info: All unit tests passed.
+2022-11-01 05:24:31 info: All steps were completed successfully
+2022-11-01 06:06:50 info: --------------------------------------------
+2022-11-01 06:06:50 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-01 06:06:50 info: --------------------------------------------
+2022-11-01 06:06:50 warn: A unit test file was not provided.
+2022-11-01 06:06:55 info: All steps were completed successfully
+2022-11-01 06:40:30 info: --------------------------------------------
+2022-11-01 06:40:30 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-01 06:40:30 info: --------------------------------------------
+2022-11-01 06:40:30 warn: A unit test file was not provided.
+2022-11-01 06:40:34 info: All steps were completed successfully
+2022-11-01 07:12:53 info: ------------------------------------------------
+2022-11-01 07:12:53 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-11-01 07:12:53 info: ------------------------------------------------
+2022-11-01 07:12:53 warn: A unit test file was not provided.
+2022-11-01 07:12:57 info: All steps were completed successfully
+2022-11-01 07:19:58 info: ------------------------------------------------
+2022-11-01 07:19:58 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2022-11-01 07:19:58 info: ------------------------------------------------
+2022-11-01 07:19:58 warn: A unit test file was not provided.
+2022-11-01 07:20:03 info: All steps were completed successfully
+2022-11-01 07:39:16 info: -----------------------------------------
+2022-11-01 07:39:16 info: >>> Running Unit Test `ex6-totalCost` <<<
+2022-11-01 07:39:16 info: -----------------------------------------
+2022-11-01 07:39:16 warn: A unit test file was not provided.
+2022-11-01 07:39:20 info: All steps were completed successfully
+2022-11-01 07:54:27 info: -------------------------------------------
+2022-11-01 07:54:27 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-11-01 07:54:27 info: -------------------------------------------
+2022-11-01 07:54:27 warn: A unit test file was not provided.
+2022-11-01 07:54:33 info: All steps were completed successfully
+2022-11-01 07:57:09 info: -------------------------------------------
+2022-11-01 07:57:09 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-11-01 07:57:09 info: -------------------------------------------
+2022-11-01 07:57:09 warn: A unit test file was not provided.
+2022-11-01 07:57:14 info: All steps were completed successfully
+2022-11-01 08:14:39 info: --------------------------------------------
+2022-11-01 08:14:39 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-01 08:14:39 info: --------------------------------------------
+2022-11-01 08:14:39 warn: A unit test file was not provided.
+2022-11-01 08:14:43 info: All steps were completed successfully
+2022-11-01 08:18:09 info: --------------------------------------------
+2022-11-01 08:18:09 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-01 08:18:09 info: --------------------------------------------
+2022-11-01 08:18:09 warn: A unit test file was not provided.
+2022-11-01 08:18:13 info: All steps were completed successfully
+2022-11-01 08:20:57 info: --------------------------------------------
+2022-11-01 08:20:57 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-01 08:20:57 info: --------------------------------------------
+2022-11-01 08:20:57 warn: A unit test file was not provided.
+2022-11-01 08:21:02 info: All steps were completed successfully
+2022-11-02 02:13:39 info: --------------------------------------------
+2022-11-02 02:13:39 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2022-11-02 02:13:39 info: --------------------------------------------
+2022-11-02 02:13:39 warn: A unit test file was not provided.
+2022-11-02 02:13:44 info: All steps were completed successfully
+2022-11-02 02:22:28 info: -------------------------------------------
+2022-11-02 02:22:28 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-11-02 02:22:28 info: -------------------------------------------
+2022-11-02 02:22:31 info: All unit tests passed.
+2022-11-02 02:22:35 info: All steps were completed successfully
+2022-11-02 02:27:04 info: -------------------------------------------
+2022-11-02 02:27:04 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-11-02 02:27:04 info: -------------------------------------------
+2022-11-02 02:27:04 warn: A unit test file was not provided.
+2022-11-02 02:27:09 info: All steps were completed successfully
+2022-11-05 09:43:54 info: -------------------------------------------
+2022-11-05 09:43:54 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-11-05 09:43:54 info: -------------------------------------------
+2022-11-05 09:43:54 warn: A unit test file was not provided.
+2022-11-05 09:43:58 info: All steps were completed successfully
+2022-11-05 10:49:51 info: ----------------------------------------
+2022-11-05 10:49:51 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-11-05 10:49:51 info: ----------------------------------------
+2022-11-05 10:49:54 info: All unit tests passed.
+2022-11-05 10:49:58 info: All steps were completed successfully
+2022-11-06 03:00:16 info: ------------------------------------------------------
+2022-11-06 03:00:16 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-06 03:00:16 info: ------------------------------------------------------
+2022-11-06 03:00:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  ✕ doubleEvenNumbers should take the even numbers and double them (6 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 0
+    + Received  + 2
+
+      Array [
+    +   2,
+        4,
+    +   6,
+        8,
+      ]
+
+      20 |     const actual = doubleEvenNumbers([1, 2, 3, 4]);
+      21 |     const expected = [4, 8];
+    > 22 |     expect(actual).toEqual(expected);
+         |                    ^
+      23 | });
+
+      at Object.toEqual (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:22:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        0.809 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2022-11-06 03:04:31 info: Disclaimer turned off
+2022-11-06 03:04:39 info: ------------------------------------------------------
+2022-11-06 03:04:39 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-06 03:04:39 info: ------------------------------------------------------
+2022-11-06 03:04:42 info: All unit tests passed.
+2022-11-06 03:04:45 info: All steps were completed successfully
+2022-11-06 03:17:44 info: -------------------------------------------------
+2022-11-06 03:17:44 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-06 03:17:44 info: -------------------------------------------------
+2022-11-06 03:17:47 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (2 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: 187.5
+
+      49 |         const result = computeEarnings(mondayTasks, hourlyRate);
+      50 |         const expected = '€187.50';
+    > 51 |         expect(result).toBe(expected);
+         |                        ^
+      52 |     });
+      53 | });
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:51:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.774 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-11-06 03:20:55 info: -------------------------------------------------
+2022-11-06 03:20:55 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-06 03:20:55 info: -------------------------------------------------
+2022-11-06 03:20:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (3 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      49 |         const result = computeEarnings(mondayTasks, hourlyRate);
+      50 |         const expected = '€187.50';
+    > 51 |         expect(result).toBe(expected);
+         |                        ^
+      52 |     });
+      53 | });
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:51:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.865 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-11-06 03:23:16 info: -------------------------------------------------
+2022-11-06 03:23:16 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-06 03:23:16 info: -------------------------------------------------
+2022-11-06 03:23:18 info: All unit tests passed.
+2022-11-06 03:23:22 info: All steps were completed successfully
+2022-11-06 03:40:25 info: -------------------------------------------------
+2022-11-06 03:40:25 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-06 03:40:25 info: -------------------------------------------------
+2022-11-06 03:40:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (1 ms)
+    ✕ should not modify the original `fruitBasket` array (3 ms)
+    ✕ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    TypeError: basket.filer is not a function
+
+      28 | // ! Function under test
+      29 | function sanitizeFruitBasket(basket, fruit) {
+    > 30 |     return basket.filer((item) => item !== fruit);
+         |                   ^
+      31 | }
+      32 |
+      33 | // ! Unit tests (using Jest)
+
+      at filer (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:30:19)
+      at Object.sanitizeFruitBasket (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:43:9)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    TypeError: basket.filer is not a function
+
+      28 | // ! Function under test
+      29 | function sanitizeFruitBasket(basket, fruit) {
+    > 30 |     return basket.filer((item) => item !== fruit);
+         |                   ^
+      31 | }
+      32 |
+      33 | // ! Unit tests (using Jest)
+
+      at filer (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:30:19)
+      at Object.sanitizeFruitBasket (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:48:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.571 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-06 03:47:37 info: -------------------------------------------------
+2022-11-06 03:47:37 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-06 03:47:37 info: -------------------------------------------------
+2022-11-06 03:47:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (1 ms)
+    ✕ should not modify the original `fruitBasket` array (4 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      42 |         const originalFruitBasketContents = [...fruitBasket];
+      43 |         sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 44 |         expect(originalFruitBasketContents).toBe(fruitBasket);
+         |                                             ^
+      45 |     });
+      46 |
+      47 |     test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:44:45)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    - Expected  - 2
+    + Received  + 0
+
+      Array [
+        "apple",
+    -   "lemon",
+        "grapefruit",
+    -   "lemon",
+        "banana",
+        "watermelon",
+      ]
+
+      55 |             'watermelon',
+      56 |         ];
+    > 57 |         expect(result).toBe(expected);
+         |                        ^
+      58 |     });
+      59 | });
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:57:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        1.147 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-06 03:48:27 info: -------------------------------------------------
+2022-11-06 03:48:27 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-06 03:48:27 info: -------------------------------------------------
+2022-11-06 03:48:30 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✕ should not modify the original `fruitBasket` array (4 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      42 |         const originalFruitBasketContents = [...fruitBasket];
+      43 |         sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 44 |         expect(originalFruitBasketContents).toBe(fruitBasket);
+         |                                             ^
+      45 |     });
+      46 |
+      47 |     test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:44:45)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    - Expected  - 1
+    + Received  + 0
+
+      Array [
+        "apple",
+        "grapefruit",
+    -   "lemon",
+        "banana",
+        "watermelon",
+      ]
+
+      48 |         const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      49 |         const expected = ['apple', 'grapefruit', 'lemon', 'banana', 'watermelon'];
+    > 50 |         expect(result).toBe(expected);
+         |                        ^
+      51 |     });
+      52 | });
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:50:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.662 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-06 03:49:55 info: -------------------------------------------------
+2022-11-06 03:49:55 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-06 03:49:55 info: -------------------------------------------------
+2022-11-06 03:49:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✕ should not modify the original `fruitBasket` array (4 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      42 |         const originalFruitBasketContents = [...fruitBasket];
+      43 |         sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 44 |         expect(originalFruitBasketContents).toBe(fruitBasket);
+         |                                             ^
+      45 |     });
+      46 |
+      47 |     test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:44:45)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      48 |         const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      49 |         const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 50 |         expect(result).toBe(expected);
+         |                        ^
+      51 |     });
+      52 | });
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:50:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.688 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-06 03:51:57 info: -------------------------------------------------
+2022-11-06 03:51:57 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-06 03:51:57 info: -------------------------------------------------
+2022-11-06 03:51:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array
+    ✕ should return a new array that does not include the unwanted `lemon` (4 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      48 |         const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      49 |         const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 50 |         expect(result).toBe(expected);
+         |                        ^
+      51 |     });
+      52 | });
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:50:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.691 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-06 03:54:26 info: -------------------------------------------------
+2022-11-06 03:54:26 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-06 03:54:26 info: -------------------------------------------------
+2022-11-06 03:54:29 info: All unit tests passed.
+2022-11-06 03:54:33 info: All steps were completed successfully
+2022-11-06 03:55:20 info: -------------------------------------------------
+2022-11-06 03:55:20 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-06 03:55:20 info: -------------------------------------------------
+2022-11-06 03:55:22 info: All unit tests passed.
+2022-11-06 03:55:26 info: All steps were completed successfully
+2022-11-07 05:12:01 info: ------------------------------------------
+2022-11-07 05:12:01 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-07 05:12:01 info: ------------------------------------------
+2022-11-07 05:12:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (1 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: Cannot read properties of undefined (reading 'push')
+
+      18 |     return {
+      19 |         subscribe: function(subscriber) {
+    > 20 |             this.subscribers.push(subscriber);
+         |                              ^
+      21 |         },
+      22 |         notify: function(message) {
+      23 |             for (const func of subscribers) {
+
+      at Object.push [as subscribe] (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:20:30)
+      at Object.subscribe (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:23:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.764 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-07 05:13:24 info: ------------------------------------------
+2022-11-07 05:13:24 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-07 05:13:24 info: ------------------------------------------
+2022-11-07 05:13:27 info: All unit tests passed.
+2022-11-07 05:13:31 info: All steps were completed successfully
+2022-11-07 06:12:08 info: --------------------------------------
+2022-11-07 06:12:08 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-07 06:12:08 info: --------------------------------------
+2022-11-07 06:12:11 info: All unit tests passed.
+2022-11-07 06:12:15 info: All steps were completed successfully
+2022-11-09 08:33:16 info: ----------------------------------------------
+2022-11-09 08:33:16 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-09 08:33:16 info: ----------------------------------------------
+2022-11-09 08:33:20 info: All unit tests passed.
+2022-11-09 08:33:24 info: All steps were completed successfully
+2022-11-10 09:47:42 info: -------------------------------------------------
+2022-11-10 09:47:42 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-10 09:47:42 info: -------------------------------------------------
+2022-11-10 09:47:46 info: All unit tests passed.
+2022-11-10 09:47:50 info: All steps were completed successfully
