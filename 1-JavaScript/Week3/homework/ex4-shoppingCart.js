@@ -24,14 +24,14 @@ const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
 function addToShoppingCart(groceryItem) {
-  shoppingCart.push(groceryItem);
-  if (!groceryItem) {
-    shoppingCart.pop();
+  if (groceryItem) {
+    shoppingCart.push(groceryItem);
+
+    if (shoppingCart.length > 3) {
+      shoppingCart.shift();
+    }
   }
 
-  if (shoppingCart.length > 3) {
-    shoppingCart.shift();
-  }
   const shoppingCartList = shoppingCart.join(', ');
   return `You bought ${shoppingCartList}!`;
 }

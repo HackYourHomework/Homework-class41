@@ -18,14 +18,10 @@ it pure. Do the following:
 // ! Function under test
 function addToShoppingCart(shoppingCart, groceryItem) {
   const newShoppingCart = [...shoppingCart, groceryItem];
-
-  console.log(groceryItem);
   if (!groceryItem) {
-    newShoppingCart.pop();
+    return shoppingCart;
   } else if (newShoppingCart.length > 3) {
-    console.log(newShoppingCart);
     newShoppingCart.shift();
-    console.log(newShoppingCart);
   }
 
   return newShoppingCart;
