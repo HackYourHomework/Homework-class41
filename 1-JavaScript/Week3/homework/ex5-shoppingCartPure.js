@@ -17,10 +17,13 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 function addToShoppingCart(shoppingCart, groceryItem) {
-  const newShoppingCart = [...shoppingCart, groceryItem];
   if (!groceryItem) {
     return shoppingCart;
-  } else if (newShoppingCart.length > 3) {
+  }
+
+  const newShoppingCart = [...shoppingCart, groceryItem];
+
+  if (newShoppingCart.length > 3) {
     newShoppingCart.shift();
   }
 
