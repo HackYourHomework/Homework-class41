@@ -31,12 +31,9 @@ function giveCompliment(name) {
     'best',
     'nice',
   ];
-  const complimentString =
-    'You are ' +
-    compliments[Math.floor(Math.random() * 10)] +
-    ', ' +
-    name +
-    '!';
+  const complimentString = `You are ${
+    compliments[Math.floor(Math.random() * compliments.length)]
+  }, ${name}!`;
   return complimentString;
 }
 console.log(giveCompliment('Andrei'));

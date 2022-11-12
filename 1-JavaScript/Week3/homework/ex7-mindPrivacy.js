@@ -31,13 +31,21 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(employeeRecords) {
+  // third solution
+  const tempEmployeeRecords = employeeRecords.map(
+    ({ name, occupation, gender, email, salary }) => ({
+      name,
+      occupation,
+      email,
+    })
+  );
   // first solution
-  const tempEmployeeRecords = [];
-  for (const employee of employeeRecords) {
-    const { name, occupation, gender, email, salary } = employee;
-    const tempEmployee = { name, occupation, email };
-    tempEmployeeRecords.push(tempEmployee);
-  }
+  // const tempEmployeeRecords = [];
+  // for (const employee of employeeRecords) {
+  //   const { name, occupation, gender, email, salary } = employee;
+  //   const tempEmployee = { name, occupation, email };
+  //   tempEmployeeRecords.push(tempEmployee);
+  // }
 
   // second solution
   // for (const employee of employeeRecords) {

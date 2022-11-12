@@ -17,12 +17,12 @@ it pure. Do the following:
 ------------------------------------------------------------------------------*/
 // ! Function under test
 function addToShoppingCart(shoppingCart, item) {
-  const tempShoppingCart = [...shoppingCart];
+  let tempShoppingCart = [];
   if (item !== undefined) {
-    tempShoppingCart.push(item);
+    tempShoppingCart = [...shoppingCart, item]; //tempShoppingCart.push(item);
   }
   if (tempShoppingCart.length > 3) {
-    tempShoppingCart.shift();
+    tempShoppingCart = tempShoppingCart.slice(1); //tempShoppingCart.shift();
   }
   console.log(`You bought ${tempShoppingCart.join(', ')}!`);
   return tempShoppingCart;

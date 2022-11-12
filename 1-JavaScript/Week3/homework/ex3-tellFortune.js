@@ -33,8 +33,8 @@ body, this code is now written once only in a separated function.
 
 // This function should take an array as its parameter and return
 // a randomly selected element as its return value.
-function selectRandomly(array) {
-  return array[Math.floor(Math.random() * array.length)];
+function selectRandomly(arrayOfChoices) {
+  return arrayOfChoices[Math.floor(Math.random() * arrayOfChoices.length)];
 }
 
 function tellFortune(numKids, partnerNames, locations, jobTitles) {
@@ -50,7 +50,7 @@ function main() {
 
   const partnerNames = ['Anna', 'Victoria', 'Nina', 'Kathy', 'Johanna'];
 
-  const locations = ['Amsterdam', 'Moscow', 'New-York', 'Tokio', 'Bangkok'];
+  const locations = ['Amsterdam', 'Moscow', 'New York', 'Tokio', 'Bangkok'];
 
   const jobTitles = [
     'Cleaner',

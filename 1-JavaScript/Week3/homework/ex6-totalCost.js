@@ -1,5 +1,6 @@
 'use strict';
 
+const { consolidate } = require('cspell-trie-lib');
 const { sum } = require('lodash');
 
 /*------------------------------------------------------------------------------
@@ -33,9 +34,7 @@ const cartForParty = {
 
 function calculateTotalPrice(cart) {
   let totalPrice = 0;
-  for (const item in cartForParty) {
-    totalPrice += cartForParty[item];
-  }
+  Object.keys(cart).forEach((key) => (totalPrice += cart[key]));
   return 'Total: € ' + totalPrice.toFixed(2);
 }
 calculateTotalPrice(cartForParty);
