@@ -1,0 +1,11 @@
+
+*** ESLint Report ***
+
+ex7-mindPrivacy.js
+  36:26  error    'gender' is defined but never used  no-unused-vars
+  36:41  error    'salary' is defined but never used  no-unused-vars
+  43:3   warning  Remove commented-out code           hyf/no-commented-out-code
+  51:3   warning  Remove commented-out code           hyf/no-commented-out-code
+
+✖ 4 problems (2 errors, 2 warnings)
+

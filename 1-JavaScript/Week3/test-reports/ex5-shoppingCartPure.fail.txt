@@ -1,0 +1,9 @@
+
+*** ESLint Report ***
+
+ex5-shoppingCartPure.js
+  22:49  warning  Remove commented-out code  hyf/no-commented-out-code
+  25:51  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
