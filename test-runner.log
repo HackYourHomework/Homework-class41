@@ -1,0 +1,61 @@
+2022-11-13 09:39:14 info: ------------------------------------------------------
+2022-11-13 09:39:14 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-13 09:39:14 info: ------------------------------------------------------
+2022-11-13 09:39:17 info: All unit tests passed.
+2022-11-13 09:39:18 error: *** ESLint Report ***
+
+ex1-doubleEvenNumbers.test.js
+  19:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-11-13 09:39:32 info: ------------------------------------------------------
+2022-11-13 09:39:32 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-13 09:39:32 info: ------------------------------------------------------
+2022-11-13 09:39:34 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  × doubleEvenNumbers should take the even numbers and double them (7 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+    +   2,
+        4,
+    -   8,
+      ]
+
+      31 |   const actual = doubleEvenNumbers([1, 2, 3, 4]);
+      32 |   const expected = [4, 8];
+    > 33 |   expect(actual).toEqual(expected);
+         |                  ^
+      34 | });
+      35 |
+
+      at Object.toEqual (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:33:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        0.505 s, estimated 1 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2022-11-13 09:39:36 error: *** ESLint Report ***
+
+ex1-doubleEvenNumbers.test.js
+  19:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-11-13 09:39:52 info: ------------------------------------------------------
+2022-11-13 09:39:52 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-13 09:39:52 info: ------------------------------------------------------
+2022-11-13 09:39:54 info: All unit tests passed.
+2022-11-13 09:39:58 info: All steps were completed successfully
