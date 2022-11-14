@@ -13,8 +13,8 @@ Let's rewrite it (or _refactor_ it, as experienced developers would call it):
 function doubleEvenNumbers() {
   const newNumbers = [1, 2, 3, 4];
   const dbEvn = newNumbers
-    .filter(function (num) {
-      return num % 2 === 0;
+    .filter(function (num1) {
+      return num1 % 2 === 0;
     })
     .map(function (num2) {
       return num2 * 2;

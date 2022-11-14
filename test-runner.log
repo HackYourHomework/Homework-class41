@@ -54,3 +54,18 @@ ex2-mondaysWorth.test.js
 2022-11-14 12:54:15 info: -------------------------------------------------
 2022-11-14 12:54:16 info: All unit tests passed.
 2022-11-14 12:54:19 info: All steps were completed successfully
+2022-11-14 02:38:56 info: ------------------------------------------------------
+2022-11-14 02:38:56 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-14 02:38:56 info: ------------------------------------------------------
+2022-11-14 02:38:59 info: All unit tests passed.
+2022-11-14 02:39:03 info: All steps were completed successfully
+2022-11-14 02:40:23 info: -------------------------------------------------
+2022-11-14 02:40:23 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-14 02:40:23 info: -------------------------------------------------
+2022-11-14 02:40:25 info: All unit tests passed.
+2022-11-14 02:40:28 info: All steps were completed successfully
+2022-11-14 02:47:39 info: ------------------------------------------------------
+2022-11-14 02:47:39 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-14 02:47:39 info: ------------------------------------------------------
+2022-11-14 02:47:41 info: All unit tests passed.
+2022-11-14 02:47:44 info: All steps were completed successfully

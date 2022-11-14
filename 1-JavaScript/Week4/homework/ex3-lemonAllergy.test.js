@@ -26,14 +26,16 @@ const fruitBasket = [
 ];
 
 // ! Function under test
-function sanitizeFruitBasket(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function sanitizeFruitBasket(arr, query) {
+  const sanitized = arr.filter((el) => el !== query);
+  return sanitized;
 }
+
+sanitizeFruitBasket(fruitBasket, 'lemon');
 
 // ! Unit tests (using Jest)
 describe('sanitizeFruitBasket', () => {
   test('should take two parameters', () => {
-    // TODO replace next line with your code
     expect(false).toBe(true);
   });
 
