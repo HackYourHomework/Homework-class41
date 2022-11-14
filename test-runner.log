@@ -265,3 +265,204 @@ Ran all test suites matching /ex2-mondaysWorth.test.js/i.
 2022-11-13 10:22:13 info: -------------------------------------------------
 2022-11-13 10:22:15 info: All unit tests passed.
 2022-11-13 10:22:18 info: All steps were completed successfully
+2022-11-14 01:45:47 info: -------------------------------------------------
+2022-11-14 01:45:47 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 01:45:47 info: -------------------------------------------------
+2022-11-14 01:45:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (6 ms)
+    √ should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   2
+    Received length:   0
+    Received function: [Function sanitizeFruitBasket]
+
+      34 | describe('sanitizeFruitBasket', () => {
+      35 |   test('should take two parameters', () => {
+    > 36 |     expect(sanitizeFruitBasket).toHaveLength(2);
+         |                                 ^
+      37 |   });
+      38 |
+      39 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:36:33)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: undefined
+
+      48 |     const result = sanitizeFruitBasket(fruitBasket);
+      49 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 50 |     expect(result).toBe(expected);
+         |                    ^
+      51 |   });
+      52 | });
+      53 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:50:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.537 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-14 01:48:32 info: -------------------------------------------------
+2022-11-14 01:48:32 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 01:48:32 info: -------------------------------------------------
+2022-11-14 01:48:34 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    √ should not modify the original `fruitBasket` array
+    × should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: undefined
+
+      48 |     const result = sanitizeFruitBasket(fruitBasket);
+      49 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 50 |     expect(result).toBe(expected);
+         |                    ^
+      51 |   });
+      52 | });
+      53 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:50:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.496 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-14 01:48:36 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  29:30  error  'parone' is defined but never used  no-unused-vars
+  29:38  error  'partwo' is defined but never used  no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2022-11-14 01:48:38 error: *** Spell Checker Report ***
+
+ex3-lemonAllergy.test.js:29:30 - Unknown word (parone)
+ex3-lemonAllergy.test.js:29:38 - Unknown word (partwo)
+
+2022-11-14 01:52:05 info: -------------------------------------------------
+2022-11-14 01:52:05 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 01:52:05 info: -------------------------------------------------
+2022-11-14 01:52:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (3 ms)
+    √ should not modify the original `fruitBasket` array
+    × should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   2
+    Received length:   0
+    Received function: [Function sanitizeFruitBasket]
+
+      36 | describe('sanitizeFruitBasket', () => {
+      37 |   test('should take two parameters', () => {
+    > 38 |     expect(sanitizeFruitBasket).toHaveLength(2);
+         |                                 ^
+      39 |   });
+      40 |
+      41 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:38:33)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: undefined
+
+      50 |     const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      51 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 52 |     expect(result).toBe(expected);
+         |                    ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.57 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-14 01:52:09 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  32:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-11-14 02:07:56 info: -------------------------------------------------
+2022-11-14 02:07:56 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 02:07:56 info: -------------------------------------------------
+2022-11-14 02:07:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (2 ms)
+    √ should not modify the original `fruitBasket` array
+    × should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      50 |     const result = sanitizeFruitBasket(fruitBasket, 'lemon');
+      51 |     const expected = ['apple', 'grapefruit', 'banana', 'watermelon'];
+    > 52 |     expect(result).toBe(expected);
+         |                    ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.499 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-14 02:09:17 info: -------------------------------------------------
+2022-11-14 02:09:17 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 02:09:17 info: -------------------------------------------------
+2022-11-14 02:09:19 info: All unit tests passed.
+2022-11-14 02:09:22 info: All steps were completed successfully
