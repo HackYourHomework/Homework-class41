@@ -672,3 +672,58 @@ ex4-observable/ex4-observable.js
 2022-11-14 04:43:08 info: ------------------------------------------
 2022-11-14 04:43:11 info: All unit tests passed.
 2022-11-14 04:43:14 info: All steps were completed successfully
+2022-11-14 10:29:23 info: --------------------------------------
+2022-11-14 10:29:23 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-14 10:29:23 info: --------------------------------------
+2022-11-14 10:29:26 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\husse\HYF\MODULE_2\Homework-class41\test-runner\CustomReporter.js"
+2022-11-14 10:29:28 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'a' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2022-11-14 10:32:14 info: --------------------------------------
+2022-11-14 10:32:14 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-14 10:32:14 info: --------------------------------------
+2022-11-14 10:32:16 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\husse\HYF\MODULE_2\Homework-class41\test-runner\CustomReporter.js"
+2022-11-14 10:32:18 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'b' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'a' is not defined  no-undef
+  116:13  error  'c' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2022-11-14 10:38:10 info: --------------------------------------
+2022-11-14 10:38:10 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-14 10:38:10 info: --------------------------------------
+2022-11-14 10:38:13 info: All unit tests passed.
+2022-11-14 10:38:17 info: All steps were completed successfully
