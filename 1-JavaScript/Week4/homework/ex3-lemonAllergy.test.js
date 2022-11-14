@@ -31,6 +31,7 @@ function sanitizeFruitBasket(basket, fruit) {
   const newFruitBasket = basket.filter((item) => item !== fruit);
   /* Alternative Solution:
   const newFruitBasket = basket.filter((item) => !fruit.includes(item));*/
+
   return newFruitBasket;
 }
 
