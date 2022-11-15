@@ -32,7 +32,7 @@ const mondayTasks = [
 const hourlyRate = 25;
 
 function computeEarnings(tasks, rate) {
-  const dur = [...tasks].map((elem) => {
+  const dur = tasks.map((elem) => {
     return elem.duration;
   });
   const sum =

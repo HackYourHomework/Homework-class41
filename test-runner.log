@@ -452,3 +452,8 @@ npm notice
 2022-11-09 03:27:57 info: --------------------------------------
 2022-11-09 03:28:03 info: All unit tests passed.
 2022-11-09 03:28:11 info: All steps were completed successfully
+2022-11-15 12:45:28 info: -------------------------------------------------
+2022-11-15 12:45:28 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-15 12:45:28 info: -------------------------------------------------
+2022-11-15 12:45:33 info: All unit tests passed.
+2022-11-15 12:45:39 info: All steps were completed successfully
