@@ -15,6 +15,7 @@ Complete the `createObservable()` function as follows:
 
 function createObservable() {
   const subscribers = [];
+  
   return {
     subscribe: function (subscriber) {
       // TODO complete this function
