@@ -1,0 +1,22 @@
+
+*** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  38:5  warning  Remove commented-out code  hyf/no-commented-out-code
+  45:5  warning  Remove commented-out code  hyf/no-commented-out-code
+  51:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 3 problems (0 errors, 3 warnings)
+
+
+*** Spell Checker Report ***
+
+ex3-lemonAllergy.test.js:29:30 - Unknown word (fruitarr)
+ex3-lemonAllergy.test.js:29:39 - Unknown word (allergicfruit)
+ex3-lemonAllergy.test.js:30:9 - Unknown word (newfruitarr)
+ex3-lemonAllergy.test.js:30:23 - Unknown word (fruitarr)
+ex3-lemonAllergy.test.js:30:50 - Unknown word (allergicfruit)
+ex3-lemonAllergy.test.js:31:10 - Unknown word (newfruitarr)
+ex3-lemonAllergy.test.js:49:11 - Unknown word (exfruit)
+ex3-lemonAllergy.test.js:50:45 - Unknown word (exfruit)
+ex3-lemonAllergy.test.js:50:69 - Unknown word (exfruit)

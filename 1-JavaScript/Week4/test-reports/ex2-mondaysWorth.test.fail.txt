@@ -1,0 +1,7 @@
+
+*** Spell Checker Report ***
+
+ex2-mondaysWorth.test.js:35:9 - Unknown word (arrminutes)
+ex2-mondaysWorth.test.js:36:9 - Unknown word (totalearn)
+ex2-mondaysWorth.test.js:36:23 - Unknown word (arrminutes)
+ex2-mondaysWorth.test.js:37:21 - Unknown word (totalearn)

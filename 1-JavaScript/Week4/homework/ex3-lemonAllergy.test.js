@@ -26,26 +26,28 @@ const fruitBasket = [
 ];
 
 // ! Function under test
-function sanitizeFruitBasket(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function sanitizeFruitBasket(fruitarr,allergicfruit) {
+  const newfruitarr = fruitarr.filter(i => i !== allergicfruit);
+  return newfruitarr;
 }
 
 // ! Unit tests (using Jest)
 describe('sanitizeFruitBasket', () => {
   test('should take two parameters', () => {
-    // TODO replace next line with your code
-    expect(false).toBe(true);
+    expect(sanitizeFruitBasket).toHaveLength(2);
+    //expect(false).toBe(true);
   });
 
   test('should not modify the original `fruitBasket` array', () => {
     // Save the original contents of the fruit basket
     const originalFruitBasketContents = [...fruitBasket];
-    // TODO replace next line with your code
-    expect(false).toBe(true);
+    expect(originalFruitBasketContents).toEqual(fruitBasket);
+    //expect(false).toBe(true);
   });
 
   test('should return a new array that does not include the unwanted `lemon`', () => {
-    // TODO replace next line with your code
-    expect(false).toBe(true);
+    const exfruit = 'lemon';
+    expect(sanitizeFruitBasket(fruitBasket, exfruit)).not.toContain(exfruit);
+    //expect(false).toBe(true);
   });
 });
