@@ -31,15 +31,11 @@ const employeeRecords = [
 
 // ! Function under test
 function filterPrivateData(records) {
-  const result = [];
-  for (const key of Object.keys(records)) {
-    const copy = records[key];
-    delete copy.salary;
-    delete copy.gender;
-    const { name, occupation, email } = records[key];
-    result.push({ name: name, occupation: occupation, email: email });
-  }
-  return result;
+  return records.map(({ name, occupation, email }) => ({
+    name,
+    occupation,
+    email,
+  }));
 }
 
 // ! Test functions (plain vanilla JavaScript)
