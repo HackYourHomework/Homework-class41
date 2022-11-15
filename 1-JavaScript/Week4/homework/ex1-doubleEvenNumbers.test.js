@@ -10,16 +10,27 @@ Let's rewrite it (or _refactor_ it, as experienced developers would call it):
 `doubleEvenNumbers`.
 ------------------------------------------------------------------------------*/
 // ! Function to be tested
-function doubleEvenNumbers(numbers) {
+function doubleEvenNumbers(arrayOFnumbers) {
   // TODO rewrite the function body using `map` and `filter`.
-  const newNumbers = [];
+
+  let evenNumbers = arrayOFnumbers.filter(function(element){
+    return element % 2 === 0 ; }).map(function (el){
+      return el *2 ;  
+  });
+return evenNumbers ; 
+}
+doubleEvenNumbers();
+
+
+  /*const newNumbers = [];
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] % 2 === 0) {
       newNumbers.push(numbers[i] * 2);
     }
   }
-  return newNumbers;
+  return newNumbers;*/
 }
+doubleEvenNumbers();
 
 // ! Unit test (using Jest)
 test('doubleEvenNumbers should take the even numbers and double them', () => {
