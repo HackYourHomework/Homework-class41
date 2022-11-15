@@ -172,3 +172,620 @@ Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
 2022-11-15 11:32:16 info: ------------------------------------------------------
 2022-11-15 11:32:18 info: All unit tests passed.
 2022-11-15 11:32:21 info: All steps were completed successfully
+2022-11-15 12:00:46 info: ------------------------------------------------------
+2022-11-15 12:00:46 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-15 12:00:46 info: ------------------------------------------------------
+2022-11-15 12:00:48 info: All unit tests passed.
+2022-11-15 12:00:52 info: All steps were completed successfully
+2022-11-15 12:32:56 info: ------------------------------------------------------
+2022-11-15 12:32:56 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-15 12:32:56 info: ------------------------------------------------------
+2022-11-15 12:32:58 info: All unit tests passed.
+2022-11-15 12:33:02 info: All steps were completed successfully
+2022-11-15 02:01:18 info: ------------------------------------------------------
+2022-11-15 02:01:18 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-15 02:01:18 info: ------------------------------------------------------
+2022-11-15 02:01:20 info: All unit tests passed.
+2022-11-15 02:01:23 info: All steps were completed successfully
+2022-11-15 02:07:15 info: ------------------------------------------------------
+2022-11-15 02:07:15 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-15 02:07:15 info: ------------------------------------------------------
+2022-11-15 02:07:17 info: All unit tests passed.
+2022-11-15 02:07:20 info: All steps were completed successfully
+2022-11-15 02:07:29 info: -------------------------------------------------
+2022-11-15 02:07:29 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-15 02:07:29 info: -------------------------------------------------
+2022-11-15 02:07:32 info: All unit tests passed.
+2022-11-15 02:07:33 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  35:7  warning  'totalEarnings' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-11-15 02:08:06 info: -------------------------------------------------
+2022-11-15 02:08:06 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-15 02:08:06 info: -------------------------------------------------
+2022-11-15 02:08:08 info: All unit tests passed.
+2022-11-15 02:08:11 info: All steps were completed successfully
+2022-11-15 02:08:21 info: -------------------------------------------------
+2022-11-15 02:08:21 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-15 02:08:21 info: -------------------------------------------------
+2022-11-15 02:08:23 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (5 ms)
+    ✓ should not modify the original `fruitBasket` array (1 ms)
+    ✓ should return a new array that does not include the unwanted `lemon` (6 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      36 | describe('sanitizeFruitBasket', () => {
+      37 |   test('should take two parameters', () => {
+    > 38 |     expect(false).toBe(true);
+         |                   ^
+      39 |   });
+      40 |
+      41 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:38:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.542 s, estimated 2 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-15 02:08:25 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  43:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-15 02:10:13 info: -------------------------------------------------
+2022-11-15 02:10:13 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-15 02:10:13 info: -------------------------------------------------
+2022-11-15 02:10:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (4 ms)
+    ✕ should not modify the original `fruitBasket` array (1 ms)
+    ✓ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      36 | describe('sanitizeFruitBasket', () => {
+      37 |   test('should take two parameters', () => {
+    > 38 |     expect(false).toBe(true);
+         |                   ^
+      39 |   });
+      40 |
+      41 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:38:19)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toHaveLength(expected)
+
+    Matcher error: received value must have a length property whose value must be a number
+
+    Received has type:  number
+    Received has value: 2
+
+      42 |     // Save the original contents of the fruit basket
+      43 |     const originalFruitBasketContents = [...fruitBasket];
+    > 44 |     expect(sanitizeFruitBasket.length).toHaveLength(2);
+         |                                        ^
+      45 |   });
+      46 |
+      47 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:44:40)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.521 s, estimated 2 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-15 02:10:16 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  43:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-15 02:20:46 info: -------------------------------------------------
+2022-11-15 02:20:46 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-15 02:20:46 info: -------------------------------------------------
+2022-11-15 02:20:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (4 ms)
+    ✓ should not modify the original `fruitBasket` array (1 ms)
+    ✓ should return a new array that does not include the unwanted `lemon` (9 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Matcher error: received value must have a length property whose value must be a number
+
+    Received has type:  number
+    Received has value: 2
+
+      36 | describe('sanitizeFruitBasket', () => {
+      37 |   test('should take two parameters', () => {
+    > 38 |     expect(sanitizeFruitBasket.length).toHaveLength(2);
+         |                                        ^
+      39 |   });
+      40 |
+      41 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:38:40)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.524 s, estimated 2 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-15 02:21:31 info: -------------------------------------------------
+2022-11-15 02:21:31 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-15 02:21:31 info: -------------------------------------------------
+2022-11-15 02:21:33 info: All unit tests passed.
+2022-11-15 02:21:36 info: All steps were completed successfully
+2022-11-15 06:27:45 info: -------------------------------------------------
+2022-11-15 06:27:45 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-15 06:27:45 info: -------------------------------------------------
+2022-11-15 06:27:53 info: All unit tests passed.
+2022-11-15 06:28:03 info: All steps were completed successfully
+2022-11-15 06:28:14 info: ------------------------------------------
+2022-11-15 06:28:14 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-15 06:28:14 info: ------------------------------------------
+2022-11-15 06:28:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: /run/media/ahim/a51083f3-b7bc-44b4-b7a1-ce8a2b2c8d20/HYF/hyf-html-exercises/Homework-class41/1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js: Missing semicolon. (26:37)
+
+      24 |     },
+      25 |     notify: function (message) {
+    > 26 |       subscribers.forEach(subscriber) {
+         |                                      ^
+      27 |         subscriber(message);
+      28 |       };
+      29 |     },
+
+    > 1 | const createObservable = require('./ex4-observable');
+        |                                  ^
+      2 |
+      3 | describe('createObservable', () => {
+      4 |   test('should exist and be a function', () => {
+
+      at Parser._raise (node_modules/@babel/parser/src/parser/error.js:147:45)
+      at Parser._raise [as raiseWithData] (node_modules/@babel/parser/src/parser/error.js:142:17)
+      at Parser.raiseWithData [as raise] (node_modules/@babel/parser/src/parser/error.js:91:17)
+      at Parser.raise [as semicolon] (node_modules/@babel/parser/src/parser/util.js:143:10)
+      at Parser.semicolon [as parseExpressionStatement] (node_modules/@babel/parser/src/parser/statement.js:904:10)
+      at Parser.parseExpressionStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:388:19)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseBlock] (node_modules/@babel/parser/src/parser/statement.js:925:10)
+      at Parser.parseBlock [as parseFunctionBody] (node_modules/@babel/parser/src/parser/expression.js:2375:24)
+      at Parser.parseFunctionBody [as parseFunctionBodyAndFinish] (node_modules/@babel/parser/src/parser/expression.js:2348:10)
+      at parseFunctionBodyAndFinish (node_modules/@babel/parser/src/parser/statement.js:1200:12)
+      at Parser.callback [as withSmartMixTopicForbiddingContext] (node_modules/@babel/parser/src/parser/expression.js:2849:14)
+      at Parser.withSmartMixTopicForbiddingContext [as parseFunction] (node_modules/@babel/parser/src/parser/statement.js:1198:10)
+      at Parser.parseFunction [as parseFunctionOrFunctionSent] (node_modules/@babel/parser/src/parser/expression.js:1544:17)
+      at Parser.parseFunctionOrFunctionSent [as parseExprAtom] (node_modules/@babel/parser/src/parser/expression.js:1151:21)
+      at Parser.parseExprAtom [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.js:668:23)
+      at Parser.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.js:648:21)
+      at Parser.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.js:619:23)
+      at Parser.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.js:372:14)
+      at Parser.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.js:382:23)
+      at Parser.parseExprOps [as parseMaybeConditional] (node_modules/@babel/parser/src/parser/expression.js:340:23)
+      at Parser.parseMaybeConditional [as parseMaybeAssign] (node_modules/@babel/parser/src/parser/expression.js:301:21)
+      at parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.js:255:12)
+      at Parser.callback [as allowInAnd] (node_modules/@babel/parser/src/parser/expression.js:2875:12)
+      at Parser.allowInAnd [as parseMaybeAssignAllowIn] (node_modules/@babel/parser/src/parser/expression.js:254:17)
+      at Parser.parseMaybeAssignAllowIn [as parseObjectProperty] (node_modules/@babel/parser/src/parser/expression.js:2135:16)
+      at Parser.parseObjectProperty [as parseObjPropValue] (node_modules/@babel/parser/src/parser/expression.js:2189:12)
+      at Parser.parseObjPropValue [as parsePropertyDefinition] (node_modules/@babel/parser/src/parser/expression.js:2033:10)
+      at Parser.parsePropertyDefinition [as parseObjectLike] (node_modules/@babel/parser/src/parser/expression.js:1899:25)
+      at Parser.parseObjectLike [as parseExprAtom] (node_modules/@babel/parser/src/parser/expression.js:1143:21)
+      at Parser.parseExprAtom [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.js:668:23)
+      at Parser.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.js:648:21)
+      at Parser.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.js:619:23)
+      at Parser.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.js:372:14)
+      at Parser.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.js:382:23)
+      at Parser.parseExprOps [as parseMaybeConditional] (node_modules/@babel/parser/src/parser/expression.js:340:23)
+      at Parser.parseMaybeConditional [as parseMaybeAssign] (node_modules/@babel/parser/src/parser/expression.js:301:21)
+      at Parser.parseMaybeAssign [as parseExpressionBase] (node_modules/@babel/parser/src/parser/expression.js:226:23)
+      at parseExpressionBase (node_modules/@babel/parser/src/parser/expression.js:219:39)
+      at Parser.callback [as allowInAnd] (node_modules/@babel/parser/src/parser/expression.js:2870:16)
+      at Parser.allowInAnd [as parseExpression] (node_modules/@babel/parser/src/parser/expression.js:219:17)
+      at Parser.parseExpression [as parseReturnStatement] (node_modules/@babel/parser/src/parser/statement.js:683:28)
+      at Parser.parseReturnStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:289:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseBlock] (node_modules/@babel/parser/src/parser/statement.js:925:10)
+      at Parser.parseBlock [as parseFunctionBody] (node_modules/@babel/parser/src/parser/expression.js:2375:24)
+      at Parser.parseFunctionBody [as parseFunctionBodyAndFinish] (node_modules/@babel/parser/src/parser/expression.js:2348:10)
+      at parseFunctionBodyAndFinish (node_modules/@babel/parser/src/parser/statement.js:1200:12)
+      at Parser.callback [as withSmartMixTopicForbiddingContext] (node_modules/@babel/parser/src/parser/expression.js:2849:14)
+      at Parser.withSmartMixTopicForbiddingContext [as parseFunction] (node_modules/@babel/parser/src/parser/statement.js:1198:10)
+      at Parser.parseFunction [as parseFunctionStatement] (node_modules/@babel/parser/src/parser/statement.js:654:17)
+      at Parser.parseFunctionStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:280:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.js:130:10)
+      at Parser.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.js:115:25)
+      at Parser.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.js:41:10)
+      at parse (node_modules/@babel/parser/src/index.js:58:38)
+      at parser (node_modules/@babel/core/lib/parser/index.js:52:34)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/lib/transformation/normalize-file.js:87:38)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/lib/transformation/index.js:29:50)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/lib/transform.js:25:41)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/ScriptTransformer.js:519:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/ScriptTransformer.js:648:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/ScriptTransformer.js:700:19)
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:1:34)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        1.617 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-15 06:28:21 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  26:39  error  Parsing error: Unexpected token {
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-15 06:30:13 info: ------------------------------------------
+2022-11-15 06:30:13 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-15 06:30:13 info: ------------------------------------------
+2022-11-15 06:30:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: /run/media/ahim/a51083f3-b7bc-44b4-b7a1-ce8a2b2c8d20/HYF/hyf-html-exercises/Homework-class41/1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js: Missing semicolon. (26:44)
+
+      24 |     },
+      25 |     notify: function (message) {
+    > 26 |       return subscribers.forEach(subscriber) {
+         |                                             ^
+      27 |         subscriber(message);
+      28 |       };
+      29 |     },
+
+    > 1 | const createObservable = require('./ex4-observable');
+        |                                  ^
+      2 |
+      3 | describe('createObservable', () => {
+      4 |   test('should exist and be a function', () => {
+
+      at Parser._raise (node_modules/@babel/parser/src/parser/error.js:147:45)
+      at Parser._raise [as raiseWithData] (node_modules/@babel/parser/src/parser/error.js:142:17)
+      at Parser.raiseWithData [as raise] (node_modules/@babel/parser/src/parser/error.js:91:17)
+      at Parser.raise [as semicolon] (node_modules/@babel/parser/src/parser/util.js:143:10)
+      at Parser.semicolon [as parseReturnStatement] (node_modules/@babel/parser/src/parser/statement.js:684:12)
+      at Parser.parseReturnStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:289:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseBlock] (node_modules/@babel/parser/src/parser/statement.js:925:10)
+      at Parser.parseBlock [as parseFunctionBody] (node_modules/@babel/parser/src/parser/expression.js:2375:24)
+      at Parser.parseFunctionBody [as parseFunctionBodyAndFinish] (node_modules/@babel/parser/src/parser/expression.js:2348:10)
+      at parseFunctionBodyAndFinish (node_modules/@babel/parser/src/parser/statement.js:1200:12)
+      at Parser.callback [as withSmartMixTopicForbiddingContext] (node_modules/@babel/parser/src/parser/expression.js:2849:14)
+      at Parser.withSmartMixTopicForbiddingContext [as parseFunction] (node_modules/@babel/parser/src/parser/statement.js:1198:10)
+      at Parser.parseFunction [as parseFunctionOrFunctionSent] (node_modules/@babel/parser/src/parser/expression.js:1544:17)
+      at Parser.parseFunctionOrFunctionSent [as parseExprAtom] (node_modules/@babel/parser/src/parser/expression.js:1151:21)
+      at Parser.parseExprAtom [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.js:668:23)
+      at Parser.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.js:648:21)
+      at Parser.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.js:619:23)
+      at Parser.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.js:372:14)
+      at Parser.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.js:382:23)
+      at Parser.parseExprOps [as parseMaybeConditional] (node_modules/@babel/parser/src/parser/expression.js:340:23)
+      at Parser.parseMaybeConditional [as parseMaybeAssign] (node_modules/@babel/parser/src/parser/expression.js:301:21)
+      at parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.js:255:12)
+      at Parser.callback [as allowInAnd] (node_modules/@babel/parser/src/parser/expression.js:2875:12)
+      at Parser.allowInAnd [as parseMaybeAssignAllowIn] (node_modules/@babel/parser/src/parser/expression.js:254:17)
+      at Parser.parseMaybeAssignAllowIn [as parseObjectProperty] (node_modules/@babel/parser/src/parser/expression.js:2135:16)
+      at Parser.parseObjectProperty [as parseObjPropValue] (node_modules/@babel/parser/src/parser/expression.js:2189:12)
+      at Parser.parseObjPropValue [as parsePropertyDefinition] (node_modules/@babel/parser/src/parser/expression.js:2033:10)
+      at Parser.parsePropertyDefinition [as parseObjectLike] (node_modules/@babel/parser/src/parser/expression.js:1899:25)
+      at Parser.parseObjectLike [as parseExprAtom] (node_modules/@babel/parser/src/parser/expression.js:1143:21)
+      at Parser.parseExprAtom [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.js:668:23)
+      at Parser.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.js:648:21)
+      at Parser.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.js:619:23)
+      at Parser.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.js:372:14)
+      at Parser.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.js:382:23)
+      at Parser.parseExprOps [as parseMaybeConditional] (node_modules/@babel/parser/src/parser/expression.js:340:23)
+      at Parser.parseMaybeConditional [as parseMaybeAssign] (node_modules/@babel/parser/src/parser/expression.js:301:21)
+      at Parser.parseMaybeAssign [as parseExpressionBase] (node_modules/@babel/parser/src/parser/expression.js:226:23)
+      at parseExpressionBase (node_modules/@babel/parser/src/parser/expression.js:219:39)
+      at Parser.callback [as allowInAnd] (node_modules/@babel/parser/src/parser/expression.js:2870:16)
+      at Parser.allowInAnd [as parseExpression] (node_modules/@babel/parser/src/parser/expression.js:219:17)
+      at Parser.parseExpression [as parseReturnStatement] (node_modules/@babel/parser/src/parser/statement.js:683:28)
+      at Parser.parseReturnStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:289:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseBlock] (node_modules/@babel/parser/src/parser/statement.js:925:10)
+      at Parser.parseBlock [as parseFunctionBody] (node_modules/@babel/parser/src/parser/expression.js:2375:24)
+      at Parser.parseFunctionBody [as parseFunctionBodyAndFinish] (node_modules/@babel/parser/src/parser/expression.js:2348:10)
+      at parseFunctionBodyAndFinish (node_modules/@babel/parser/src/parser/statement.js:1200:12)
+      at Parser.callback [as withSmartMixTopicForbiddingContext] (node_modules/@babel/parser/src/parser/expression.js:2849:14)
+      at Parser.withSmartMixTopicForbiddingContext [as parseFunction] (node_modules/@babel/parser/src/parser/statement.js:1198:10)
+      at Parser.parseFunction [as parseFunctionStatement] (node_modules/@babel/parser/src/parser/statement.js:654:17)
+      at Parser.parseFunctionStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:280:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.js:130:10)
+      at Parser.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.js:115:25)
+      at Parser.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.js:41:10)
+      at parse (node_modules/@babel/parser/src/index.js:58:38)
+      at parser (node_modules/@babel/core/lib/parser/index.js:52:34)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/lib/transformation/normalize-file.js:87:38)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/lib/transformation/index.js:29:50)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/lib/transform.js:25:41)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/ScriptTransformer.js:519:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/ScriptTransformer.js:648:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/ScriptTransformer.js:700:19)
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:1:34)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        1.085 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-15 06:30:19 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  26:46  error  Parsing error: Unexpected token {
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-15 06:32:46 info: ------------------------------------------
+2022-11-15 06:32:46 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-15 06:32:46 info: ------------------------------------------
+2022-11-15 06:32:49 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  ● Test suite failed to run
+
+    SyntaxError: /run/media/ahim/a51083f3-b7bc-44b4-b7a1-ce8a2b2c8d20/HYF/hyf-html-exercises/Homework-class41/1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js: Unexpected token, expected "," (27:5)
+
+      25 |     notify: function (message) {
+      26 |       subscribers.forEach(subscriber => subscriber(message));
+    > 27 |     };
+         |      ^
+      28 |   }
+      29 | }
+      30 |
+
+    > 1 | const createObservable = require('./ex4-observable');
+        |                                  ^
+      2 |
+      3 | describe('createObservable', () => {
+      4 |   test('should exist and be a function', () => {
+
+      at Parser._raise (node_modules/@babel/parser/src/parser/error.js:147:45)
+      at Parser._raise [as raiseWithData] (node_modules/@babel/parser/src/parser/error.js:142:17)
+      at Parser.raiseWithData [as raise] (node_modules/@babel/parser/src/parser/error.js:91:17)
+      at Parser.raise [as unexpected] (node_modules/@babel/parser/src/parser/util.js:190:16)
+      at Parser.unexpected [as expect] (node_modules/@babel/parser/src/parser/util.js:150:28)
+      at Parser.expect [as parseObjectLike] (node_modules/@babel/parser/src/parser/expression.js:1892:14)
+      at Parser.parseObjectLike [as parseExprAtom] (node_modules/@babel/parser/src/parser/expression.js:1143:21)
+      at Parser.parseExprAtom [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.js:668:23)
+      at Parser.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.js:648:21)
+      at Parser.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.js:619:23)
+      at Parser.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.js:372:14)
+      at Parser.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.js:382:23)
+      at Parser.parseExprOps [as parseMaybeConditional] (node_modules/@babel/parser/src/parser/expression.js:340:23)
+      at Parser.parseMaybeConditional [as parseMaybeAssign] (node_modules/@babel/parser/src/parser/expression.js:301:21)
+      at Parser.parseMaybeAssign [as parseExpressionBase] (node_modules/@babel/parser/src/parser/expression.js:226:23)
+      at parseExpressionBase (node_modules/@babel/parser/src/parser/expression.js:219:39)
+      at Parser.callback [as allowInAnd] (node_modules/@babel/parser/src/parser/expression.js:2870:16)
+      at Parser.allowInAnd [as parseExpression] (node_modules/@babel/parser/src/parser/expression.js:219:17)
+      at Parser.parseExpression [as parseReturnStatement] (node_modules/@babel/parser/src/parser/statement.js:683:28)
+      at Parser.parseReturnStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:289:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseBlock] (node_modules/@babel/parser/src/parser/statement.js:925:10)
+      at Parser.parseBlock [as parseFunctionBody] (node_modules/@babel/parser/src/parser/expression.js:2375:24)
+      at Parser.parseFunctionBody [as parseFunctionBodyAndFinish] (node_modules/@babel/parser/src/parser/expression.js:2348:10)
+      at parseFunctionBodyAndFinish (node_modules/@babel/parser/src/parser/statement.js:1200:12)
+      at Parser.callback [as withSmartMixTopicForbiddingContext] (node_modules/@babel/parser/src/parser/expression.js:2849:14)
+      at Parser.withSmartMixTopicForbiddingContext [as parseFunction] (node_modules/@babel/parser/src/parser/statement.js:1198:10)
+      at Parser.parseFunction [as parseFunctionStatement] (node_modules/@babel/parser/src/parser/statement.js:654:17)
+      at Parser.parseFunctionStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:280:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.js:130:10)
+      at Parser.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.js:115:25)
+      at Parser.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.js:41:10)
+      at parse (node_modules/@babel/parser/src/index.js:58:38)
+      at parser (node_modules/@babel/core/lib/parser/index.js:52:34)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/lib/transformation/normalize-file.js:87:38)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/lib/transformation/index.js:29:50)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/lib/transform.js:25:41)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/ScriptTransformer.js:519:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/ScriptTransformer.js:648:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/ScriptTransformer.js:700:19)
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:1:34)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        1.119 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-15 06:32:52 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  27:6  error  Parsing error: Unexpected token ;
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-15 06:33:10 info: ------------------------------------------
+2022-11-15 06:33:10 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-15 06:33:10 info: ------------------------------------------
+2022-11-15 06:33:13 info: All unit tests passed.
+2022-11-15 06:33:15 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  3:9  error  'forEach' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-15 06:34:12 info: ------------------------------------------
+2022-11-15 06:34:12 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-15 06:34:12 info: ------------------------------------------
+2022-11-15 06:34:14 info: All unit tests passed.
+2022-11-15 06:34:18 info: All steps were completed successfully
+2022-11-15 08:42:55 info: --------------------------------------
+2022-11-15 08:42:55 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-15 08:42:55 info: --------------------------------------
+2022-11-15 08:42:55 info: Exercise has not yet been modified
+2022-11-15 08:42:59 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/run/media/ahim/a51083f3-b7bc-44b4-b7a1-ce8a2b2c8d20/HYF/hyf-html-exercises/Homework-class41/test-runner/CustomReporter.js"
+2022-11-15 08:45:45 info: --------------------------------------
+2022-11-15 08:45:45 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-15 08:45:45 info: --------------------------------------
+2022-11-15 08:45:45 info: Exercise has not yet been modified
+2022-11-15 08:45:47 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/run/media/ahim/a51083f3-b7bc-44b4-b7a1-ce8a2b2c8d20/HYF/hyf-html-exercises/Homework-class41/test-runner/CustomReporter.js"
+2022-11-15 08:46:07 info: --------------------------------------
+2022-11-15 08:46:07 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-15 08:46:07 info: --------------------------------------
+2022-11-15 08:46:07 info: Exercise has not yet been modified
+2022-11-15 08:46:09 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/run/media/ahim/a51083f3-b7bc-44b4-b7a1-ce8a2b2c8d20/HYF/hyf-html-exercises/Homework-class41/test-runner/CustomReporter.js"
+2022-11-15 09:19:02 info: --------------------------------------
+2022-11-15 09:19:02 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-15 09:19:02 info: --------------------------------------
+2022-11-15 09:19:04 info: All unit tests passed.
+2022-11-15 09:19:08 info: All steps were completed successfully
