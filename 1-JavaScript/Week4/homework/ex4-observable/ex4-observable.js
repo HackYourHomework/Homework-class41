@@ -14,16 +14,19 @@ Complete the `createObservable()` function as follows:
 ------------------------------------------------------------------------------*/
 
 function createObservable() {
-  const subscribers = [];
+  const subscribers = ['a','b','c'];
   return {
     subscribe: function (subscriber) {
-      // TODO complete this function
-    },
+      const func1 = function subscriber(){};
+      const func2 = subscribers.push(func1); 
+      },
+    
     notify: function (message) {
-      // TODO complete this function
-    },
+      subscribers.forEach(function(param){
+        return (message + param);
+      })
+    }
   };
-}
 
 // ! Do not change or remove the code below
 module.exports = createObservable;

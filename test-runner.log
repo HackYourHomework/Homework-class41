@@ -1,0 +1,218 @@
+2022-11-13 11:13:07 info: ------------------------------------------------------
+2022-11-13 11:13:07 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-13 11:13:07 info: ------------------------------------------------------
+2022-11-13 11:13:10 info: All unit tests passed.
+2022-11-13 11:13:13 info: All steps were completed successfully
+2022-11-14 12:47:56 info: -------------------------------------------------
+2022-11-14 12:47:57 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-14 12:47:57 info: -------------------------------------------------
+2022-11-14 12:47:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (3 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      55 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      56 |     const expected = '€187.50';
+    > 57 |     expect(result).toBe(expected);
+         |                    ^
+      58 |   });
+      59 | });
+      60 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:57:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.596 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-11-14 12:53:08 info: Disclaimer turned off
+2022-11-14 12:53:25 info: -------------------------------------------------
+2022-11-14 12:53:25 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-14 12:53:25 info: -------------------------------------------------
+2022-11-14 12:53:27 info: All unit tests passed.
+2022-11-14 12:53:29 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  41:9  warning  Identifier 'EuroForm' is not in camelCase  hyf/camelcase
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-11-14 12:54:15 info: -------------------------------------------------
+2022-11-14 12:54:15 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-14 12:54:15 info: -------------------------------------------------
+2022-11-14 12:54:16 info: All unit tests passed.
+2022-11-14 12:54:19 info: All steps were completed successfully
+2022-11-14 02:38:56 info: ------------------------------------------------------
+2022-11-14 02:38:56 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-14 02:38:56 info: ------------------------------------------------------
+2022-11-14 02:38:59 info: All unit tests passed.
+2022-11-14 02:39:03 info: All steps were completed successfully
+2022-11-14 02:40:23 info: -------------------------------------------------
+2022-11-14 02:40:23 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-14 02:40:23 info: -------------------------------------------------
+2022-11-14 02:40:25 info: All unit tests passed.
+2022-11-14 02:40:28 info: All steps were completed successfully
+2022-11-14 02:47:39 info: ------------------------------------------------------
+2022-11-14 02:47:39 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-14 02:47:39 info: ------------------------------------------------------
+2022-11-14 02:47:41 info: All unit tests passed.
+2022-11-14 02:47:44 info: All steps were completed successfully
+2022-11-14 02:58:59 info: -------------------------------------------------
+2022-11-14 02:58:59 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 02:58:59 info: -------------------------------------------------
+2022-11-14 02:59:01 info: All unit tests passed.
+2022-11-14 02:59:04 info: All steps were completed successfully
+2022-11-15 12:32:13 info: ------------------------------------------
+2022-11-15 12:32:13 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-15 12:32:13 info: ------------------------------------------
+2022-11-15 12:32:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    SyntaxError: /Users/eminalper/HackYourFuture/Homework-class41/1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js: Unexpected token (33:0)
+
+      31 | // ! Do not change or remove the code below
+      32 | module.exports = createObservable;
+    > 33 |
+         | ^
+
+    > 1 | const createObservable = require('./ex4-observable');
+        |                                  ^
+      2 |
+      3 | describe('createObservable', () => {
+      4 |   test('should exist and be a function', () => {
+
+      at Parser._raise (node_modules/@babel/parser/src/parser/error.js:147:45)
+      at Parser._raise [as raiseWithData] (node_modules/@babel/parser/src/parser/error.js:142:17)
+      at Parser.raiseWithData [as raise] (node_modules/@babel/parser/src/parser/error.js:91:17)
+      at Parser.raise [as unexpected] (node_modules/@babel/parser/src/parser/util.js:190:16)
+      at Parser.unexpected [as parseExprAtom] (node_modules/@babel/parser/src/parser/expression.js:1323:22)
+      at Parser.parseExprAtom [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.js:668:23)
+      at Parser.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.js:648:21)
+      at Parser.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.js:619:23)
+      at Parser.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.js:372:14)
+      at Parser.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.js:382:23)
+      at Parser.parseExprOps [as parseMaybeConditional] (node_modules/@babel/parser/src/parser/expression.js:340:23)
+      at Parser.parseMaybeConditional [as parseMaybeAssign] (node_modules/@babel/parser/src/parser/expression.js:301:21)
+      at Parser.parseMaybeAssign [as parseExpressionBase] (node_modules/@babel/parser/src/parser/expression.js:226:23)
+      at parseExpressionBase (node_modules/@babel/parser/src/parser/expression.js:219:39)
+      at Parser.callback [as allowInAnd] (node_modules/@babel/parser/src/parser/expression.js:2870:16)
+      at Parser.allowInAnd [as parseExpression] (node_modules/@babel/parser/src/parser/expression.js:219:17)
+      at Parser.parseExpression [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:379:23)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseBlock] (node_modules/@babel/parser/src/parser/statement.js:925:10)
+      at Parser.parseBlock [as parseFunctionBody] (node_modules/@babel/parser/src/parser/expression.js:2375:24)
+      at Parser.parseFunctionBody [as parseFunctionBodyAndFinish] (node_modules/@babel/parser/src/parser/expression.js:2348:10)
+      at parseFunctionBodyAndFinish (node_modules/@babel/parser/src/parser/statement.js:1200:12)
+      at Parser.callback [as withSmartMixTopicForbiddingContext] (node_modules/@babel/parser/src/parser/expression.js:2849:14)
+      at Parser.withSmartMixTopicForbiddingContext [as parseFunction] (node_modules/@babel/parser/src/parser/statement.js:1198:10)
+      at Parser.parseFunction [as parseFunctionStatement] (node_modules/@babel/parser/src/parser/statement.js:654:17)
+      at Parser.parseFunctionStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:280:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.js:130:10)
+      at Parser.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.js:115:25)
+      at Parser.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.js:41:10)
+      at parse (node_modules/@babel/parser/src/index.js:58:38)
+      at parser (node_modules/@babel/core/lib/parser/index.js:52:34)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/lib/transformation/normalize-file.js:87:38)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/lib/transformation/index.js:29:50)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/lib/transform.js:25:41)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/ScriptTransformer.js:519:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/ScriptTransformer.js:648:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/ScriptTransformer.js:700:19)
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:1:34)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.719 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-15 12:32:17 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  33:1  error  Parsing error: Unexpected token
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-15 12:45:29 info: --------------------------------------
+2022-11-15 12:45:29 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-15 12:45:29 info: --------------------------------------
+2022-11-15 12:45:29 info: Exercise has not yet been modified
+2022-11-15 12:45:32 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/eminalper/HackYourFuture/Homework-class41/test-runner/CustomReporter.js"
+2022-11-15 02:09:58 info: --------------------------------------
+2022-11-15 02:09:58 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-15 02:09:58 info: --------------------------------------
+2022-11-15 02:10:00 error: *** Unit Test Error Report ***
+
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/eminalper/HackYourFuture/Homework-class41/test-runner/CustomReporter.js"
+2022-11-15 02:11:12 info: --------------------------------------
+2022-11-15 02:11:12 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-15 02:11:12 info: --------------------------------------
+2022-11-15 02:11:14 error: *** Unit Test Error Report ***
+
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/eminalper/HackYourFuture/Homework-class41/test-runner/CustomReporter.js"
