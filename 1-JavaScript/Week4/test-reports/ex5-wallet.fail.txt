@@ -1,0 +1,8 @@
+*** Unit Test Error Report ***
+
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/eminalper/HackYourFuture/Homework-class41/test-runner/CustomReporter.js"
