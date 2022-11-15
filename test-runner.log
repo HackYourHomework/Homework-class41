@@ -1,0 +1,174 @@
+2022-10-27 07:09:31 info: ----------------------------------------------
+2022-10-27 07:09:31 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-10-27 07:09:31 info: ----------------------------------------------
+2022-10-27 07:09:41 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/run/media/ahim/a51083f3-b7bc-44b4-b7a1-ce8a2b2c8d20/HYF/hyf-html-exercises/Homework-class41/test-runner/CustomReporter.js"
+2022-10-27 07:09:52 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:30:19 - Unknown word (Ahmet)
+
+2022-10-27 07:10:48 info: Disclaimer turned off
+2022-10-27 07:10:54 info: ----------------------------------------------
+2022-10-27 07:10:54 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-10-27 07:10:54 info: ----------------------------------------------
+2022-10-27 07:10:56 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+  Expected: You are great, HackYourFuture!
+  Received: You are great, HackYourFuture.
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="/run/media/ahim/a51083f3-b7bc-44b4-b7a1-ce8a2b2c8d20/HYF/hyf-html-exercises/Homework-class41/test-runner/CustomReporter.js"
+2022-10-27 07:11:00 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:30:19 - Unknown word (Ahmet)
+
+2022-10-27 07:12:03 info: ----------------------------------------------
+2022-10-27 07:12:03 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-10-27 07:12:03 info: ----------------------------------------------
+2022-10-27 07:12:05 info: All unit tests passed.
+2022-10-27 07:12:10 error: *** Spell Checker Report ***
+
+ex1-giveCompliment.js:30:19 - Unknown word (Ahmet)
+
+2022-10-27 07:18:56 info: ----------------------------------------
+2022-10-27 07:18:56 info: >>> Running Unit Test `ex2-dogYears` <<<
+2022-10-27 07:18:56 info: ----------------------------------------
+2022-10-27 07:18:58 info: All unit tests passed.
+2022-10-27 07:19:03 info: All steps were completed successfully
+2022-11-15 10:48:13 info: ------------------------------------------------------
+2022-11-15 10:48:13 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-15 10:48:13 info: ------------------------------------------------------
+2022-11-15 10:48:16 info: All unit tests passed.
+2022-11-15 10:48:21 info: All steps were completed successfully
+2022-11-15 11:22:06 info: ------------------------------------------------------
+2022-11-15 11:22:06 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-15 11:22:06 info: ------------------------------------------------------
+2022-11-15 11:22:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  ✕ doubleEvenNumbers should take the even numbers and double them (7 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 4
+    + Received  + 1
+
+    - Array [
+    -   4,
+    -   8,
+    - ]
+    + Array []
+
+      25 |   const actual = doubleEvenNumbers([1, 2, 3, 4]);
+      26 |   const expected = [4, 8];
+    > 27 |   expect(actual).toEqual(expected);
+         |                  ^
+      28 | });
+      29 |
+
+      at Object.toEqual (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:27:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        0.538 s, estimated 1 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2022-11-15 11:22:09 error: *** ESLint Report ***
+
+ex1-doubleEvenNumbers.test.js
+  14:28  error  'numbers' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-15 11:23:00 info: ------------------------------------------------------
+2022-11-15 11:23:00 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-15 11:23:00 info: ------------------------------------------------------
+2022-11-15 11:23:01 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  ✕ doubleEvenNumbers should take the even numbers and double them (4 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: [4, 8]
+    Received array: []
+
+      25 |   const actual = doubleEvenNumbers([1, 2, 3, 4]);
+      26 |   const expected = [4, 8];
+    > 27 |   expect(actual).toContain(expected);
+         |                  ^
+      28 | });
+      29 |
+
+      at Object.toContain (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:27:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        0.514 s, estimated 1 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2022-11-15 11:23:03 error: *** ESLint Report ***
+
+ex1-doubleEvenNumbers.test.js
+  14:28  error  'numbers' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-15 11:31:37 info: ------------------------------------------------------
+2022-11-15 11:31:37 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-15 11:31:37 info: ------------------------------------------------------
+2022-11-15 11:31:39 error: *** Unit Test Error Report ***
+
+console.log
+    [ 4 ]
+
+      at Object.log (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:21:9)
+
+
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  ✕ doubleEvenNumbers should take the even numbers and double them (5 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: [4, 8]
+    Received array: [4, 8]
+
+      24 |   const actual = doubleEvenNumbers([1, 2, 3, 4]);
+      25 |   const expected = [4, 8];
+    > 26 |   expect(actual).toContain(expected);
+         |                  ^
+      27 | });
+      28 |
+
+      at Object.toContain (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:26:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        0.587 s, estimated 1 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2022-11-15 11:32:16 info: ------------------------------------------------------
+2022-11-15 11:32:16 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-15 11:32:16 info: ------------------------------------------------------
+2022-11-15 11:32:18 info: All unit tests passed.
+2022-11-15 11:32:21 info: All steps were completed successfully
