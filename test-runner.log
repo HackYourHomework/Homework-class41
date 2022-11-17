@@ -1,0 +1,1830 @@
+2022-11-12 01:06:06 info: ------------------------------------------------------
+2022-11-12 01:06:06 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-12 01:06:06 info: ------------------------------------------------------
+2022-11-12 01:06:09 error: *** Unit Test Error Report ***
+
+console.log
+    [ 2, 4 ]
+
+      at log (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:18:11)
+
+
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  ✕ doubleEvenNumbers should take the even numbers and double them (29 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: [4, 8]
+    Received: undefined
+
+      30 |   const actual = doubleEvenNumbers([1, 2, 3, 4]);
+      31 |   const expected = [4, 8];
+    > 32 |   expect(actual).toEqual(expected);
+         |                  ^
+      33 | });
+      34 |
+
+      at Object.toEqual (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:32:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        0.937 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2022-11-12 01:10:19 info: ------------------------------------------------------
+2022-11-12 01:10:19 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-12 01:10:19 info: ------------------------------------------------------
+2022-11-12 01:10:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  ● Test suite failed to run
+
+    SyntaxError: /Users/hackyourfuture/Desktop/Homework-class41/1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js: Unexpected token, expected "," (23:2)
+
+      21 |     return number * 2
+      22 |   }
+    > 23 |   return doubleEvenNumbers)
+         |   ^
+      24 |   /*const newNumbers = [];
+      25 |   for (let i = 0; i < numbers.length; i++) {
+      26 |     if (numbers[i] % 2 === 0) {
+
+      at Parser._raise (node_modules/@babel/parser/src/parser/error.js:147:45)
+      at Parser._raise [as raiseWithData] (node_modules/@babel/parser/src/parser/error.js:142:17)
+      at Parser.raiseWithData [as raise] (node_modules/@babel/parser/src/parser/error.js:91:17)
+      at Parser.raise [as unexpected] (node_modules/@babel/parser/src/parser/util.js:190:16)
+      at Parser.unexpected [as expect] (node_modules/@babel/parser/src/parser/util.js:150:28)
+      at Parser.expect [as parseCallExpressionArguments] (node_modules/@babel/parser/src/parser/expression.js:975:14)
+      at Parser.parseCallExpressionArguments [as parseCoverCallAndAsyncArrowHead] (node_modules/@babel/parser/src/parser/expression.js:852:29)
+      at Parser.parseCoverCallAndAsyncArrowHead [as parseSubscript] (node_modules/@babel/parser/src/parser/expression.js:732:19)
+      at Parser.parseSubscript [as parseSubscripts] (node_modules/@babel/parser/src/parser/expression.js:689:19)
+      at Parser.parseSubscripts [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.js:674:17)
+      at Parser.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.js:648:21)
+      at Parser.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.js:619:23)
+      at Parser.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.js:372:14)
+      at Parser.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.js:382:23)
+      at Parser.parseExprOps [as parseMaybeConditional] (node_modules/@babel/parser/src/parser/expression.js:340:23)
+      at Parser.parseMaybeConditional [as parseMaybeAssign] (node_modules/@babel/parser/src/parser/expression.js:301:21)
+      at parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.js:255:12)
+      at Parser.callback [as allowInAnd] (node_modules/@babel/parser/src/parser/expression.js:2870:16)
+      at Parser.allowInAnd [as parseMaybeAssignAllowIn] (node_modules/@babel/parser/src/parser/expression.js:254:17)
+      at Parser.parseMaybeAssignAllowIn [as parseVar] (node_modules/@babel/parser/src/parser/statement.js:1117:18)
+      at Parser.parseVar [as parseVarStatement] (node_modules/@babel/parser/src/parser/statement.js:803:10)
+      at Parser.parseVarStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:303:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseBlock] (node_modules/@babel/parser/src/parser/statement.js:925:10)
+      at Parser.parseBlock [as parseFunctionBody] (node_modules/@babel/parser/src/parser/expression.js:2375:24)
+      at Parser.parseFunctionBody [as parseFunctionBodyAndFinish] (node_modules/@babel/parser/src/parser/expression.js:2348:10)
+      at parseFunctionBodyAndFinish (node_modules/@babel/parser/src/parser/statement.js:1200:12)
+      at Parser.callback [as withSmartMixTopicForbiddingContext] (node_modules/@babel/parser/src/parser/expression.js:2849:14)
+      at Parser.withSmartMixTopicForbiddingContext [as parseFunction] (node_modules/@babel/parser/src/parser/statement.js:1198:10)
+      at Parser.parseFunction [as parseFunctionStatement] (node_modules/@babel/parser/src/parser/statement.js:654:17)
+      at Parser.parseFunctionStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:280:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.js:130:10)
+      at Parser.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.js:115:25)
+      at Parser.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.js:41:10)
+      at parse (node_modules/@babel/parser/src/index.js:58:38)
+      at parser (node_modules/@babel/core/lib/parser/index.js:52:34)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/lib/transformation/normalize-file.js:87:38)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/lib/transformation/index.js:29:50)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/lib/transform.js:25:41)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/ScriptTransformer.js:615:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/ScriptTransformer.js:757:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/ScriptTransformer.js:814:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.955 s, estimated 1 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2022-11-12 01:10:24 error: *** ESLint Report ***
+
+ex1-doubleEvenNumbers.test.js
+  23:3  error  Parsing error: Unexpected token return
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-12 01:14:02 info: ------------------------------------------------------
+2022-11-12 01:14:02 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-12 01:14:02 info: ------------------------------------------------------
+2022-11-12 01:14:04 info: All unit tests passed.
+2022-11-12 01:14:07 info: All steps were completed successfully
+2022-11-12 01:32:11 info: -------------------------------------------------
+2022-11-12 01:32:11 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-12 01:32:11 info: -------------------------------------------------
+2022-11-12 01:32:13 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  ● Test suite failed to run
+
+    SyntaxError: /Users/hackyourfuture/Desktop/Homework-class41/1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js: Unexpected token, expected "," (22:2)
+
+      20 |     duration: 120,
+      21 |   }
+    > 22 |   {
+         |   ^
+      23 |     name: 'Development time',
+      24 |     duration: 240,
+      25 |   },
+
+      at Parser._raise (node_modules/@babel/parser/src/parser/error.js:147:45)
+      at Parser._raise [as raiseWithData] (node_modules/@babel/parser/src/parser/error.js:142:17)
+      at Parser.raiseWithData [as raise] (node_modules/@babel/parser/src/parser/error.js:91:17)
+      at Parser.raise [as unexpected] (node_modules/@babel/parser/src/parser/util.js:190:16)
+      at Parser.unexpected [as expect] (node_modules/@babel/parser/src/parser/util.js:150:28)
+      at Parser.expect [as parseExprList] (node_modules/@babel/parser/src/parser/expression.js:2472:14)
+      at Parser.parseExprList [as parseArrayLike] (node_modules/@babel/parser/src/parser/expression.js:2288:26)
+      at Parser.parseArrayLike [as parseExprAtom] (node_modules/@babel/parser/src/parser/expression.js:1126:21)
+      at Parser.parseExprAtom [as parseExprSubscripts] (node_modules/@babel/parser/src/parser/expression.js:668:23)
+      at Parser.parseExprSubscripts [as parseUpdate] (node_modules/@babel/parser/src/parser/expression.js:648:21)
+      at Parser.parseUpdate [as parseMaybeUnary] (node_modules/@babel/parser/src/parser/expression.js:619:23)
+      at Parser.parseMaybeUnary [as parseMaybeUnaryOrPrivate] (node_modules/@babel/parser/src/parser/expression.js:372:14)
+      at Parser.parseMaybeUnaryOrPrivate [as parseExprOps] (node_modules/@babel/parser/src/parser/expression.js:382:23)
+      at Parser.parseExprOps [as parseMaybeConditional] (node_modules/@babel/parser/src/parser/expression.js:340:23)
+      at Parser.parseMaybeConditional [as parseMaybeAssign] (node_modules/@babel/parser/src/parser/expression.js:301:21)
+      at parseMaybeAssign (node_modules/@babel/parser/src/parser/expression.js:255:12)
+      at Parser.callback [as allowInAnd] (node_modules/@babel/parser/src/parser/expression.js:2870:16)
+      at Parser.allowInAnd [as parseMaybeAssignAllowIn] (node_modules/@babel/parser/src/parser/expression.js:254:17)
+      at Parser.parseMaybeAssignAllowIn [as parseVar] (node_modules/@babel/parser/src/parser/statement.js:1117:18)
+      at Parser.parseVar [as parseVarStatement] (node_modules/@babel/parser/src/parser/statement.js:803:10)
+      at Parser.parseVarStatement [as parseStatementContent] (node_modules/@babel/parser/src/parser/statement.js:303:21)
+      at Parser.parseStatementContent [as parseStatement] (node_modules/@babel/parser/src/parser/statement.js:243:17)
+      at Parser.parseStatement [as parseBlockOrModuleBlockBody] (node_modules/@babel/parser/src/parser/statement.js:979:25)
+      at Parser.parseBlockOrModuleBlockBody [as parseBlockBody] (node_modules/@babel/parser/src/parser/statement.js:955:10)
+      at Parser.parseBlockBody [as parseProgram] (node_modules/@babel/parser/src/parser/statement.js:130:10)
+      at Parser.parseProgram [as parseTopLevel] (node_modules/@babel/parser/src/parser/statement.js:115:25)
+      at Parser.parseTopLevel [as parse] (node_modules/@babel/parser/src/parser/index.js:41:10)
+      at parse (node_modules/@babel/parser/src/index.js:58:38)
+      at parser (node_modules/@babel/core/lib/parser/index.js:52:34)
+          at parser.next (<anonymous>)
+      at normalizeFile (node_modules/@babel/core/lib/transformation/normalize-file.js:87:38)
+          at normalizeFile.next (<anonymous>)
+      at run (node_modules/@babel/core/lib/transformation/index.js:29:50)
+          at run.next (<anonymous>)
+      at transform (node_modules/@babel/core/lib/transform.js:25:41)
+          at transform.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at sync (node_modules/gensync/index.js:89:14)
+      at ScriptTransformer.transformSource (node_modules/@jest/transform/build/ScriptTransformer.js:615:31)
+      at ScriptTransformer._transformAndBuildScript (node_modules/@jest/transform/build/ScriptTransformer.js:757:40)
+      at ScriptTransformer.transform (node_modules/@jest/transform/build/ScriptTransformer.js:814:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.649 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-11-12 01:32:15 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  22:3  error  Parsing error: Unexpected token {
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-12 03:32:52 info: -------------------------------------------------
+2022-11-12 03:32:52 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-12 03:32:52 info: -------------------------------------------------
+2022-11-12 03:32:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (3 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: 187.5
+
+      53 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      54 |     const expected = '€187.50';
+    > 55 |     expect(result).toBe(expected);
+         |                    ^
+      56 |   });
+      57 | });
+      58 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:55:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.936 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-11-12 03:35:02 info: -------------------------------------------------
+2022-11-12 03:35:02 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-12 03:35:02 info: -------------------------------------------------
+2022-11-12 03:35:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (4 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.5"
+
+      54 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      55 |     const expected = '€187.50';
+    > 56 |     expect(result).toBe(expected);
+         |                    ^
+      57 |   });
+      58 | });
+      59 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:56:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.936 s, estimated 1 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-11-12 03:40:42 info: -------------------------------------------------
+2022-11-12 03:40:42 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-12 03:40:42 info: -------------------------------------------------
+2022-11-12 03:40:46 info: All unit tests passed.
+2022-11-12 03:40:51 info: All steps were completed successfully
+2022-11-12 03:56:52 info: -------------------------------------------------
+2022-11-12 03:56:52 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-12 03:56:52 info: -------------------------------------------------
+2022-11-12 03:56:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  ● Test suite failed to run
+
+    ReferenceError: Cannot access 'newBasket' before initialization
+
+      30 |   const newBasket = basket.filter((fruit) => {
+      31 |     fruit === imposter;
+    > 32 |     return newBasket;
+         |     ^
+      33 |   });
+      34 | }
+      35 | sanitizeFruitBasket(fruitBasket, 'lemon');
+
+      at 1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:32:5
+          at Array.filter (<anonymous>)
+      at filter (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:30:28)
+      at Object.sanitizeFruitBasket (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:35:1)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.942 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-12 03:56:59 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  46:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-12 03:57:58 info: -------------------------------------------------
+2022-11-12 03:57:58 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-12 03:57:58 info: -------------------------------------------------
+2022-11-12 03:58:01 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (4 ms)
+    ✕ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      39 |   test('should take two parameters', () => {
+      40 |     // TODO replace next line with your code
+    > 41 |     expect(false).toBe(true);
+         |                   ^
+      42 |   });
+      43 |
+      44 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:41:19)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      46 |     const originalFruitBasketContents = [...fruitBasket];
+      47 |     // TODO replace next line with your code
+    > 48 |     expect(false).toBe(true);
+         |                   ^
+      49 |   });
+      50 |
+      51 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:48:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      51 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      52 |     // TODO replace next line with your code
+    > 53 |     expect(false).toBe(true);
+         |                   ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:53:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.865 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-12 03:58:03 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  46:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-12 03:58:49 info: -------------------------------------------------
+2022-11-12 03:58:49 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-12 03:58:49 info: -------------------------------------------------
+2022-11-12 03:58:51 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (5 ms)
+    ✕ should not modify the original `fruitBasket` array
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      39 |   test('should take two parameters', () => {
+      40 |     // TODO replace next line with your code
+    > 41 |     expect(false).toBe(true);
+         |                   ^
+      42 |   });
+      43 |
+      44 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:41:19)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      46 |     const originalFruitBasketContents = [...fruitBasket];
+      47 |     // TODO replace next line with your code
+    > 48 |     expect(false).toBe(true);
+         |                   ^
+      49 |   });
+      50 |
+      51 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:48:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      51 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      52 |     // TODO replace next line with your code
+    > 53 |     expect(false).toBe(true);
+         |                   ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:53:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.567 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-12 03:58:53 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  46:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-12 04:00:23 info: -------------------------------------------------
+2022-11-12 04:00:23 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-12 04:00:23 info: -------------------------------------------------
+2022-11-12 04:00:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (5 ms)
+    ✕ should not modify the original `fruitBasket` array
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      38 |   test('should take two parameters', () => {
+      39 |     // TODO replace next line with your code
+    > 40 |     expect(false).toBe(true);
+         |                   ^
+      41 |   });
+      42 |
+      43 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:40:19)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      45 |     const originalFruitBasketContents = [...fruitBasket];
+      46 |     // TODO replace next line with your code
+    > 47 |     expect(false).toBe(true);
+         |                   ^
+      48 |   });
+      49 |
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:47:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      51 |     // TODO replace next line with your code
+    > 52 |     expect(false).toBe(true);
+         |                   ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.559 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-12 04:00:26 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  29:10  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
+  45:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2022-11-12 04:01:07 info: -------------------------------------------------
+2022-11-12 04:01:07 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-12 04:01:07 info: -------------------------------------------------
+2022-11-12 04:01:09 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (5 ms)
+    ✕ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      40 |   test('should take two parameters', () => {
+      41 |     // TODO replace next line with your code
+    > 42 |     expect(false).toBe(true);
+         |                   ^
+      43 |   });
+      44 |
+      45 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:42:19)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      47 |     const originalFruitBasketContents = [...fruitBasket];
+      48 |     // TODO replace next line with your code
+    > 49 |     expect(false).toBe(true);
+         |                   ^
+      50 |   });
+      51 |
+      52 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:49:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      52 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      53 |     // TODO replace next line with your code
+    > 54 |     expect(false).toBe(true);
+         |                   ^
+      55 |   });
+      56 | });
+      57 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:54:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.632 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-12 04:31:36 info: -------------------------------------------------
+2022-11-12 04:31:36 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-12 04:31:36 info: -------------------------------------------------
+2022-11-12 04:31:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✕ should take two parameters (5 ms)
+    ✕ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon`
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      38 |   test('should take two parameters', () => {
+      39 |     sanitizeFruitBasket.length === 2;
+    > 40 |     expect(false).toBe(true);
+         |                   ^
+      41 |   });
+      42 |
+      43 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:40:19)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      45 |     const originalFruitBasketContents = [...fruitBasket];
+      46 |     // TODO replace next line with your code
+    > 47 |     expect(false).toBe(true);
+         |                   ^
+      48 |   });
+      49 |
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:47:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      51 |     // TODO replace next line with your code
+    > 52 |     expect(false).toBe(true);
+         |                   ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.981 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-12 04:31:43 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  45:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-12 04:34:08 info: -------------------------------------------------
+2022-11-12 04:34:08 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-12 04:34:08 info: -------------------------------------------------
+2022-11-12 04:34:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✕ should not modify the original `fruitBasket` array (4 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      45 |     const originalFruitBasketContents = [...fruitBasket];
+      46 |     // TODO replace next line with your code
+    > 47 |     expect(false).toBe(true);
+         |                   ^
+      48 |   });
+      49 |
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:47:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      51 |     // TODO replace next line with your code
+    > 52 |     expect(false).toBe(true);
+         |                   ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        0.855 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-12 04:34:13 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  45:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-14 10:26:29 info: -------------------------------------------------
+2022-11-14 10:26:29 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 10:26:29 info: -------------------------------------------------
+2022-11-14 10:26:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (3 ms)
+    ✕ should not modify the original `fruitBasket` array (6 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      45 |     const originalFruitBasketContents = [...fruitBasket];
+      46 |     // TODO replace next line with your code
+    > 47 |     expect(originalFruitBasketContents).toBe(fruitBasket);
+         |                                         ^
+      48 |   });
+      49 |
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:47:41)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      51 |     // TODO replace next line with your code
+    > 52 |     expect(false).toBe(true);
+         |                   ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        1.125 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-14 10:27:17 info: -------------------------------------------------
+2022-11-14 10:27:17 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 10:27:17 info: -------------------------------------------------
+2022-11-14 10:27:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (3 ms)
+    ✓ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (3 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      51 |     // TODO replace next line with your code
+    > 52 |     expect(false).toBe(true);
+         |                   ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.984 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-14 10:36:28 info: -------------------------------------------------
+2022-11-14 10:36:28 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 10:36:28 info: -------------------------------------------------
+2022-11-14 10:36:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    TypeError: basket.filter is not a function
+
+      28 | // ! Function under test
+      29 | function sanitizeFruitBasket(basket, imposter) {
+    > 30 |   const newBasket = basket.filter((fruit) => {
+         |                            ^
+      31 |     return fruit !== imposter;
+      32 |   });
+      33 |   return newBasket;
+
+      at filter (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:30:28)
+      at Object.sanitizeFruitBasket (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.948 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-14 10:37:43 info: -------------------------------------------------
+2022-11-14 10:37:43 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 10:37:43 info: -------------------------------------------------
+2022-11-14 10:37:46 info: All unit tests passed.
+2022-11-14 10:37:52 info: All steps were completed successfully
+2022-11-14 10:38:01 info: -------------------------------------------------
+2022-11-14 10:38:01 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 10:38:01 info: -------------------------------------------------
+2022-11-14 10:38:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    ✓ should take two parameters (2 ms)
+    ✓ should not modify the original `fruitBasket` array (1 ms)
+    ✕ should return a new array that does not include the unwanted `lemon` (3 ms)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: "lemon"
+    Received array: ["apple", "grapefruit", "banana", "watermelon"]
+
+      50 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      51 |     // TODO replace next line with your code
+    > 52 |     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toContain('lemon');
+         |                                                       ^
+      53 |   });
+      54 | });
+      55 |
+
+      at Object.toContain (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:52:55)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.854 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-14 10:38:17 info: -------------------------------------------------
+2022-11-14 10:38:17 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-14 10:38:17 info: -------------------------------------------------
+2022-11-14 10:38:20 info: All unit tests passed.
+2022-11-14 10:38:23 info: All steps were completed successfully
+2022-11-14 11:12:23 info: ------------------------------------------
+2022-11-14 11:12:23 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:12:23 info: ------------------------------------------
+2022-11-14 11:12:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (3 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.939 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:17:36 info: ------------------------------------------
+2022-11-14 11:17:36 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:17:36 info: ------------------------------------------
+2022-11-14 11:17:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (3 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.636 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:28:28 info: ------------------------------------------
+2022-11-14 11:28:28 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:28:28 info: ------------------------------------------
+2022-11-14 11:28:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received: called with 0 arguments
+
+    Number of calls: 1
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.956 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:29:54 info: ------------------------------------------
+2022-11-14 11:29:54 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:29:54 info: ------------------------------------------
+2022-11-14 11:29:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received: called with 0 arguments
+
+    Number of calls: 1
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.547 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:30:13 info: ------------------------------------------
+2022-11-14 11:30:13 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:30:13 info: ------------------------------------------
+2022-11-14 11:30:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received: called with 0 arguments
+
+    Number of calls: 1
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.565 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:30:16 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  22:23  error  'message' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-14 11:30:30 info: ------------------------------------------
+2022-11-14 11:30:30 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:30:30 info: ------------------------------------------
+2022-11-14 11:30:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received: called with 0 arguments
+
+    Number of calls: 1
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.595 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:30:33 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  22:23  error  'message' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-14 11:31:55 info: ------------------------------------------
+2022-11-14 11:31:55 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:31:55 info: ------------------------------------------
+2022-11-14 11:31:57 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received: called with 0 arguments
+
+    Number of calls: 1
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.547 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:31:59 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  23:13  error  'eachSub' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-14 11:32:42 info: ------------------------------------------
+2022-11-14 11:32:42 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:32:42 info: ------------------------------------------
+2022-11-14 11:32:44 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received: called with 0 arguments
+
+    Number of calls: 1
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.552 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:33:07 info: ------------------------------------------
+2022-11-14 11:33:07 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:33:07 info: ------------------------------------------
+2022-11-14 11:33:09 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (3 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.459 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:34:12 info: ------------------------------------------
+2022-11-14 11:34:12 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:34:12 info: ------------------------------------------
+2022-11-14 11:34:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received
+           1: called with 0 arguments
+           2: called with 0 arguments
+
+    Number of calls: 2
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.553 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:34:16 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  23:28  error  'item' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-11-14 11:35:22 info: ------------------------------------------
+2022-11-14 11:35:22 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:35:22 info: ------------------------------------------
+2022-11-14 11:35:24 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received: called with 0 arguments
+
+    Number of calls: 1
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.554 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:35:26 error: *** ESLint Report ***
+
+ex4-observable/ex4-observable.js
+  23:19  warning  Results from `map` are unused. Replace `map` with `forEach`  no-restricted-syntax
+  23:19  error    Results from `map` are unused. Replace `map` with `forEach`  hyf/use-map-result
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2022-11-14 11:41:32 info: ------------------------------------------
+2022-11-14 11:41:32 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:41:32 info: ------------------------------------------
+2022-11-14 11:41:36 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: item.alert is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach((item) => {
+    > 24 |         return item.alert(message);
+         |                     ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at alert (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:24:21)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.95 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:43:03 info: ------------------------------------------
+2022-11-14 11:43:03 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:43:03 info: ------------------------------------------
+2022-11-14 11:43:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (3 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received: called with 0 arguments
+
+    Number of calls: 1
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.798 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 11:45:19 info: ------------------------------------------
+2022-11-14 11:45:19 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 11:45:19 info: ------------------------------------------
+2022-11-14 11:45:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (3 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+    Received: called with 0 arguments
+
+    Number of calls: 1
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.794 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 03:14:21 info: ------------------------------------------
+2022-11-14 03:14:21 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 03:14:21 info: ------------------------------------------
+2022-11-14 03:14:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (4 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: item.push is not a function
+
+      26 |     notify: function (message) {
+      27 |       subscribers.forEach((item) => {
+    > 28 |         return item.push(message);
+         |                     ^
+      29 |       });
+      30 |     },
+      31 |   };
+
+      at push (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:28:21)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:27:19)
+      at Object.notify (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.987 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 04:04:29 info: ------------------------------------------
+2022-11-14 04:04:30 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 04:04:30 info: ------------------------------------------
+2022-11-14 04:04:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.078 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 04:16:30 info: ------------------------------------------
+2022-11-14 04:16:30 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 04:16:30 info: ------------------------------------------
+2022-11-14 04:16:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: item.push is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach((item) => {
+    > 24 |         return item.push(message);
+         |                     ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at push (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:24:21)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.927 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 04:24:38 info: ------------------------------------------
+2022-11-14 04:24:38 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 04:24:38 info: ------------------------------------------
+2022-11-14 04:24:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (19 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: item.push is not a function
+
+      22 |     notify: function (message) {
+      23 |       subscribers.forEach((item) => {
+    > 24 |         return item.push(message);
+         |                     ^
+      25 |       });
+      26 |     },
+      27 |   };
+
+      at push (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:24:21)
+          at Array.forEach (<anonymous>)
+      at Object.forEach [as notify] (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:23:19)
+      at Object.notify (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.039 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 04:43:59 info: ------------------------------------------
+2022-11-14 04:43:59 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 04:43:59 info: ------------------------------------------
+2022-11-14 04:44:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (3 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      28 |
+      29 |     // Assert that both listeners have been called with the Hi! message
+    > 30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+      32 |   });
+      33 | });
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:30:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.991 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 04:47:38 info: ------------------------------------------
+2022-11-14 04:47:38 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 04:47:38 info: ------------------------------------------
+2022-11-14 04:47:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (3 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      29 |     // Assert that both listeners have been called with the Hi! message
+      30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+    > 31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      32 |   });
+      33 | });
+      34 |
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.982 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 04:49:32 info: ------------------------------------------
+2022-11-14 04:49:32 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 04:49:32 info: ------------------------------------------
+2022-11-14 04:49:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties (1 ms)
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    TypeError: subscribers[0].push is not a function
+
+      21 |     },
+      22 |     notify: function (message) {
+    > 23 |       subscribers[0].push(message);
+         |                      ^
+      24 |     },
+      25 |   };
+      26 | }
+
+      at Object.push [as notify] (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.js:23:22)
+      at Object.notify (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:27:16)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.872 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 04:50:41 info: ------------------------------------------
+2022-11-14 04:50:41 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 04:50:41 info: ------------------------------------------
+2022-11-14 04:50:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (2 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      29 |     // Assert that both listeners have been called with the Hi! message
+      30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+    > 31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      32 |   });
+      33 | });
+      34 |
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.614 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 05:01:39 info: ------------------------------------------
+2022-11-14 05:01:39 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 05:01:39 info: ------------------------------------------
+2022-11-14 05:01:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-observable.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js
+  createObservable
+    ✓ should exist and be a function (3 ms)
+    ✓ should return an object with `subscribe` and a `notify` function properties
+    ✕ should notify all subscribers of any notification (4 ms)
+
+  ● createObservable › should notify all subscribers of any notification
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "Hi!"
+
+    Number of calls: 0
+
+      29 |     // Assert that both listeners have been called with the Hi! message
+      30 |     expect(listener1).toHaveBeenCalledWith('Hi!');
+    > 31 |     expect(listener2).toHaveBeenCalledWith('Hi!');
+         |                       ^
+      32 |   });
+      33 | });
+      34 |
+
+      at Object.toHaveBeenCalledWith (1-JavaScript/Week4/homework/ex4-observable/ex4-observable.test.js:31:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.937 s, estimated 1 s
+Ran all test suites matching /ex4-observable.test.js/i.
+2022-11-14 05:03:01 info: ------------------------------------------
+2022-11-14 05:03:01 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-14 05:03:01 info: ------------------------------------------
+2022-11-14 05:03:04 info: All unit tests passed.
+2022-11-14 05:03:10 info: All steps were completed successfully
+2022-11-14 06:58:47 info: --------------------------------------
+2022-11-14 06:58:47 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-14 06:58:47 info: --------------------------------------
+2022-11-14 06:58:51 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class41/test-runner/CustomReporter.js"
+2022-11-14 06:58:54 error: *** ESLint Report ***
+
+ex5-wallet/index.js
+   80:13  error  'c' is not defined  no-undef
+   89:13  error  'c' is not defined  no-undef
+   98:13  error  'a' is not defined  no-undef
+  107:13  error  'a' is not defined  no-undef
+  116:13  error  'a' is not defined  no-undef
+
+✖ 5 problems (5 errors, 0 warnings)
+
+
+2022-11-14 06:59:49 info: --------------------------------------
+2022-11-14 06:59:49 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-14 06:59:49 info: --------------------------------------
+2022-11-14 06:59:50 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class41/test-runner/CustomReporter.js"
+2022-11-14 07:01:34 info: --------------------------------------
+2022-11-14 07:01:34 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-14 07:01:34 info: --------------------------------------
+2022-11-14 07:01:36 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class41/test-runner/CustomReporter.js"
+2022-11-14 07:04:26 info: --------------------------------------
+2022-11-14 07:04:26 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-14 07:04:26 info: --------------------------------------
+2022-11-14 07:04:28 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q2: What is in the Call Stack, from top to bottom?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+✕ wallet q5: The owner of the wallet with insufficient funds is?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="/Users/hackyourfuture/Desktop/Homework-class41/test-runner/CustomReporter.js"
+2022-11-14 07:05:28 info: --------------------------------------
+2022-11-14 07:05:28 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-14 07:05:28 info: --------------------------------------
+2022-11-14 07:05:30 info: All unit tests passed.
+2022-11-14 07:05:36 info: All steps were completed successfully
