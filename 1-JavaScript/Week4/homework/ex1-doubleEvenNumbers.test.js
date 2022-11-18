@@ -12,8 +12,8 @@ Let's rewrite it (or _refactor_ it, as experienced developers would call it):
 // ! Function to be tested
 function doubleEvenNumbers(numbers) {
   return numbers
-    .filter((isEven) => isEven % 2 === 0)
-    .map((double) => double * 2);
+    .filter((isEven) => isEven % 2 === 0) //first take out odd numbers
+    .map((double) => double * 2); //then  double the even numbers
 }
 
 // ! Unit test (using Jest)

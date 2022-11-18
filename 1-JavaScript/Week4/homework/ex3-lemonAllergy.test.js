@@ -27,7 +27,7 @@ const fruitBasket = [
 
 // ! Function under test
 function sanitizeFruitBasket(paramList, paramUnwanted) {
-  return paramList.filter((word) => word !== paramUnwanted);
+  return paramList.filter((word) => word !== paramUnwanted); //returning new list with elements that is not paramUnwanted
 }
 
 // ! Unit tests (using Jest)

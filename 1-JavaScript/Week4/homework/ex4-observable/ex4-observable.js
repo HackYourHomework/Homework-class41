@@ -17,9 +17,11 @@ function createObservable() {
   const subscribers = [];
   return {
     subscribe: function (subscriber) {
+      //createObservable has a function named subscribe: save sended functions in subscribers list
       subscribers.push(subscriber);
     },
     notify: function (message) {
+      //createObservable has a function named notify: progress given message with listed functions
       return subscribers.map((deliveryFunction) => deliveryFunction(message));
     },
   };
