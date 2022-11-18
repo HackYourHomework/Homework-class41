@@ -1,0 +1,132 @@
+2022-11-15 08:06:29 info: ------------------------------------------------------
+2022-11-15 08:06:29 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-11-15 08:06:29 info: ------------------------------------------------------
+2022-11-15 08:06:39 info: All unit tests passed.
+2022-11-15 08:06:53 error: *** Spell Checker Report ***
+
+
+2022-11-15 09:42:20 info: -------------------------------------------------
+2022-11-15 09:42:20 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-15 09:42:20 info: -------------------------------------------------
+2022-11-15 09:42:29 info: All unit tests passed.
+2022-11-15 09:42:42 error: *** Spell Checker Report ***
+
+
+2022-11-15 10:56:48 info: -------------------------------------------------
+2022-11-15 10:56:48 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-15 10:56:48 info: -------------------------------------------------
+2022-11-15 10:56:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    √ should take two parameters (9 ms)
+    × should not modify the original `fruitBasket` array (13 ms)
+    × should return a new array that does not include the unwanted `lemon` (5 ms)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "lemon", "grapefruit", "lemon", "banana", "watermelon", "lemon"]
+    Received: serializes to the same string
+
+      41 |     const originalFruitBasketContents = [...fruitBasket];
+      42 |     sanitizeFruitBasket(fruitBasket, 'lemon');
+    > 43 |     expect(fruitBasket).toBe(originalFruitBasketContents);
+         |                         ^
+      44 |   });
+      45 |
+      46 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:43:25)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    If it should pass with deep equality, replace "toBe" with "toStrictEqual"
+
+    Expected: ["apple", "grapefruit", "banana", "watermelon"]
+    Received: serializes to the same string
+
+      45 |
+      46 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+    > 47 |     expect(sanitizeFruitBasket(fruitBasket, 'lemon')).toBe([
+         |                                                       ^
+      48 |       'apple',
+      49 |       'grapefruit',
+      50 |       'banana',
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:47:55)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 1 passed, 3 total
+Snapshots:   0 total
+Time:        2.041 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-15 10:57:12 error: *** Spell Checker Report ***
+
+
+2022-11-15 10:59:35 info: -------------------------------------------------
+2022-11-15 10:59:35 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-15 10:59:35 info: -------------------------------------------------
+2022-11-15 10:59:45 info: All unit tests passed.
+2022-11-15 10:59:57 error: *** Spell Checker Report ***
+
+
+2022-11-16 12:50:37 info: ------------------------------------------
+2022-11-16 12:50:37 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-16 12:50:37 info: ------------------------------------------
+2022-11-16 12:50:47 info: All unit tests passed.
+2022-11-16 12:51:00 error: *** Spell Checker Report ***
+
+
+2022-11-16 01:49:30 info: --------------------------------------
+2022-11-16 01:49:30 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-16 01:49:30 info: --------------------------------------
+2022-11-16 01:49:40 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\User\Desktop\H Y F\Homework-class41\test-runner\CustomReporter.js"
+2022-11-16 01:49:53 error: *** Spell Checker Report ***
+
+
+2022-11-16 01:50:50 info: --------------------------------------
+2022-11-16 01:50:50 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-16 01:50:50 info: --------------------------------------
+2022-11-16 01:50:57 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+✕ wallet q3: What tooltip appears when hovering over the third debug button?
+✕ wallet q4: What is displayed in the console?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\User\Desktop\H Y F\Homework-class41\test-runner\CustomReporter.js"
+2022-11-16 01:51:09 error: *** Spell Checker Report ***
+
+
+2022-11-16 01:52:11 info: --------------------------------------
+2022-11-16 01:52:11 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-16 01:52:11 info: --------------------------------------
+2022-11-16 01:52:21 error: *** Unit Test Error Report ***
+
+✕ wallet q1: At line 26, which variables are in the scope marked Closure?
+
+
+Command failed: npx jest ex5-wallet.test.js --colors --reporters="C:\Users\User\Desktop\H Y F\Homework-class41\test-runner\CustomReporter.js"
+2022-11-16 01:52:35 error: *** Spell Checker Report ***
+
+
+2022-11-16 01:53:47 info: --------------------------------------
+2022-11-16 01:53:47 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-16 01:53:47 info: --------------------------------------
+2022-11-16 01:53:57 info: All unit tests passed.
+2022-11-16 01:54:10 error: *** Spell Checker Report ***
+
+
