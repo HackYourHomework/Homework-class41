@@ -1,0 +1,16 @@
+
+*** ESLint Report ***
+
+ex5-shoppingCartPure.js
+  25:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+*** Spell Checker Report ***
+
+ex5-shoppingCartPure.js:20:7 - Unknown word (newcart)
+ex5-shoppingCartPure.js:21:34 - Unknown word (newcart)
+ex5-shoppingCartPure.js:22:9 - Unknown word (newcart)
+ex5-shoppingCartPure.js:22:30 - Unknown word (newcart)
+ex5-shoppingCartPure.js:23:13 - Unknown word (newcart)

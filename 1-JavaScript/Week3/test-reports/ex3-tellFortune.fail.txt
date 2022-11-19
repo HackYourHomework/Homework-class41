@@ -1,0 +1,15 @@
+
+*** Spell Checker Report ***
+
+ex3-tellFortune.js:37:9 - Unknown word (newnumber)
+ex3-tellFortune.js:38:17 - Unknown word (newnumber)
+ex3-tellFortune.js:42:9 - Unknown word (newkids)
+ex3-tellFortune.js:43:9 - Unknown word (newpartner)
+ex3-tellFortune.js:44:9 - Unknown word (newlocation)
+ex3-tellFortune.js:45:9 - Unknown word (newjob)
+ex3-tellFortune.js:46:27 - Unknown word (newjob)
+ex3-tellFortune.js:46:40 - Unknown word (newlocation)
+ex3-tellFortune.js:46:67 - Unknown word (newpartner)
+ex3-tellFortune.js:46:86 - Unknown word (newkids)
+ex3-tellFortune.js:52:41 - Unknown word (Katya)
+ex3-tellFortune.js:52:57 - Unknown word (Cristof)

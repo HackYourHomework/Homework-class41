@@ -1,0 +1,18 @@
+
+*** ESLint Report ***
+
+ex6-totalCost.js
+  38:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+*** Spell Checker Report ***
+
+ex6-totalCost.js:27:3 - Unknown word (nori)
+ex6-totalCost.js:33:9 - Unknown word (cartarr)
+ex6-totalCost.js:34:7 - Unknown word (sumcart)
+ex6-totalCost.js:35:23 - Unknown word (cartarr)
+ex6-totalCost.js:36:5 - Unknown word (sumcart)
+ex6-totalCost.js:38:17 - Unknown word (sumcart)
+ex6-totalCost.js:39:22 - Unknown word (sumcart)
