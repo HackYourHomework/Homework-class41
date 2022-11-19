@@ -32,9 +32,9 @@ const mondayTasks = [
 const hourlyRate = 25;
 
 function computeEarnings(tasks,rate) {
-  const arrminutes = tasks.filter(i => i.duration).map(k => k.duration);
-  const totalearn = ((arrminutes.reduce((a, b) => a + b, 0) / 60) * rate);
-  return `€${Number(totalearn).toFixed(2)}`;
+  const arrMinutes = tasks.filter(i => i.duration).map(k => k.duration);
+  const totalEarn = ((arrMinutes.reduce((a, b) => a + b, 0) / 60) * rate);
+  return `€${Number(totalEarn).toFixed(2)}`;
 }
 
 // ! Unit tests (using Jest)
