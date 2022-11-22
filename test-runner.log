@@ -519,3 +519,8 @@ Ran all test suites matching /ex1-bookList.test.js/i.
 2022-11-22 09:44:23 info: ---------------------------------------
 2022-11-22 09:44:27 info: All unit tests passed.
 2022-11-22 09:44:31 info: All steps were completed successfully
+2022-11-22 10:37:34 info: ------------------------------------------
+2022-11-22 10:37:34 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-11-22 10:37:34 info: ------------------------------------------
+2022-11-22 10:37:37 info: All unit tests passed.
+2022-11-22 10:37:40 info: All steps were completed successfully
