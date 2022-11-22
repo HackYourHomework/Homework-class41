@@ -18,7 +18,33 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const bookDiv = document.querySelector('#bookList');
+  const ulList = document.createElement('ul');
+  bookDiv.appendChild(ulList);
+
+  for (let i = 0; i < books.length; i++) {
+    const bookTitle = document.createElement('p');
+    bookTitle.textContent = books[i].title + '-' + books[i].author;
+    const liBook = document.createElement('li');
+    liBook.setAttribute('id', 'book' + i);
+    ulList.appendChild(liBook);
+    liBook.append(bookTitle);
+  }
+  const firstBook = document.querySelector('#book0');
+  const secondBook = document.querySelector('#book1');
+  const thirdBook = document.querySelector('#book2');
+  const firstImg = document.createElement('img');
+  const secondImg = document.createElement('img');
+  const thirdImg = document.createElement('img');
+  firstImg.src = 'assets/the_design_of_everyday_things.jpg';
+  secondImg.src = 'assets/the_most_human_human.jpg';
+  thirdImg.src = 'assets/the_pragmatic_programmer.jpg';
+  firstBook.append(firstImg);
+  secondBook.append(secondImg);
+  thirdBook.append(thirdImg);
+  firstImg.alt = 'The design of everyday things cover';
+  secondImg.alt = 'The most human human cover';
+  thirdImg.alt = 'The pragmatic cover';
 }
 
 function main() {
