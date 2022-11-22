@@ -16,9 +16,39 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 -----------------------------------------------------------------------------*/
 //cspell: enable
-
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const bookList = document.createElement('ul');
+  document.getElementById('bookList').appendChild(bookList);
+  bookList.setAttribute(
+    'style',
+    'height: 70%; width: 80%; margin: auto; text-align: center; '
+  );
+  books.forEach((book) => {
+    const bookElement = document.createElement('li');
+    bookList.appendChild(bookElement);
+    bookElement.style.cssText =
+      'border: 1.5 px solid; display: inline-block; padding: 30px; margin: 20px 10px; width: 30%';
+    bookElement.style.background = book.alreadyRead ? 'green' : 'red';
+
+    const paragraph = document.createElement('p');
+    bookElement.appendChild(paragraph);
+    paragraph.textContent = `${book.title} - ${book.author}`;
+    paragraph.style.cssText =
+      'font-size: 16px; font-weight: bold; margin-bottom: 50px';
+
+    const image = document.createElement('img');
+    bookElement.appendChild(image);
+    image.alt = `${book.title} image`;
+    image.src =
+      book.isbn === '978-0465050659'
+        ? 'assets/the_design_of_everyday_things.jpg'
+        : book.isbn === '978-1617933431'
+        ? 'assets/the_most_human_human.jpg'
+        : 'assets/the_pragmatic_programmer.jpg';
+    image.style.cssText = 'width: 250px; height: 350px';
+  });
+
+  return bookList;
 }
 
 function main() {
