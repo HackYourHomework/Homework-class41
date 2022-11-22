@@ -43,8 +43,7 @@ function createBookList(books) {
     bookImg.src = books[i].image;
     bookDiv.appendChild(bookImg);
     booksUl.appendChild(bookLi);
-    console.log(bookInfo);
-    console.log(booksUl);
+    bookImg.alt = books[i].title + ' ' + books[i].author + ' book cover photo';
   }
   return booksUl;
 }
