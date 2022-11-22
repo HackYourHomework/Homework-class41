@@ -108,3 +108,19 @@ ex2-aboutMe/index.js:17:25 - Unknown word (shortlivedfault)
 
 ex2-aboutMe/index.js:18:25 - Unknown word (shortlivedfault)
 
+2022-11-22 02:07:59 info: ------------------------------------------
+2022-11-22 02:07:59 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-11-22 02:07:59 info: ------------------------------------------
+2022-11-22 02:08:02 info: All unit tests passed.
+2022-11-22 02:08:06 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:43 - Unknown word (Xdpd)
+
+2022-11-22 02:08:42 info: ------------------------------------------
+2022-11-22 02:08:42 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-11-22 02:08:42 info: ------------------------------------------
+2022-11-22 02:08:44 info: All unit tests passed.
+2022-11-22 02:08:48 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:43 - Unknown word (Xdpd)
+
