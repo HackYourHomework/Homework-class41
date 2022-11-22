@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const clock = document.createElement('span');
   clock.id = 'clock';
   document.body.appendChild(clock);
-  clock.style.fontSize = '10vw';
+  clock.style.fontSize = '20vw';
   clock.style.color = '#004AAD';
   clock.style.fontFamily = '"Comic Sans MS", "Comic Sans", cursive';
   setInterval(addCurrentTime, 1000);
