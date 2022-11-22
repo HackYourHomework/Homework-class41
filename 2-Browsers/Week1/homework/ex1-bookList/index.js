@@ -17,9 +17,76 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 -----------------------------------------------------------------------------*/
 //cspell: enable
 
+// const myBooks = [
+//   {
+//     title: 'The Design of Everyday Things',
+//     author: 'Don Norman',
+//     isbn: '978-0465050659',
+//     alreadyRead: false,
+//   },
+//   {
+//     title: 'The Most Human Human',
+//     author: 'Brian Christian',
+//     isbn: '978-1617933431',
+//     alreadyRead: true,
+//   },
+//   {
+//     title: 'The Pragmatic Programmer',
+//     author: 'Andrew Hunt',
+//     isbn: '978-0201616224',
+//     alreadyRead: true,
+//   },
+// ];
+
 function createBookList(books) {
   // TODO your code goes in here, return the ul element
+
+  const bookShelf = document.createElement('ul');
+
+  for (let i = 0; i < books.length; i++) {
+    const li = document.createElement('li');
+    const text = document.createTextNode(books.title + books.author);
+    if (books.alreadyRead) {
+      li.style.backgroundColor = 'green';
+    } else {
+      li.style.backgroundColor = 'red';
+    }
+
+    const booksPhoto = document.createElement('img');
+    booksPhoto.src = `./assets/${books[i].title
+      .toLowerCase()
+      .split(' ')
+      .join('_')}.jpg`;
+    booksPhoto.alt = books.title;
+    books[i].appendChild(books[i].title);
+    books[i].appendChild(booksPhoto);
+    bookShelf.appendChild(li);
+  }
+  return bookShelf;
 }
+
+// function createBookList(books) {
+//   // TODO your code goes in here, return the ul element
+//   const listOfBooks = document.createElement('ul');
+//   for (const book of books) {
+//     const itemBook = document.createElement('li');
+//     book.alreadyRead
+//      // ? (itemBook.style.backgroundColor = 'green')
+//       : (itemBook.style.backgroundColor = 'red');
+//     const imgOfBook = document.createElement('img');
+//     const titleOfBook = document.createElement('p');
+//     titleOfBook.textContent = `//${book.title} - ${book.author}`;
+//     imgOfBook.src = `//./assets/${book.title
+//       .toLowerCase()
+//       .split(' ')
+//       .join('_')}.jpg`;
+//     imgOfBook.alt = book.title;
+//     itemBook.appendChild(titleOfBook);
+//     itemBook.appendChild(imgOfBook);
+//     listOfBooks.appendChild(itemBook);
+//   }
+//   return listOfBooks;
+// }
 
 function main() {
   const myBooks = [

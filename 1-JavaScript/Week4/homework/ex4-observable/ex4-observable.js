@@ -14,19 +14,19 @@ Complete the `createObservable()` function as follows:
 ------------------------------------------------------------------------------*/
 
 function createObservable() {
-  const subscribers = ['a','b','c'];
+  const subscribers = ['a', 'b', 'c'];
   return {
     subscribe: function (subscriber) {
-      const func1 = function subscriber(){};
-      const func2 = subscribers.push(func1); 
-      },
-    
-    notify: function (message) {
-      subscribers.forEach(function(param){
-        return (message + param);
-      })
-    }
-  };
+      const func1 = function subscriber() {};
+      const func2 = subscribers.push(func1);
+    },
 
+    notify: function (message) {
+      subscribers.forEach(function (param) {
+        return message + param;
+      });
+    },
+  };
+}
 // ! Do not change or remove the code below
 module.exports = createObservable;
