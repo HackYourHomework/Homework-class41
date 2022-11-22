@@ -8,9 +8,11 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    HackYourFuture logo instead.
 ------------------------------------------------------------------------------*/
 function hijackGoogleLogo() {
-  document.getElementByClassName('lnXpd').src =
+  const linkGoogle = document.getElementByClassName('lnXpd');
+  linkGoogle.src =
     'https://uploads-ssl.webflow.com/62745a1007e49e2461fb7ecd/62745a1007e49e6f2afb7fd1_HYF.svg';
-  document.getElementByClassName('lnXpd').srcset =
+  /* I think maybe can just write here linkGoogle.src = linkGoogle.srcset coz links are equal */
+  linkGoogle.srcset =
     'https://uploads-ssl.webflow.com/62745a1007e49e2461fb7ecd/62745a1007e49e6f2afb7fd1_HYF.svg';
 }
 hijackGoogleLogo();

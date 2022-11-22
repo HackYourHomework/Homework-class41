@@ -11,14 +11,19 @@ window.addEventListener('DOMContentLoaded', () => {
   function addCurrentTime() {
     const currentTime = new Date();
     let hours = currentTime.getHours();
-    hours = hours < 10 ? '0' + hours : hours;
+    hours = addNull(hours);
     let minutes = currentTime.getMinutes();
-    minutes = minutes < 10 ? '0' + minutes : minutes;
+    minutes = addNull(minutes);
     let seconds = currentTime.getSeconds();
-    seconds = seconds < 10 ? '0' + seconds : seconds;
+    seconds = addNull(seconds);
     const time = hours + ':' + minutes + ':' + seconds;
     clock.textContent = time;
   }
+
+  function addNull(number) {
+    return number < 10 ? '0' + number : number;
+  }
+
   const clock = document.createElement('span');
   clock.id = 'clock';
   document.body.appendChild(clock);

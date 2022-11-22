@@ -19,32 +19,24 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 
 function createBookList(books) {
   const booksUl = document.createElement('ul');
-  for (let i = 0; i < books.length; i++) {
+  books.forEach((book) => {
     const bookInfo = document.createElement('p');
-    bookInfo.textContent = books[i].title + ' - ' + books[i].author;
+    bookInfo.textContent = `${book.title} - ${book.author}`;
     const bookLi = document.createElement('li');
     const bookDiv = document.createElement('div');
-    bookDiv.style.width = '300px';
-    bookDiv.style.height = '400px';
-    bookDiv.style.padding = '20px';
-    bookLi.style.display = 'flex';
-    books[i].alreadyRead
+    bookDiv.className += 'book-div';
+    book.alreadyRead
       ? (bookDiv.style.backgroundColor = 'green')
       : (bookDiv.style.backgroundColor = 'red');
     bookLi.appendChild(bookDiv);
-    bookLi.style.display = 'inline-block';
-    bookLi.style.margin = '50px';
-    bookLi.style.width = '300px';
-    bookLi.style.height = '400px';
-    bookLi.style.verticalAlign = 'middle';
+    bookLi.classList.add('book-li');
     bookDiv.appendChild(bookInfo);
-    bookDiv.style.textAlign = 'center';
     const bookImg = document.createElement('img');
-    bookImg.src = books[i].image;
+    bookImg.src = book.image;
     bookDiv.appendChild(bookImg);
     booksUl.appendChild(bookLi);
-    bookImg.alt = books[i].title + ' ' + books[i].author + ' book cover photo';
-  }
+    bookImg.alt = `${book.title} by ${book.author} book cover photo`;
+  });
   return booksUl;
 }
 

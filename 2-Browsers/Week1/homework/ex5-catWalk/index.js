@@ -30,10 +30,10 @@ window.addEventListener('DOMContentLoaded', () => {
   function catWalk() {
     const position = parseFloat(cat.style.left);
 
-    if (position > screenWidth - parseFloat(cat.width)) {
+    if (position > screenWidth - cat.width) {
       cat.style.left = 0;
     } else if (
-      position > (screenWidth - parseFloat(cat.width)) / 2 &&
+      position > (screenWidth - cat.width) / 2 &&
       position < screenWidth / 2
     ) {
       window.clearInterval(interval);
@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
       window.setTimeout(() => {
         interval = window.setInterval(catWalk, 50);
         cat.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
-        cat.style.left = position + parseFloat(cat.width) / 2 + 'px';
+        cat.style.left = position + cat.width / 2 + 'px';
       }, 5000);
     } else {
       cat.style.left = position + 10 + 'px';
