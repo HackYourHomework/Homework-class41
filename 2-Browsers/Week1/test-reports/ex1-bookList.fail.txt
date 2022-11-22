@@ -1,0 +1,9 @@
+
+*** ESLint Report ***
+
+ex1-bookList/index.js
+  33:47  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+

@@ -577,3 +577,546 @@ ex3-lemonAllergy.test.js
 2022-11-19 09:24:52 info: -------------------------------------------------
 2022-11-19 09:24:56 info: All unit tests passed.
 2022-11-19 09:25:04 info: All steps were completed successfully
+2022-11-21 10:50:20 info: ----------------------------------------
+2022-11-21 10:50:20 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-11-21 10:50:20 info: ----------------------------------------
+2022-11-21 10:50:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (6.654 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (178 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:116  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:262  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:399  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        6.94 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-11-21 10:50:35 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  32:47  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-21 10:54:39 info: ----------------------------------------
+2022-11-21 10:54:39 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-11-21 10:54:39 info: ----------------------------------------
+2022-11-21 10:54:44 info: All unit tests passed.
+2022-11-21 10:54:45 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  33:47  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-21 11:23:09 info: ---------------------------------------
+2022-11-21 11:23:09 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-21 11:23:09 info: ---------------------------------------
+2022-11-21 11:23:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (185 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (4 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (48 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.268 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-11-21 11:23:16 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  20:4  warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+  23:2  error    Unnecessary semicolon                                 no-extra-semi
+
+✖ 2 problems (1 error, 1 warning)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-21 11:23:18 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:27 - Unknown word (Khinkali)
+
+2022-11-21 11:47:52 info: ---------------------------------------
+2022-11-21 11:47:52 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-21 11:47:52 info: ---------------------------------------
+2022-11-21 11:48:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (6.324 s)
+  Generated HTML
+    ✓ should be syntactically valid (173 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (4 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (42 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.609 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-11-21 11:48:06 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  20:4  warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+  23:2  error    Unnecessary semicolon                                 no-extra-semi
+
+✖ 2 problems (1 error, 1 warning)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-21 11:48:10 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:27 - Unknown word (Khinkali)
+
+2022-11-21 11:49:12 info: ---------------------------------------
+2022-11-21 11:49:12 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-21 11:49:12 info: ---------------------------------------
+2022-11-21 11:49:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (164 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (4 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (41 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.32 s, estimated 7 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-11-21 11:49:18 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  20:4  warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+  23:2  error    Unnecessary semicolon                                 no-extra-semi
+
+✖ 2 problems (1 error, 1 warning)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-21 11:49:20 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:27 - Unknown word (Khinkali)
+
+2022-11-21 11:50:45 info: ---------------------------------------
+2022-11-21 11:50:45 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-21 11:50:45 info: ---------------------------------------
+2022-11-21 11:50:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (178 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (4 ms)
+    ✓ each <li> should have the CSS class `list-item`
+    ✓ each <li> should rendered red (40 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.083 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-11-21 11:50:52 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  20:4  warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+  23:2  error    Unnecessary semicolon                                 no-extra-semi
+
+✖ 2 problems (1 error, 1 warning)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-21 11:50:54 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:27 - Unknown word (Khinkali)
+
+2022-11-21 11:52:13 info: ---------------------------------------
+2022-11-21 11:52:13 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-21 11:52:13 info: ---------------------------------------
+2022-11-21 11:52:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (164 ms)
+    ✓ should have all TODO comments removed
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (41 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.115 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-11-21 11:52:19 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  20:4  warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+  23:2  error    Unnecessary semicolon                                 no-extra-semi
+
+✖ 2 problems (1 error, 1 warning)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-21 11:52:21 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:27 - Unknown word (Khinkali)
+
+2022-11-21 11:52:38 info: ---------------------------------------
+2022-11-21 11:52:38 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-21 11:52:38 info: ---------------------------------------
+2022-11-21 11:52:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    ✓ should be syntactically valid (173 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (1 ms)
+    ✓ each <li> should rendered red (40 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.042 s, estimated 4 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-11-21 11:52:44 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  20:4  warning  Avoid `for in` loops. Prefer `Object.keys()` instead  no-restricted-syntax
+  23:2  error    Unnecessary semicolon                                 no-extra-semi
+
+✖ 2 problems (1 error, 1 warning)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-21 11:52:46 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:27 - Unknown word (Khinkali)
+
+2022-11-22 12:00:51 info: ---------------------------------------
+2022-11-22 12:00:51 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-22 12:00:51 info: ---------------------------------------
+2022-11-22 12:01:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (6.679 s)
+  Generated HTML
+    ✓ should be syntactically valid (182 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (3 ms)
+    ✓ each <li> should have the CSS class `list-item` (2 ms)
+    ✓ each <li> should rendered red (45 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.986 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-11-22 12:01:14 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:27 - Unknown word (Khinkali)
+
+2022-11-22 12:02:02 info: ---------------------------------------
+2022-11-22 12:02:02 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-22 12:02:02 info: ---------------------------------------
+2022-11-22 12:02:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (6.456 s)
+  Generated HTML
+    ✓ should be syntactically valid (196 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ the body font-family should be `Arial, sans-serif` (4 ms)
+    ✓ each <li> should have the CSS class `list-item` (2 ms)
+    ✓ each <li> should rendered red (44 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.743 s, estimated 7 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-11-22 12:02:19 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:27 - Unknown word (Khinkali)
+
+2022-11-22 02:35:14 info: --------------------------------------------
+2022-11-22 02:35:14 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 02:35:14 info: --------------------------------------------
+2022-11-22 02:35:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (8.569 s)
+  whatsTheTime
+    ✓ HTML should be syntactically valid (160 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✕ should use `setInterval()` (2 ms)
+    ✓ should not call `setInterval()` more than once (2002 ms)
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function
+
+  ● whatsTheTime › should use `setInterval()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `setInterval()`', () => {
+    > 52 |     expect(state.setInterval).toBeDefined();
+         |                               ^
+      53 |   });
+      54 |
+      55 |   test('should not call `setInterval()` more than once', async () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:52:31)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        8.845 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-11-22 02:40:38 info: --------------------------------------------
+2022-11-22 02:40:38 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 02:40:38 info: --------------------------------------------
+2022-11-22 02:40:44 info: All unit tests passed.
+2022-11-22 02:40:48 info: All steps were completed successfully
+2022-11-22 02:56:54 info: --------------------------------------------
+2022-11-22 02:56:54 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 02:56:54 info: --------------------------------------------
+2022-11-22 02:57:07 info: All unit tests passed.
+2022-11-22 02:57:11 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  15:21  error  Unnecessary semicolon  no-extra-semi
+
+✖ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
+
+2022-11-22 02:57:33 info: --------------------------------------------
+2022-11-22 02:57:33 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 02:57:33 info: --------------------------------------------
+2022-11-22 02:57:40 info: All unit tests passed.
+2022-11-22 02:57:44 info: All steps were completed successfully
+2022-11-22 02:59:42 info: --------------------------------------------
+2022-11-22 02:59:42 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 02:59:42 info: --------------------------------------------
+2022-11-22 02:59:50 info: All unit tests passed.
+2022-11-22 02:59:55 info: All steps were completed successfully
+2022-11-22 08:20:28 info: ---------------------------------------
+2022-11-22 08:20:28 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-22 08:20:28 info: ---------------------------------------
+2022-11-22 08:20:39 info: All unit tests passed.
+2022-11-22 08:20:43 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  29:8  warning  'i' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-11-22 08:21:27 info: ---------------------------------------
+2022-11-22 08:21:27 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-22 08:21:27 info: ---------------------------------------
+2022-11-22 08:21:32 info: All unit tests passed.
+2022-11-22 08:21:36 info: All steps were completed successfully
+2022-11-22 08:42:43 info: ---------------------------------------
+2022-11-22 08:42:43 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-22 08:42:43 info: ---------------------------------------
+2022-11-22 08:42:48 info: All unit tests passed.
+2022-11-22 08:42:51 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:16:27 - Unknown word (Khinkali)
+
+2022-11-22 08:47:49 info: ------------------------------------------
+2022-11-22 08:47:49 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-11-22 08:47:49 info: ------------------------------------------
+2022-11-22 08:47:51 info: All unit tests passed.
+2022-11-22 08:47:55 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:44 - Unknown word (Xdpd)
+
