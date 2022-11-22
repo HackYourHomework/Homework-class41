@@ -436,3 +436,8 @@ ex4-whatsTheTime/index.js
 ✖ 4 problems (0 errors, 4 warnings)
 
 
+2022-11-22 09:31:36 info: ---------------------------------------
+2022-11-22 09:31:36 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-22 09:31:36 info: ---------------------------------------
+2022-11-22 09:31:41 info: All unit tests passed.
+2022-11-22 09:31:45 info: All steps were completed successfully
