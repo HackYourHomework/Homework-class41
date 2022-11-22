@@ -706,3 +706,48 @@ npm notice
 2022-11-22 02:31:10 info: --------------------------------------------
 2022-11-22 02:31:25 info: All unit tests passed.
 2022-11-22 02:31:43 info: All steps were completed successfully
+2022-11-22 03:45:04 info: ---------------------------------------
+2022-11-22 03:45:04 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-22 03:45:04 info: ---------------------------------------
+2022-11-22 03:45:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-catWalk.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex5-catWalk.test.js (6.622 s)
+  catWalk
+    ✓ HTML should be syntactically valid (178 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ should use `setInterval()` and/or `setTimeout()`
+    ✓ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● catWalk › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.927 s
+Ran all test suites matching /ex5-catWalk.test.js/i.
+npm notice 
+npm notice New major version of npm available! 8.15.0 -> 9.1.2
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v9.1.2>
+npm notice Run `npm install -g npm@9.1.2` to update!
+npm notice
+2022-11-22 03:45:53 info: ---------------------------------------
+2022-11-22 03:45:53 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-22 03:45:53 info: ---------------------------------------
+2022-11-22 03:46:03 info: All unit tests passed.
+2022-11-22 03:46:11 info: All steps were completed successfully
