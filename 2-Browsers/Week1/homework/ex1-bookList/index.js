@@ -18,7 +18,21 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const ul = document.createElement('ul');
+  let p = document.createElement('p');
+
+  books.forEach((element) => {
+    ulMaker(element.title, element.author);
+  });
+
+  function ulMaker(title, author) {
+    const li = document.createElement('li');
+    p = title + ' - ' + author;
+    li.appendChild(document.createTextNode(p));
+    return ul.appendChild(li);
+  }
+  console.log(ul);
+  return ul;
 }
 
 function main() {
