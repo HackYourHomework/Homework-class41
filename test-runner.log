@@ -465,3 +465,52 @@ Ran all test suites matching /ex4-whatsTheTime.test.js/i.
 2022-11-22 01:56:22 info: --------------------------------------------
 2022-11-22 01:56:29 info: All unit tests passed.
 2022-11-22 01:56:32 info: All steps were completed successfully
+2022-11-22 04:09:23 info: ----------------------------------------
+2022-11-22 04:09:23 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-11-22 04:09:23 info: ----------------------------------------
+2022-11-22 04:09:29 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid (121 ms)
+    ✓ should have all TODO comments removed
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:80   error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:217  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:347  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        3.286 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-11-22 04:13:23 info: ----------------------------------------
+2022-11-22 04:13:23 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-11-22 04:13:23 info: ----------------------------------------
+2022-11-22 04:13:28 info: All unit tests passed.
+2022-11-22 04:13:31 info: All steps were completed successfully

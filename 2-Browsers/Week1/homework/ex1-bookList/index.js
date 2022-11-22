@@ -1,92 +1,32 @@
-//cspell: disable
-/*------------------------------------------------------------------------------
-Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-1-the-book-list
-
-I'd like to display my three favorite books inside a nice webpage!
-
-1. Iterate through the array of books.
-2. For each book, create a `<p>`
-element with the book title and author.
-3. Use a `<ul>`  and `<li>` to display the books.
-4. Add an `<img>` to each book that links to a URL of the book cover.
-5. Change the style of the book depending on whether you have read it(green) or not(red).
-
-The end result should look something like this:
-https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
-
------------------------------------------------------------------------------*/
-//cspell: enable
-
-// const myBooks = [
-//   {
-//     title: 'The Design of Everyday Things',
-//     author: 'Don Norman',
-//     isbn: '978-0465050659',
-//     alreadyRead: false,
-//   },
-//   {
-//     title: 'The Most Human Human',
-//     author: 'Brian Christian',
-//     isbn: '978-1617933431',
-//     alreadyRead: true,
-//   },
-//   {
-//     title: 'The Pragmatic Programmer',
-//     author: 'Andrew Hunt',
-//     isbn: '978-0201616224',
-//     alreadyRead: true,
-//   },
-// ];
-
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+  const bookList = document.getElementById('bookList');
+  const ul = document.createElement('ul');
+  bookList.appendChild(ul);
 
-  const bookShelf = document.createElement('ul');
-
-  for (let i = 0; i < books.length; i++) {
+  books.forEach((element) => {
     const li = document.createElement('li');
-    const text = document.createTextNode(books.title + books.author);
-    if (books.alreadyRead) {
-      li.style.backgroundColor = 'green';
+    const p = document.createElement('p');
+    const bookImage = document.createElement('img');
+    bookImage.setAttribute('src', tittleToPath(element.title));
+    if (element.alreadyRead) {
+      bookImage.style.backgroundColor = 'green';
     } else {
-      li.style.backgroundColor = 'red';
+      bookImage.style.backgroundColor = 'red';
     }
 
-    const booksPhoto = document.createElement('img');
-    booksPhoto.src = `./assets/${books[i].title
-      .toLowerCase()
-      .split(' ')
-      .join('_')}.jpg`;
-    booksPhoto.alt = books.title;
-    books[i].appendChild(books[i].title);
-    books[i].appendChild(booksPhoto);
-    bookShelf.appendChild(li);
-  }
-  return bookShelf;
+    bookImage.alt = element.title;
+
+    p.textContent = element.title + ' ' + element.author;
+
+    li.appendChild(p);
+    li.appendChild(bookImage);
+    ul.appendChild(li);
+  });
 }
 
-// function createBookList(books) {
-//   // TODO your code goes in here, return the ul element
-//   const listOfBooks = document.createElement('ul');
-//   for (const book of books) {
-//     const itemBook = document.createElement('li');
-//     book.alreadyRead
-//      // ? (itemBook.style.backgroundColor = 'green')
-//       : (itemBook.style.backgroundColor = 'red');
-//     const imgOfBook = document.createElement('img');
-//     const titleOfBook = document.createElement('p');
-//     titleOfBook.textContent = `//${book.title} - ${book.author}`;
-//     imgOfBook.src = `//./assets/${book.title
-//       .toLowerCase()
-//       .split(' ')
-//       .join('_')}.jpg`;
-//     imgOfBook.alt = book.title;
-//     itemBook.appendChild(titleOfBook);
-//     itemBook.appendChild(imgOfBook);
-//     listOfBooks.appendChild(itemBook);
-//   }
-//   return listOfBooks;
-// }
+function tittleToPath(tittle) {
+  return `./assets/${tittle.toLowerCase().split(' ').join('_')}.jpg`;
+}
 
 function main() {
   const myBooks = [

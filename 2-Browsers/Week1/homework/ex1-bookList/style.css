@@ -1,1 +1,24 @@
-/* Write your style here */
+img {
+  width: 200px;
+  height: 350px;
+  padding: 20px;
+  margin: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  margin: 20px;
+  padding: 20px;
+  background-color: black;
+  list-style-type: none;
+  text-align: center;
+}
+
+p {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
