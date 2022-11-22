@@ -27,6 +27,7 @@ function createBookList(books) {
 
   div.appendChild(ul);
 
+  // eslint-disable-next-line no-autofix/prefer-const
   for (let book of books) {
     const paragraph = document.createElement('p');
     paragraph.textContent = book.title + ' by ' + book.author;
@@ -38,6 +39,7 @@ function createBookList(books) {
     const searchImageTitle = book.title.toLowerCase().split(' ').join('_');
     const image = document.createElement('img');
     image.src = 'assets/' + searchImageTitle + '.jpg';
+    image.alt = 'searchImageTitle';
     image.style.width = '50%';
 
     list.appendChild(image);

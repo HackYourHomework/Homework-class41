@@ -1,0 +1,110 @@
+2022-11-22 01:36:53 info: ----------------------------------------
+2022-11-22 01:36:53 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-11-22 01:36:53 info: ----------------------------------------
+2022-11-22 01:36:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-bookList.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    × HTML should be syntactically valid (126 ms)
+    √ should have all TODO comments removed
+    √ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    √ should contain a <ul> with 3 <li> elements (1 ms)
+    √ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    √ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:212  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:392  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:563  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:42:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        3.581 s
+Ran all test suites matching /ex1-bookList.test.js/i.
+2022-11-22 01:43:48 info: ----------------------------------------
+2022-11-22 01:43:48 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-11-22 01:43:48 info: ----------------------------------------
+2022-11-22 01:43:53 info: All unit tests passed.
+2022-11-22 01:43:58 info: All steps were completed successfully
+2022-11-22 01:44:42 info: ----------------------------------------------
+2022-11-22 01:44:42 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-22 01:44:42 info: ----------------------------------------------
+2022-11-22 01:44:45 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should take a single parameter
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\husse\HYF\MODULE_2\Homework-class41\test-runner\CustomReporter.js"
+2022-11-22 01:45:07 info: ---------------------------------------
+2022-11-22 01:45:07 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-22 01:45:07 info: ---------------------------------------
+2022-11-22 01:45:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-aboutMe.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js
+  Generated HTML
+    √ should be syntactically valid (112 ms)
+    √ should have all TODO comments removed (1 ms)
+    × the body font-family should be `Arial, sans-serif` (3 ms)
+    √ each <li> should have the CSS class `list-item` (2 ms)
+    √ each <li> should rendered red (31 ms)
+
+  ● Generated HTML › the body font-family should be `Arial, sans-serif`
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: StringContaining "Arial"
+    Received: ""
+
+      25 |   test('the body font-family should be `Arial, sans-serif`', () => {
+      26 |     const fontFamily = document.body.style.fontFamily;
+    > 27 |     expect(fontFamily).toEqual(expect.stringContaining('Arial'));
+         |                        ^
+      28 |     expect(fontFamily).toEqual(expect.stringContaining('sans-serif'));
+      29 |   });
+      30 |
+
+      at Object.toEqual (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:27:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.135 s
+Ran all test suites matching /ex2-aboutMe.test.js/i.
+2022-11-22 01:45:17 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:17:25 - Unknown word (shortlivedfault)
+
+2022-11-22 01:46:55 info: ---------------------------------------
+2022-11-22 01:46:55 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-22 01:46:55 info: ---------------------------------------
+2022-11-22 01:47:00 info: All unit tests passed.
+2022-11-22 01:47:05 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:18:25 - Unknown word (shortlivedfault)
+
