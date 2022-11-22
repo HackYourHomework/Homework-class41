@@ -652,3 +652,11 @@ ex2-aboutMe/index.js:17:25 - Unknown word (Charkiv)
 
 ex2-aboutMe/index.js:15:26 - Unknown word (sergeyzoloto)
 
+2022-11-22 01:59:44 info: ------------------------------------------
+2022-11-22 01:59:44 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-11-22 01:59:44 info: ------------------------------------------
+2022-11-22 01:59:50 info: All unit tests passed.
+2022-11-22 01:59:57 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:11:43 - Unknown word (Xdpd)
+
