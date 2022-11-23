@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     minutes = addNull(minutes);
     let seconds = currentTime.getSeconds();
     seconds = addNull(seconds);
-    const time = hours + ':' + minutes + ':' + seconds;
+    const time = `${hours}:${minutes}:${seconds}`;
     clock.textContent = time;
   }
 

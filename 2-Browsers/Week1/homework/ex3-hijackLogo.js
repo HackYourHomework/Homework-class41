@@ -11,8 +11,6 @@ function hijackGoogleLogo() {
   const linkGoogle = document.getElementByClassName('lnXpd');
   linkGoogle.src =
     'https://uploads-ssl.webflow.com/62745a1007e49e2461fb7ecd/62745a1007e49e6f2afb7fd1_HYF.svg';
-  /* I think maybe can just write here linkGoogle.src = linkGoogle.srcset coz links are equal */
-  linkGoogle.srcset =
-    'https://uploads-ssl.webflow.com/62745a1007e49e2461fb7ecd/62745a1007e49e6f2afb7fd1_HYF.svg';
+  linkGoogle.srcset = linkGoogle.src;
 }
 hijackGoogleLogo();
