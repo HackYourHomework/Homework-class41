@@ -441,3 +441,8 @@ ex4-whatsTheTime/index.js
 2022-11-22 09:31:36 info: ---------------------------------------
 2022-11-22 09:31:41 info: All unit tests passed.
 2022-11-22 09:31:45 info: All steps were completed successfully
+2022-11-23 12:59:08 info: ----------------------------------------
+2022-11-23 12:59:08 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-11-23 12:59:08 info: ----------------------------------------
+2022-11-23 12:59:13 info: All unit tests passed.
+2022-11-23 12:59:17 info: All steps were completed successfully

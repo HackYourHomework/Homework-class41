@@ -18,14 +18,8 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 //cspell: enable
 
 function createBookList(books) {
-  const div = document.getElementById('bookList');
   const ul = document.createElement('ul');
-  ul.style.listStyleType = 'none';
-  ul.style.display = 'flex';
-  ul.style.flexDirection = 'row';
-  ul.style.gap = '20px';
-
-  div.appendChild(ul);
+  ul.className = 'ul-style';
 
   // eslint-disable-next-line no-autofix/prefer-const
   for (let book of books) {
@@ -34,24 +28,25 @@ function createBookList(books) {
 
     const list = document.createElement('li');
     list.appendChild(paragraph);
-    list.style.textAlign = 'center';
+    list.className = 'li-style';
 
     const searchImageTitle = book.title.toLowerCase().split(' ').join('_');
     const image = document.createElement('img');
     image.src = 'assets/' + searchImageTitle + '.jpg';
     image.alt = 'searchImageTitle';
-    image.style.width = '50%';
+    image.className = 'img-style';
 
     list.appendChild(image);
 
     if (book.alreadyRead) {
-      list.style.backgroundColor = 'green';
+      list.classList.add('book-read');
     } else {
-      list.style.backgroundColor = 'red';
+      list.classList.add('book-not-read');
     }
 
     ul.appendChild(list);
   }
+  return ul;
 }
 
 function main() {
