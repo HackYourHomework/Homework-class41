@@ -619,3 +619,58 @@ ex2-aboutMe/index.js:19:25 - Unknown word (shortlivedfault)
 2022-11-23 03:04:52 info: --------------------------------------------
 2022-11-23 03:04:58 info: All unit tests passed.
 2022-11-23 03:05:02 info: All steps were completed successfully
+2022-11-23 04:40:24 info: ---------------------------------------
+2022-11-23 04:40:24 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-23 04:40:24 info: ---------------------------------------
+2022-11-23 04:40:29 info: All unit tests passed.
+2022-11-23 04:40:31 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  24:1  warning  Remove commented-out code                       hyf/no-commented-out-code
+  27:1  warning  Remove commented-out code                       hyf/no-commented-out-code
+  29:1  warning  Remove commented-out code                       hyf/no-commented-out-code
+  33:1  warning  Remove commented-out code                       hyf/no-commented-out-code
+  37:1  warning  Remove commented-out code                       hyf/no-commented-out-code
+  41:1  warning  Remove commented-out code                       hyf/no-commented-out-code
+  48:1  warning  Remove commented-out code                       hyf/no-commented-out-code
+  50:1  warning  Remove commented-out code                       hyf/no-commented-out-code
+  59:7  warning  'img' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  65:3  warning  Remove commented-out code                       hyf/no-commented-out-code
+
+✖ 10 problems (0 errors, 10 warnings)
+
+
+2022-11-23 04:40:59 info: ---------------------------------------
+2022-11-23 04:40:59 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-23 04:40:59 info: ---------------------------------------
+2022-11-23 04:41:03 info: All unit tests passed.
+2022-11-23 04:41:05 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  30:7  warning  'img' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-11-23 04:41:40 info: ---------------------------------------
+2022-11-23 04:41:40 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-23 04:41:40 info: ---------------------------------------
+2022-11-23 04:41:44 info: All unit tests passed.
+2022-11-23 04:41:48 info: All steps were completed successfully
+2022-11-23 05:29:54 info: ---------------------------------------
+2022-11-23 05:29:54 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-23 05:29:54 info: ---------------------------------------
+2022-11-23 05:29:59 info: All unit tests passed.
+2022-11-23 05:30:00 error: *** ESLint Report ***
+
+ex5-catWalk/index.js
+  51:12  warning  Identifier 'OriginalPic' is not in camelCase  hyf/camelcase
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-11-23 05:31:05 info: ---------------------------------------
+2022-11-23 05:31:05 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-23 05:31:05 info: ---------------------------------------
+2022-11-23 05:31:09 info: All unit tests passed.
+2022-11-23 05:31:13 info: All steps were completed successfully
