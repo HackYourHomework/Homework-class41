@@ -21,8 +21,50 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-function catWalk() {
-  // TODO complete this function
+// function catWalk() {
+
+// }
+
+
+
+
+const catImage = document.querySelector('img');
+// catImage.style.cssText = 'left:0';
+
+let catWalking = 0;
+let timeoutID;
+let intervalID;
+
+const imgDimensions = catImage.getBoundingClientRect();
+const imageWidth = imgDimensions['width'];
+
+const screenCenter = screen.width / 2 - imageWidth/2;
+
+function catInCenter() {
+  catImage.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+  clearTimeout(timeoutID);
+  intervalID = setInterval(catWalk, 100);
 }
 
+function catWalk() {
+
+  // TODO complete this function
+
+  catWalking = catWalking + 10;
+
+  if (catWalking < screenCenter) {
+    catImage.style.left= catWalking + 'px';
+  } else if (catWalking - screenCenter < 10) {
+    catImage.src =
+      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+    clearInterval(intervalID);
+    timeoutID = setTimeout(catInCenter, 5000);
+  } else if (catWalking > screenCenter && catWalking < screenCenter * 2) {
+    catImage.style.left = catWalking + 'px';
+  } else if (catWalking > screenCenter * 2) {
+    catImage.style.left = 0 + 'px';
+    catWalking = 0;
+  }
+}
 // TODO execute `catWalk` when the browser has completed loading the page
+window.onload = () => (intervalID = setInterval(catWalk, 100));

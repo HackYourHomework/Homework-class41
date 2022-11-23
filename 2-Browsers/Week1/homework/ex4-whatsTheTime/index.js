@@ -9,6 +9,25 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
   // TODO complete this function
+
+
+  const today = new Date();
+  let hour = today.getHours(),
+    minute = today.getMinutes(),
+    second = today.getSeconds();
+
+  if (minute < 10) minute = '0' + minute;
+  if (hour < 10) hour = '0' + hour;
+  if (second < 10) second = '0' + second;
+  const time = hour + ':' + minute + ':' + second;
+  return time;
 }
 
 // TODO execute `addCurrentTime` when the browser has completed loading the page
+
+
+window.onload = () => setInterval(addCurrentTime, 1000);
+
+document.write(addCurrentTime());
+
+console.log(addCurrentTime());
