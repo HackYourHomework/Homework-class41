@@ -22,7 +22,7 @@ function createBookList(books) {
   ul.className = 'ul-style';
 
   // eslint-disable-next-line no-autofix/prefer-const
-  for (let book of books) {
+  for (const book of books) {
     const paragraph = document.createElement('p');
     paragraph.textContent = book.title + ' by ' + book.author;
 

@@ -614,3 +614,8 @@ Ran all test suites matching /ex2-aboutMe.test.js/i.
 
 ex2-aboutMe/index.js:19:25 - Unknown word (shortlivedfault)
 
+2022-11-23 03:04:52 info: --------------------------------------------
+2022-11-23 03:04:52 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-23 03:04:52 info: --------------------------------------------
+2022-11-23 03:04:58 info: All unit tests passed.
+2022-11-23 03:05:02 info: All steps were completed successfully

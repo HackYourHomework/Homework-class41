@@ -21,6 +21,6 @@ hometown.textContent = 'Groningen';
 
 const list = document.getElementsByTagName('li');
 // eslint-disable-next-line no-autofix/prefer-const
-for (let listItem of list) {
+for (const listItem of list) {
   listItem.className = 'list-item';
 }
