@@ -1,4 +1,8 @@
 'use strict';
+
+// eslint-disable-next-line no-unused-vars
+const { duration } = require('moment');
+
 /*------------------------------------------------------------------------------
 Full description atL https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week4#exercise-2-whats-your-monday-worth
 
@@ -31,8 +35,14 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+// eslint-disable-next-line no-unused-vars
+function computeEarnings(dayTasks, rate) {
+  const workingMinutes = dayTasks.reduce(
+    (hours, taskTime) => hours + taskTime.duration,
+    0
+  );
+  const amount = ((workingMinutes / 60) * rate).toFixed(2);
+  return `€${amount}`;
 }
 
 // ! Unit tests (using Jest)
