@@ -813,3 +813,17 @@ Ran all test suites matching /ex6-gameOfLife.test.js/i.
 2022-11-24 03:30:13 error: *** Spell Checker Report ***
 
 
+2022-11-24 02:40:17 info: ----------------------------------------
+2022-11-24 02:40:17 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-11-24 02:40:17 info: ----------------------------------------
+2022-11-24 02:40:34 info: All unit tests passed.
+2022-11-24 02:40:50 error: *** Spell Checker Report ***
+
+
+2022-11-24 02:50:37 info: ------------------------------------------
+2022-11-24 02:50:37 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-11-24 02:50:37 info: ------------------------------------------
+2022-11-24 02:50:46 info: All unit tests passed.
+2022-11-24 02:50:58 error: *** Spell Checker Report ***
+
+
