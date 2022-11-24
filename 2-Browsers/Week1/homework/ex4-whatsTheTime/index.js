@@ -7,8 +7,15 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
   second). Use `setInterval()` to make sure the time stays current.
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
+const h3 = document.createElement('h3');
+document.body.appendChild(h3);
+h3.textContent = 'Page is loading';
+const interval = setInterval(addCurrentTime, 1000); // Play addCurrentTime() for every 1000ms
 function addCurrentTime() {
-  // TODO complete this function
+  const date = new Date(); // New date created
+  const localTime = date.toLocaleTimeString('en-US', { hour12: false }); // Date designed for US time format
+  h3.textContent = localTime; // For h3 to constantly change: it should be inside the function
+  console.log(localTime);
 }
 
-// TODO execute `addCurrentTime` when the browser has completed loading the page
+window.onload = interval;
