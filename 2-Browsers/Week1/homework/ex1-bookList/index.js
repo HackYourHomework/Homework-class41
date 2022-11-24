@@ -24,12 +24,12 @@ function createBookList(books) {
     bookInfo.textContent = `${book.title} - ${book.author}`;
     const bookLi = document.createElement('li');
     const bookDiv = document.createElement('div');
-    bookDiv.className += 'book-div';
+    bookDiv.classList.add('book-div'); //bookDiv.className += 'book-div'; does this string add class as I thought or change?
     book.alreadyRead
       ? (bookDiv.style.backgroundColor = 'green')
       : (bookDiv.style.backgroundColor = 'red');
     bookLi.appendChild(bookDiv);
-    bookLi.classList.add('book-li');
+    bookLi.classList.add('book-li'); //I got that it is a better way always to add a class to be sure that will not interfer with other developers
     bookDiv.appendChild(bookInfo);
     const bookImg = document.createElement('img');
     bookImg.src = book.image;

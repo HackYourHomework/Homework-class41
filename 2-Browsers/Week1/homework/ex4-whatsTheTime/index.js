@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const currentTime = new Date();
     let hours = currentTime.getHours();
     hours = addNull(hours);
-    let minutes = currentTime.getMinutes();
+    let minutes = currentTime.getMinutes(); //here is also other method possible ('0' + currentTime.getMinutes()).slice(-2) and no need to use function then;
     minutes = addNull(minutes);
     let seconds = currentTime.getSeconds();
     seconds = addNull(seconds);
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   function addNull(number) {
-    return number < 10 ? '0' + number : number;
+    return number < 10 ? number.toString().padStart(2, '0') : number; //done with padStart method
   }
 
   const clock = document.createElement('span');
