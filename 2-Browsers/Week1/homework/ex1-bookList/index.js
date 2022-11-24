@@ -18,33 +18,50 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 //cspell: enable
 
 function createBookList(books) {
-  // TODO your code goes in here, return the ul element
+    const listOfBooks = document.createElement('ul');
+    for (const book of books) {
+        const itemBook = document.createElement('li');
+        book.alreadyRead ?
+            itemBook.classList.add('green') :
+            itemBook.classList.add('red');
+        const imgOfBook = document.createElement('img');
+        const titleOfBook = document.createElement('p');
+        titleOfBook.textContent = `${book.title} - ${book.author}`;
+        imgOfBook.src = `./assets/${book.title
+      .toLowerCase()
+      .split(' ')
+      .join('_')}.jpg`;
+        imgOfBook.alt = book.title;
+        itemBook.appendChild(titleOfBook);
+        itemBook.appendChild(imgOfBook);
+        listOfBooks.appendChild(itemBook);
+    }
+    return listOfBooks;
 }
 
 function main() {
-  const myBooks = [
-    {
-      title: 'The Design of Everyday Things',
-      author: 'Don Norman',
-      isbn: '978-0465050659',
-      alreadyRead: false,
-    },
-    {
-      title: 'The Most Human Human',
-      author: 'Brian Christian',
-      isbn: '978-1617933431',
-      alreadyRead: true,
-    },
-    {
-      title: 'The Pragmatic Programmer',
-      author: 'Andrew Hunt',
-      isbn: '978-0201616224',
-      alreadyRead: true,
-    },
-  ];
+    const myBooks = [{
+            title: 'The Design of Everyday Things',
+            author: 'Don Norman',
+            isbn: '978-0465050659',
+            alreadyRead: false,
+        },
+        {
+            title: 'The Most Human Human',
+            author: 'Brian Christian',
+            isbn: '978-1617933431',
+            alreadyRead: true,
+        },
+        {
+            title: 'The Pragmatic Programmer',
+            author: 'Andrew Hunt',
+            isbn: '978-0201616224',
+            alreadyRead: true,
+        },
+    ];
 
-  const ulElement = createBookList(myBooks);
-  document.querySelector('#bookList').appendChild(ulElement);
+    const ulElement = createBookList(myBooks);
+    document.querySelector('#bookList').appendChild(ulElement);
 }
 
 window.addEventListener('load', main);
