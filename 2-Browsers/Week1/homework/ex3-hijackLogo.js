@@ -12,7 +12,7 @@ function hijackGoogleLogo() {
     'body > div.L3eUgb > div.o3j99.LLD4me.yr19Zb.LS8OJ > div > img'
   );
   googleLogo.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
-  googleLogo.srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svgclear';
+  googleLogo.srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
 }
 
 hijackGoogleLogo();
