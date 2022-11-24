@@ -21,8 +21,34 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-function catWalk() {
-  // TODO complete this function
-}
+const catImg = document.getElementsByTagName('img')[0];
+catImg.style.left = '0px';
+let leftCount = 0; // To count how far cat gone from left
+const interval = setInterval(catWalk, 50); // play catWalk() in every 50ms
+let isCatWalking = true; // To control cat status
+let isDanced = false;
 
-// TODO execute `catWalk` when the browser has completed loading the page
+async function catWalk() {
+  const screenWidth = screen.width; // To calculate screen width. Unfortunately not active window size :(
+  isCatWalking ? (leftCount += 10) : leftCount;
+  catImg.style.left = `${leftCount}px`;
+
+  // When cat reach to the end of the screen
+  if (leftCount + catImg.width > screenWidth) {
+    leftCount = 0; // to star from left again
+    isDanced = false; // for cat can be able to dance again
+  }
+
+  // If i make it with '===' and not with '>' if numbers didn't catch each other: cat may never dance
+  // Is dance created for this 'if' to work just for once
+  if (catImg.width / 2 + leftCount > screenWidth / 2 && !isDanced) {
+    isDanced = true;
+    isCatWalking = false; // For cat to stop moving
+    catImg.src =
+      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+    await new Promise((r) => setTimeout(r, 5000));
+    catImg.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+    isCatWalking = true;
+  }
+}
+window.onload = interval;
