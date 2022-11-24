@@ -1053,3 +1053,48 @@ ex4-observable/ex4-observable.js
 2022-11-11 01:09:20 info: ------------------------------------------
 2022-11-11 01:09:24 info: All unit tests passed.
 2022-11-11 01:09:28 info: All steps were completed successfully
+2022-11-24 02:20:12 info: -------------------------------------------------
+2022-11-24 02:20:12 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-24 02:20:12 info: -------------------------------------------------
+2022-11-24 02:20:13 error: *** Unit Test Error Report ***
+
+console.log
+    €187.50
+
+      at log (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:45:18)
+
+
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (1 ms)
+    ✕ should compute the earnings as a formatted Euro amount (12 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: undefined
+
+      57 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      58 |     const expected = '€187.50';
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.22 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-11-24 02:21:16 info: -------------------------------------------------
+2022-11-24 02:21:16 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-11-24 02:21:16 info: -------------------------------------------------
+2022-11-24 02:21:16 info: All unit tests passed.
+2022-11-24 02:21:18 info: All steps were completed successfully

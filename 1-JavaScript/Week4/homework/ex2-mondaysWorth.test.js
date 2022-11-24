@@ -41,7 +41,7 @@ function computeEarnings(dayTasks, rate) {
     (hours, taskTime) => hours + taskTime.duration,
     0
   );
-  const amount = ((workingMinutes / 60) * hourlyRate).toFixed(2);
+  const amount = ((workingMinutes / 60) * rate).toFixed(2);
   return `€${amount}`;
 }
 
