@@ -8,7 +8,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    HackYourFuture logo instead.
 ------------------------------------------------------------------------------*/
 function hijackGoogleLogo() {
-  const logoImg = document.querySelector('img'); //getting image by id gives me spell error
+  const logoImg = document.querySelector('img[alt="Google"]'); //getting image by id gives me spell error
   logoImg.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
   logoImg.srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
 }

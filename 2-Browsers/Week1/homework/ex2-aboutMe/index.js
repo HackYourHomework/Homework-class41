@@ -9,9 +9,12 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
 document.body.style.fontFamily = 'Arial, sans-serif';
-document.querySelector('#nickname').textContent = 'Ahmad';
-document.querySelector('#fav-food').textContent = 'Pizza';
-document.querySelector('#hometown').textContent = 'Damascus';
+function fillIn(span, content) {
+  return (document.querySelector(span).textContent = content);
+}
+fillIn('#nickname', 'Ahmad');
+fillIn('#fav-food', 'Pizza');
+fillIn('#hometown', 'Syria');
 
 const items = document.querySelectorAll('li');
 for (const item of items) {

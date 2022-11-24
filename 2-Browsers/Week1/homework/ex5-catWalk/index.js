@@ -27,17 +27,17 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 const cat = document.querySelector('img');
 const catStyle = cat.style;
 let catLeft = 0;
+const width = window.innerWidth;
 
 function catWalk() {
+  const catPosition = parseFloat(cat.style.left);
   catLeft += 10;
   catStyle.left = catLeft + 'px';
-  console.log(catStyle);
-  if (catStyle.left === '1200px') {
+  if (catPosition > width - cat.width) {
     catStyle.left = '0px';
     catLeft = 0;
     cat.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
-  }
-  if (catStyle.left === '550px') {
+  } else if (catPosition > (width - cat.width) / 2 && catPosition < width / 2) {
     cat.src =
       'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
     clearInterval(myInterval);
@@ -48,7 +48,6 @@ function catWalk() {
   }
 }
 
-catWalk();
 let myInterval = setInterval(catWalk, 50);
 
 window.addEventListener('DOMContentLoaded', function () {
