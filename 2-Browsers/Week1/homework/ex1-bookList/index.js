@@ -1,3 +1,4 @@
+/*   previous code
 function createBookList(books) {
   const bookList = document.getElementById('bookList');
   const ul = document.createElement('ul');
@@ -22,6 +23,38 @@ function createBookList(books) {
     li.appendChild(bookImage);
     ul.appendChild(li);
   });
+}
+
+function tittleToPath(tittle) {
+  return `./assets/${tittle.toLowerCase().split(' ').join('_')}.jpg`;
+} */
+
+// new code
+
+function createBookList(books) {
+  const ul = document.createElement('ul');
+
+  books.forEach((element) => {
+    const li = document.createElement('li');
+    const p = document.createElement('p');
+    const bookImage = document.createElement('img');
+    bookImage.setAttribute('src', tittleToPath(element.title));
+    if (element.alreadyRead) {
+      li.className = 'alreadyRead';
+    } else {
+      li.className = 'unread';
+    }
+
+    bookImage.alt = element.title;
+
+    p.textContent = element.title + ' ' + element.author;
+
+    li.appendChild(p);
+    li.appendChild(bookImage);
+    ul.appendChild(li);
+  });
+
+  return ul;
 }
 
 function tittleToPath(tittle) {
