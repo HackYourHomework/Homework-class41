@@ -22,3 +22,11 @@ img {
     width:80%;
     height: auto;
 }
+
+.toRead {
+    background-color:Tomato;
+}
+
+.alreadyRead {
+    background-color: LightGreen;
+}

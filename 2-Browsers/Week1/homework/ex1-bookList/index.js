@@ -28,9 +28,9 @@ function createBookList(books) {
   const img = document.createElement('img');
   img.src = `./assets/${book.title.toLowerCase().replaceAll(' ','_')}.jpg`;
   img.alt = book.title;
-  item.append(img);  
-  if (book.alreadyRead) {item.style.backgroundColor = 'LightGreen'}
-  else {item.style.backgroundColor = 'Tomato'};
+  item.append(img);
+  if (book.alreadyRead) {item.classList.add('alreadyRead');}
+  else {item.classList.add('toRead');};
 }
 return list
 }
