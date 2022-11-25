@@ -1,1 +1,14 @@
-/* Write your style here */
+.book-div {
+  width: 310px;
+  height: 400px;
+  padding: 20px;
+
+}
+.book-li {
+  display: inline-block;
+  margin: 50px;
+  width: 310px;
+  height: 400px;
+  vertical-align: middle;
+  text-align: center;
+}

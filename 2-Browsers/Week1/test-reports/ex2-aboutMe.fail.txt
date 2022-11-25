@@ -1,0 +1,4 @@
+
+*** Spell Checker Report ***
+
+ex2-aboutMe/index.js:15:24 - Unknown word (Pelmeni)
