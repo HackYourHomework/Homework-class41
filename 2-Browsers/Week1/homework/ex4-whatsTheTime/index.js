@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   function addNull(number) {
-    return number < 10 ? number.toString().padStart(2, '0') : number; //done with padStart method
+    return number.toString().padStart(2, '0');
   }
 
   const clock = document.createElement('span');
