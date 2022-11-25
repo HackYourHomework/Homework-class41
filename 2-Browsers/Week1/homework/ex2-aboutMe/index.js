@@ -10,7 +10,7 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 document.body.style.fontFamily = 'Arial, sans-serif';
 function fillIn(span, content) {
-  return (document.querySelector(span).textContent = content);
+  document.querySelector(span).textContent = content;
 }
 fillIn('#nickname', 'Ahmad');
 fillIn('#fav-food', 'Pizza');

@@ -3,10 +3,3 @@
   display: inline-block;
   margin-right: 100px;
 }
-#book1,
-#book2 {
-  background-color: green;
-}
-#book0 {
-  background-color: red;
-}
