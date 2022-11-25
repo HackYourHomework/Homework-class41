@@ -30,9 +30,13 @@ const employeeRecords = [
 ];
 
 // ! Function under test
-function filterPrivateData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function filterPrivateData(employees) {
+  const newemployeeRecords = employees.map(({gender, salary, ...keepdata}) => keepdata); //removing gender and salary. keepdata - other parameters to keep
+  //console.log(JSON.stringify(newemployeeRecords));
+  return newemployeeRecords;
 }
+
+
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {
