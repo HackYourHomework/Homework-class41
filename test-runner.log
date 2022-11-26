@@ -1,0 +1,30 @@
+2022-11-22 01:09:58 info: ----------------------------------------
+2022-11-22 01:09:58 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-11-22 01:09:58 info: ----------------------------------------
+2022-11-22 01:10:07 info: All unit tests passed.
+2022-11-22 01:10:14 info: All steps were completed successfully
+2022-11-22 01:10:30 info: ---------------------------------------
+2022-11-22 01:10:30 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2022-11-22 01:10:30 info: ---------------------------------------
+2022-11-22 01:10:38 info: All unit tests passed.
+2022-11-22 01:10:44 info: All steps were completed successfully
+2022-11-22 01:11:00 info: ------------------------------------------
+2022-11-22 01:11:00 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-11-22 01:11:00 info: ------------------------------------------
+2022-11-22 01:11:04 info: All unit tests passed.
+2022-11-22 01:11:09 info: All steps were completed successfully
+2022-11-22 01:11:26 info: --------------------------------------------
+2022-11-22 01:11:26 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 01:11:26 info: --------------------------------------------
+2022-11-22 01:11:36 info: All unit tests passed.
+2022-11-22 01:11:42 info: All steps were completed successfully
+2022-11-22 01:11:57 info: ---------------------------------------
+2022-11-22 01:11:57 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-22 01:11:57 info: ---------------------------------------
+2022-11-22 01:12:04 info: All unit tests passed.
+2022-11-22 01:12:10 info: All steps were completed successfully
+2022-11-22 01:50:05 info: ----------------------------------------
+2022-11-22 01:50:05 info: >>> Running Unit Test `ex1-bookList` <<<
+2022-11-22 01:50:05 info: ----------------------------------------
+2022-11-22 01:50:12 info: All unit tests passed.
+2022-11-22 01:50:17 info: All steps were completed successfully
