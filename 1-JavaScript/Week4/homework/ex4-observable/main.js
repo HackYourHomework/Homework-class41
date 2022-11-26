@@ -12,7 +12,6 @@ function consoleLowerCase(message) {
 
 // Create an observable object
 const observable = createObservable();
-
 // Add three subscribers
 observable.subscribe(console.log);
 observable.subscribe(consoleUpperCase);

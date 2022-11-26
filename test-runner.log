@@ -727,3 +727,18 @@ ex5-wallet/index.js
 2022-11-14 10:38:10 info: --------------------------------------
 2022-11-14 10:38:13 info: All unit tests passed.
 2022-11-14 10:38:17 info: All steps were completed successfully
+2022-11-26 01:37:19 info: ------------------------------------------
+2022-11-26 01:37:19 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-26 01:37:19 info: ------------------------------------------
+2022-11-26 01:37:22 info: All unit tests passed.
+2022-11-26 01:37:26 info: All steps were completed successfully
+2022-11-26 01:50:59 info: ------------------------------------------
+2022-11-26 01:50:59 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-26 01:50:59 info: ------------------------------------------
+2022-11-26 01:51:02 info: All unit tests passed.
+2022-11-26 01:51:06 info: All steps were completed successfully
+2022-11-26 01:51:27 info: ------------------------------------------
+2022-11-26 01:51:27 info: >>> Running Unit Test `ex4-observable` <<<
+2022-11-26 01:51:27 info: ------------------------------------------
+2022-11-26 01:51:29 info: All unit tests passed.
+2022-11-26 01:51:33 info: All steps were completed successfully
