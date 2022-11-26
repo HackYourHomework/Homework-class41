@@ -12,5 +12,27 @@ body {
 h1 {
   text-align: center;
   margin: 50px 0;
-  font-size: 40px;
+  font-size: 50px;
+}
+
+ul {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  list-style: none;
+  display: flex;
+}
+
+li {
+  border: 1.5 px solid;
+  display: inline-block;
+  padding: 30px;
+  margin: 20px 10px;
+  width: 30%;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
