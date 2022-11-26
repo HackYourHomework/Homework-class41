@@ -674,3 +674,21 @@ ex5-catWalk/index.js
 2022-11-23 05:31:05 info: ---------------------------------------
 2022-11-23 05:31:09 info: All unit tests passed.
 2022-11-23 05:31:13 info: All steps were completed successfully
+2022-11-26 05:53:04 info: ----------------------------------------------
+2022-11-26 05:53:04 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-11-26 05:53:04 info: ----------------------------------------------
+2022-11-26 05:53:07 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should take a single parameter
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\husse\HYF\MODULE_2\Homework-class41\test-runner\CustomReporter.js"
+2022-11-26 05:53:23 info: ---------------------------------------
+2022-11-26 05:53:23 info: >>> Running Unit Test `ex5-catWalk` <<<
+2022-11-26 05:53:23 info: ---------------------------------------
+2022-11-26 05:53:27 info: All unit tests passed.
+2022-11-26 05:53:31 info: All steps were completed successfully

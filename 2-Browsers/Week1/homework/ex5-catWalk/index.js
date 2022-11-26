@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-5-the-cat-walk
 
@@ -21,38 +22,39 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
-
-let i = 0;
-
 function catWalk() {
-  const id = setTimeout(catWalk, 50);
-  const img = document.querySelector('img');
+  const catImage = document.querySelector('img');
+  let position = 0;
 
-  i += 10;
-  img.style.left = i + 'px';
+  const halfImage = catImage.width / 2;
 
-  const windowSize = document.body.clientWidth;
-  const halfImage = img.width / 2;
-  if (i > document.body.clientWidth) {
-    i = 0;
+  function positionIncrease() {
+    function changeImageToOriginal() {
+      catImage.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+      positionIncrease();
+    }
+
+    position += 10;
+    catImage.style.left = position + 'px';
+
+    if (position >= window.innerWidth) {
+      position = 0;
+    }
+
+    if (
+      position + halfImage > window.innerWidth / 2 - 10 &&
+      position + halfImage < window.innerWidth / 2 + 10
+    ) {
+      position += 10;
+      catImage.src =
+        'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+
+      setTimeout(changeImageToOriginal, 3000);
+    } else {
+      setTimeout(positionIncrease, 50);
+    }
   }
-
-  if (i + halfImage > windowSize / 2 && i < windowSize / 2) {
-    clear();
-  }
-
-  function clear() {
-    clearTimeout(id);
-    img.src =
-      'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
-    setTimeout(originalPic, 3000);
-  }
-
-  function originalPic() {
-    img.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
-    i = i + halfImage;
-    setTimeout(catWalk, 50);
-  }
+  positionIncrease();
 }
 
 window.onload = function () {
