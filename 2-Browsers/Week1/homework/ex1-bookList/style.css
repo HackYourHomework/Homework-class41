@@ -1,1 +1,26 @@
 /* Write your style here */
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li {
+    width: calc(25% - 51px);
+    margin: 15px;
+    padding: 10px;
+    min-width: 350px;
+}
+
+img {
+    width: 200px;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}

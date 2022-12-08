@@ -9,4 +9,12 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 3. Look in the css file!
 ------------------------------------------------------------------------------*/
 
-// TODO add your JavaScript code here.
+const myName = document.querySelector('#nickname');
+myName.textContent = 'Alex';
+const myFavoriteFood = document.querySelector('#fav-food');
+myFavoriteFood.textContent = 'pizza';
+const myHometown = document.querySelector('#hometown');
+myHometown.textContent = 'Yaroslavl';
+const allLiItems = document.querySelectorAll('li');
+allLiItems.forEach((item) => item.classList.add('list-item'));
+document.body.style.fontFamily = 'Arial, sans-serif'; //without this I can't pass the test even when the font is specified in the css file
