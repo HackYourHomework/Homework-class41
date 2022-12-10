@@ -1,0 +1,177 @@
+2022-12-10 02:18:12 info: ---------------------------------------
+2022-12-10 02:18:12 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-10 02:18:12 info: ---------------------------------------
+2022-12-10 02:18:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (2 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    √ should call `new Promise()`
+    × should take a single argument (3 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument
+    × should resolve when called with a string argument (2 ms)
+    √ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● getAnonName › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      58 |
+      59 |   test('should take a single argument', () => {
+    > 60 |     expect(state.paramCount).toBe(1);
+         |                              ^
+      61 |   });
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:60:30)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [TypeError: callback is not a function]
+
+      78 |     timeoutSpy.mockRestore();
+      79 |     expect(promise).toBeInstanceOf(Promise);
+    > 80 |     return expect(promise).resolves.toEqual('John Doe');
+         |            ^
+      81 |   });
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+
+      at expect (node_modules/expect/build/index.js:128:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:80:12)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+    > 72 |     expect.assertions(3);
+         |            ^
+      73 |     expect(exported).toBeDefined();
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:72:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 6 passed, 9 total
+Snapshots:   0 total
+Time:        1.72 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-12-10 02:18:35 error: *** Spell Checker Report ***
+
+
+2022-12-10 02:31:27 info: ---------------------------------------
+2022-12-10 02:31:27 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-10 02:31:27 info: ---------------------------------------
+2022-12-10 02:31:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    √ should exist and be executable (7 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ `getAnonName` should not contain unneeded console.log calls (3 ms)
+    √ should call `new Promise()` (1 ms)
+    × should take a single argument (11 ms)
+    √ `resolve()` should be called with a one argument (1 ms)
+    √ `reject()` should be called with a one argument (2 ms)
+    × should resolve when called with a string argument (9 ms)
+    √ should reject with an Error object when called without an argument (4 ms)
+
+  ● getAnonName › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      58 |
+      59 |   test('should take a single argument', () => {
+    > 60 |     expect(state.paramCount).toBe(1);
+         |                              ^
+      61 |   });
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:60:30)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [TypeError: callback is not a function]
+
+      78 |     timeoutSpy.mockRestore();
+      79 |     expect(promise).toBeInstanceOf(Promise);
+    > 80 |     return expect(promise).resolves.toEqual('John Doe');
+         |            ^
+      81 |   });
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+
+      at expect (node_modules/expect/build/index.js:128:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:80:12)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+    > 72 |     expect.assertions(3);
+         |            ^
+      73 |     expect(exported).toBeDefined();
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:72:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 7 passed, 9 total
+Snapshots:   0 total
+Time:        2.91 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-12-10 02:31:51 error: *** Spell Checker Report ***
+
+
+2022-12-10 02:34:21 info: ---------------------------------------
+2022-12-10 02:34:21 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-10 02:34:21 info: ---------------------------------------
+2022-12-10 02:34:30 info: All unit tests passed.
+2022-12-10 02:34:41 error: *** Spell Checker Report ***
+
+
