@@ -1,1 +1,20 @@
-/* Write your style here */
+.cover {
+  background-size: contain;
+  display: block;
+  height: 499px;
+}
+
+#cover-978-0465050659 {
+  background: no-repeat center url('./assets/the_design_of_everyday_things.jpg');
+  width: 328px;
+}
+
+#cover-978-1617933431 {
+  background: no-repeat center url('./assets/the_most_human_human.jpg');
+  width: 328px;
+}
+
+#cover-978-0201616224 {
+  background: no-repeat center url('./assets/the_pragmatic_programmer.jpg');
+  width: 382px;
+}

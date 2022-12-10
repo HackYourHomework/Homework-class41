@@ -18,12 +18,6 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 //cspell: enable
 
 function createBookList(books) {
-  const COVERS = {
-    '978-0465050659': './assets/the_design_of_everyday_things.jpg',
-    '978-1617933431': './assets/the_most_human_human.jpg',
-    '978-0201616224': './assets/the_pragmatic_programmer.jpg',
-  };
-
   const ul = document.createElement('ul');
   ul.style.display = 'flex';
   ul.style.flexWrap = 'wrap';
@@ -34,9 +28,9 @@ function createBookList(books) {
     const p = document.createElement('p');
     p.textContent = book.title + ' - ' + book.author;
     li.appendChild(p);
-    const cover = document.createElement('img');
-    cover.setAttribute('src', COVERS[book.isbn]);
-    cover.setAttribute('alt', book.title + ' cover');
+    const cover = document.createElement('div');
+    cover.id = 'cover-' + book.isbn;
+    cover.classList.add('cover');
     li.appendChild(cover);
     li.style.backgroundColor = book.alreadyRead ? 'green' : 'red';
     li.style.padding = '10px';
