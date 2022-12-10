@@ -457,3 +457,132 @@ npm notice
 2022-11-15 12:45:28 info: -------------------------------------------------
 2022-11-15 12:45:33 info: All unit tests passed.
 2022-11-15 12:45:39 info: All steps were completed successfully
+2022-12-10 05:41:03 info: -------------------------------------------------
+2022-12-10 05:41:03 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-12-10 05:41:03 info: -------------------------------------------------
+2022-12-10 05:41:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (2 ms)
+    ✕ should compute the earnings as a formatted Euro amount (7 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€188.00"
+
+      57 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      58 |     const expected = '€187.50';
+    > 59 |     expect(result).toBe(expected);
+         |                    ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:59:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.379 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+npm notice 
+npm notice New major version of npm available! 8.15.0 -> 9.2.0
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v9.2.0>
+npm notice Run `npm install -g npm@9.2.0` to update!
+npm notice
+2022-12-10 05:42:19 info: -------------------------------------------------
+2022-12-10 05:42:19 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-12-10 05:42:19 info: -------------------------------------------------
+2022-12-10 05:42:21 info: All unit tests passed.
+2022-12-10 05:42:25 info: All steps were completed successfully
+2022-12-10 05:44:49 info: -------------------------------------------------
+2022-12-10 05:44:49 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-12-10 05:44:49 info: -------------------------------------------------
+2022-12-10 05:44:51 info: All unit tests passed.
+2022-12-10 05:44:54 info: All steps were completed successfully
+2022-12-10 05:46:34 info: -------------------------------------------------
+2022-12-10 05:46:34 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-12-10 05:46:34 info: -------------------------------------------------
+2022-12-10 05:46:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (6 ms)
+    ✕ should compute the earnings as a formatted Euro amount (8 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€182.50"
+
+      55 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      56 |     const expected = '€187.50';
+    > 57 |     expect(result).toBe(expected);
+         |                    ^
+      58 |   });
+      59 | });
+      60 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:57:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.394 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+npm notice 
+npm notice New major version of npm available! 8.15.0 -> 9.2.0
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v9.2.0>
+npm notice Run `npm install -g npm@9.2.0` to update!
+npm notice
+2022-12-10 05:48:04 info: -------------------------------------------------
+2022-12-10 05:48:04 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-12-10 05:48:04 info: -------------------------------------------------
+2022-12-10 05:48:08 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (3 ms)
+    ✕ should compute the earnings as a formatted Euro amount (6 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€175.13"
+
+      55 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      56 |     const expected = '€187.50';
+    > 57 |     expect(result).toBe(expected);
+         |                    ^
+      58 |   });
+      59 | });
+      60 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:57:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        1.154 s, estimated 2 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+npm notice 
+npm notice New major version of npm available! 8.15.0 -> 9.2.0
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v9.2.0>
+npm notice Run `npm install -g npm@9.2.0` to update!
+npm notice
+2022-12-10 05:48:37 info: -------------------------------------------------
+2022-12-10 05:48:37 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-12-10 05:48:37 info: -------------------------------------------------
+2022-12-10 05:48:43 info: All unit tests passed.
+2022-12-10 05:48:53 info: All steps were completed successfully
