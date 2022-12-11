@@ -3,3 +3,13 @@
 2022-12-11 04:26:32 info: ---------------------------------------
 2022-12-11 04:26:40 info: All unit tests passed.
 2022-12-11 04:26:48 info: All steps were completed successfully
+2022-12-11 04:41:08 info: -------------------------------------------------
+2022-12-11 04:41:08 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-12-11 04:41:08 info: -------------------------------------------------
+2022-12-11 04:41:13 info: All unit tests passed.
+2022-12-11 04:41:22 info: All steps were completed successfully
+2022-12-11 04:41:59 info: -------------------------------------------------
+2022-12-11 04:41:59 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-12-11 04:41:59 info: -------------------------------------------------
+2022-12-11 04:42:02 info: All unit tests passed.
+2022-12-11 04:42:06 info: All steps were completed successfully
