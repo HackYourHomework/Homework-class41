@@ -1,15 +1,4 @@
 'use strict';
-/*------------------------------------------------------------------------------
-Full description at: https://github.com/HackYourFuture/Homework/tree/main/3-UsingAPIs/Week1#exercise-3-roll-a-die
-
-- Run the unmodified program and confirm that problem described occurs.
-- Refactor the `rollDie()` function from callback-based to returning a
-  promise.
-- Change the calls to `callback()` to calls to `resolve()` and `reject()`.
-- Refactor the code that call `rollDie()` to use the promise it returns.
-- Does the problem described above still occur? If not, what would be your
-  explanation? Add your answer as a comment to be bottom of the file.
-------------------------------------------------------------------------------*/
 
 function rollDie() {
   return new Promise((resolve, reject) => {
@@ -50,6 +39,19 @@ function main() {
     })
     .catch((error) => console.log(error));
 }
+
+/*
+
+No successful callback happens if an error has been thrown 
+by rollOnce function. Supposedly, more than one callback 
+are possible and both an error and a result may be returned. 
+Promises allow us to handle all the errors inside a Promise block 
+with a single catch block attached at the end. Only one state
+is possible: pending, resolved (fulfilled), or rejected.
+In the case of a state reject, there is nothing else is returned
+by a Promise.
+
+*/
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
