@@ -207,3 +207,8 @@ npm notice
 2022-12-11 05:04:55 info: ---------------------------------------
 2022-12-11 05:05:00 info: All unit tests passed.
 2022-12-11 05:05:08 info: All steps were completed successfully
+2022-12-11 05:22:02 info: --------------------------------------------
+2022-12-11 05:22:02 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-12-11 05:22:02 info: --------------------------------------------
+2022-12-11 05:22:07 info: All unit tests passed.
+2022-12-11 05:22:15 info: All steps were completed successfully
