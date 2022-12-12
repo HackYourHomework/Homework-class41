@@ -27,9 +27,13 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+
+  const promises = dice.map((prom) => {
+    return rollDie(prom);
+  });
+
+  return Promise.all(promises);
 }
 
 function main() {
@@ -43,3 +47,4 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+// This is why we are using promises that makes our code 'asynchronous'
