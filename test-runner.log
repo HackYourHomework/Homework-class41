@@ -968,3 +968,17 @@ Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
 2022-12-12 02:32:52 info: -------------------------------------------------
 2022-12-12 02:32:54 info: All unit tests passed.
 2022-12-12 02:32:57 info: All steps were completed successfully
+2022-12-12 04:25:46 info: ---------------------------------------
+2022-12-12 04:25:46 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-12 04:25:46 info: ---------------------------------------
+2022-12-12 04:25:49 info: All unit tests passed.
+2022-12-12 04:25:52 info: All steps were completed successfully
+2022-12-12 05:04:05 info: ---------------------------------------
+2022-12-12 05:04:05 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-12 05:04:05 info: ---------------------------------------
+2022-12-12 05:04:07 info: All unit tests passed.
+2022-12-12 05:04:11 error: *** Spell Checker Report ***
+
+ex3-rollDie.js:67:27 - Unknown word (husse)
+ex3-rollDie.js:68:37 - Unknown word (husse)
+
