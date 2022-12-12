@@ -27,9 +27,19 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  return new Promise((resolve,reject) => {
+    const dicePromise = dice.map((side) => {
+      return rollDie(side);
+  });
+  Promise.all(dicePromise)
+      .then((results) => {
+        resolve(results);
+    })
+    .catch((error) => {
+      reject(error);
+  });
+});
 }
 
 function main() {
@@ -43,3 +53,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+//I think messages displayed in the order they placed in Microtask Queue and then in Call Stack. I'd put /*throw error;*/ to stop the process, but my tests are filing with it.
