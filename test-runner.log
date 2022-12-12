@@ -212,3 +212,13 @@ Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
 2022-12-10 04:34:30 info: -------------------------------------------------
 2022-12-10 04:34:31 info: All unit tests passed.
 2022-12-10 04:34:32 info: All steps were completed successfully
+2022-12-12 02:45:12 info: ---------------------------------------
+2022-12-12 02:45:12 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-12 02:45:12 info: ---------------------------------------
+2022-12-12 02:45:13 info: All unit tests passed.
+2022-12-12 02:45:14 info: All steps were completed successfully
+2022-12-12 02:53:29 info: ---------------------------------------
+2022-12-12 02:53:29 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-12 02:53:29 info: ---------------------------------------
+2022-12-12 02:53:30 info: All unit tests passed.
+2022-12-12 02:53:31 info: All steps were completed successfully
