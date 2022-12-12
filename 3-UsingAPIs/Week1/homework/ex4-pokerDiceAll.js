@@ -27,9 +27,9 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const diceRes = dice.map((die) => rollDie(die));
+  return Promise.all(diceRes);
 }
 
 function main() {
@@ -43,3 +43,9 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/*------------------------------------------------------------------------------
+In the map method, the function "rollDie" is called 5 times, 
+and since the called function is asynchronous, 5 processes occur simultaneously. 
+Even if one of them is rejected, the rest are reaches the end.
+------------------------------------------------------------------------------*/
