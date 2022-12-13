@@ -405,3 +405,31 @@ Ran all test suites matching /ex3-rollDie.test.js/i.
 2022-12-13 05:19:56 error: *** Spell Checker Report ***
 
 
+2022-12-13 10:12:59 info: ---------------------------------------
+2022-12-13 10:12:59 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-13 10:12:59 info: ---------------------------------------
+2022-12-13 10:13:10 info: All unit tests passed.
+2022-12-13 10:13:20 error: *** Spell Checker Report ***
+
+
+2022-12-13 10:42:32 info: --------------------------------------------
+2022-12-13 10:42:32 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-12-13 10:42:32 info: --------------------------------------------
+2022-12-13 10:42:42 info: All unit tests passed.
+2022-12-13 10:42:55 error: *** Spell Checker Report ***
+
+
+2022-12-13 10:49:20 info: --------------------------------------------
+2022-12-13 10:49:20 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-12-13 10:49:20 info: --------------------------------------------
+2022-12-13 10:49:30 info: All unit tests passed.
+2022-12-13 10:49:43 error: *** Spell Checker Report ***
+
+
+2022-12-13 10:56:46 info: ----------------------------------------------
+2022-12-13 10:56:46 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-12-13 10:56:46 info: ----------------------------------------------
+2022-12-13 10:56:56 info: All unit tests passed.
+2022-12-13 10:57:08 error: *** Spell Checker Report ***
+
+

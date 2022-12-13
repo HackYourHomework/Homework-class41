@@ -15,31 +15,20 @@ function rollDie() {
   const randomRollsToDo = Math.floor(Math.random() * 8) + 3;
   console.log(`Die scheduled for ${randomRollsToDo} rolls...`);
 
-  function spinningDice(rollNumber) {
-    const value = Math.floor(Math.random() * 6) + 1;
-    if (randomRollsToDo === rollNumber) {
+  return new Promise(function (resolve, reject) {
+    for (let i = 0; i <= randomRollsToDo; i++) {
+      const value = Math.floor(Math.random() * 6) + 1;
       console.log(`Die value is now: ${value}`);
-      return value;
-    }
-    if (rollNumber < 7) {
-      console.log(`Die value is now: ${value}`);
-    }
-    if (rollNumber > 6) {
-      console.log(`more then 6`);
-      return 'false';
-    }
-    return spinningDice(rollNumber++);
-  }
-  const diceRoller = new Promise(function (resolve, reject) {
-    const result = spinningDice(1);
-    console.log(result);
-    if (result !== 'fail') {
-      resolve(result);
-    } else {
-      reject(new Error('Oops... Die rolled off the table.'));
+      if (i === randomRollsToDo - 1) {
+        resolve(value);
+        return;
+      }
+      if (i === 5) {
+        reject(new Error('Oops... Die rolled off the table.'));
+        return;
+      }
     }
   });
-  return diceRoller;
 }
 
 function main() {
