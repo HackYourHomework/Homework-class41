@@ -46,3 +46,11 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/* You may also notice that, in the case of a rejected promise, dice that have not yet finished their roll continue to do so.
+Can you explain why? Please add your answer as a comment to the end of the exercise file.
+
+This is happening because the die did not settle down yet to the final result; even if the test has been rejected, the code will continue
+to execute after throwing the error message.
+
+*/
