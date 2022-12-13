@@ -1,0 +1,268 @@
+2022-12-12 02:17:21 info: ---------------------------------------
+2022-12-12 02:17:21 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-12 02:17:21 info: ---------------------------------------
+2022-12-12 02:17:24 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (2 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    ✓ should call `new Promise()`
+    ✕ should take a single argument (1 ms)
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument
+    ✕ should resolve when called with a string argument (1 ms)
+    ✓ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● getAnonName › should take a single argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      58 |
+      59 |   test('should take a single argument', () => {
+    > 60 |     expect(state.paramCount).toBe(1);
+         |                              ^
+      61 |   });
+      62 |
+      63 |   test('`resolve()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:60:30)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [TypeError: callback is not a function]
+
+      78 |     timeoutSpy.mockRestore();
+      79 |     expect(promise).toBeInstanceOf(Promise);
+    > 80 |     return expect(promise).resolves.toEqual('John Doe');
+         |            ^
+      81 |   });
+      82 |
+      83 |   test('should reject with an Error object when called without an argument', async () => {
+
+      at expect (node_modules/expect/build/index.js:105:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:80:12)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      70 |
+      71 |   test('should resolve when called with a string argument', async () => {
+    > 72 |     expect.assertions(3);
+         |            ^
+      73 |     expect(exported).toBeDefined();
+      74 |     const timeoutSpy = jest
+      75 |       .spyOn(global, 'setTimeout')
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:72:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 6 passed, 9 total
+Snapshots:   0 total
+Time:        0.688 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-12-12 02:18:26 info: -------------------------------------------------
+2022-12-12 02:18:26 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-12-12 02:18:26 info: -------------------------------------------------
+2022-12-12 02:18:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed
+    ✓ `checkDoubleDigits` should not contain unneeded console.log calls
+    ✓ should call new Promise() (1 ms)
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should be a function that takes a single argument
+    ✓ (9) should return a rejected promise with an Error object (1 ms)
+    ✕ (10) should return a promise that resolves to "This is a double digit number!" (3 ms)
+    ✕ (99) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    ✓ (100) should return a rejected promise with an Error object
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual(expected) // deep equality
+
+    Expected: StringContaining "This is a double digit number!"
+    Received: "10 is a double digit number!"
+
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+    > 75 |     return expect(promise).resolves.toEqual(
+         |                                     ^
+      76 |       expect.stringContaining('This is a double digit number!')
+      77 |     );
+      78 |   });
+
+      at Object.toEqual (node_modules/expect/build/index.js:166:22)
+      at Object.toEqual (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:75:37)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual(expected) // deep equality
+
+    Expected: StringContaining "This is a double digit number!"
+    Received: "99 is a double digit number!"
+
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+    > 84 |     return expect(promise).resolves.toEqual(
+         |                                     ^
+      85 |       expect.stringContaining('This is a double digit number!')
+      86 |     );
+      87 |   });
+
+      at Object.toEqual (node_modules/expect/build/index.js:166:22)
+      at Object.toEqual (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:84:37)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        0.544 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2022-12-12 02:19:40 info: -------------------------------------------------
+2022-12-12 02:19:40 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-12-12 02:19:40 info: -------------------------------------------------
+2022-12-12 02:19:42 info: All unit tests passed.
+2022-12-12 02:19:44 info: All steps were completed successfully
+2022-12-12 02:19:57 info: -------------------------------------------------
+2022-12-12 02:19:57 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-12-12 02:19:57 info: -------------------------------------------------
+2022-12-12 02:19:58 info: All unit tests passed.
+2022-12-12 02:20:01 info: All steps were completed successfully
+2022-12-13 02:47:24 info: ---------------------------------------
+2022-12-13 02:47:24 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-13 02:47:24 info: ---------------------------------------
+2022-12-13 02:47:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    ✓ should exist and be executable (2 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should call `new Promise()`
+    ✕ `resolve()` should be called with a one argument (1 ms)
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when the die settles successfully (1 ms)
+    ✓ should reject with an Error when the die rolls off the table (2 ms)
+
+  ● rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● rollDie › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      42 |
+      43 |   test('`resolve()` should be called with a one argument', () => {
+    > 44 |     expect(state.resolve).toBe(1);
+         |                           ^
+      45 |   });
+      46 |
+      47 |   test('`reject()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:44:27)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.656 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2022-12-13 02:49:17 info: ---------------------------------------
+2022-12-13 02:49:17 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-13 02:49:17 info: ---------------------------------------
+2022-12-13 02:49:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    ✓ should exist and be executable (1 ms)
+    ✓ should have all TODO comments removed
+    ✓ should call `new Promise()`
+    ✕ `resolve()` should be called with a one argument (2 ms)
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when the die settles successfully (2 ms)
+    ✓ should reject with an Error when the die rolls off the table (1 ms)
+
+  ● rollDie › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      42 |
+      43 |   test('`resolve()` should be called with a one argument', () => {
+    > 44 |     expect(state.resolve).toBe(1);
+         |                           ^
+      45 |   });
+      46 |
+      47 |   test('`reject()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:44:27)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.507 s, estimated 1 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2022-12-13 02:53:23 info: ---------------------------------------
+2022-12-13 02:53:23 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-13 02:53:23 info: ---------------------------------------
+2022-12-13 02:53:25 info: All unit tests passed.
+2022-12-13 02:53:28 info: All steps were completed successfully
+2022-12-13 10:21:59 info: --------------------------------------------
+2022-12-13 10:21:59 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-12-13 10:21:59 info: --------------------------------------------
+2022-12-13 10:22:02 info: All unit tests passed.
+2022-12-13 10:22:05 info: All steps were completed successfully
+2022-12-13 10:35:51 info: ----------------------------------------------
+2022-12-13 10:35:51 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-12-13 10:35:51 info: ----------------------------------------------
+2022-12-13 10:35:53 info: All unit tests passed.
+2022-12-13 10:35:57 info: All steps were completed successfully
