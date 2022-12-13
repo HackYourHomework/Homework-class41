@@ -159,3 +159,100 @@ Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
 2022-12-12 02:19:57 info: -------------------------------------------------
 2022-12-12 02:19:58 info: All unit tests passed.
 2022-12-12 02:20:01 info: All steps were completed successfully
+2022-12-13 02:47:24 info: ---------------------------------------
+2022-12-13 02:47:24 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-13 02:47:24 info: ---------------------------------------
+2022-12-13 02:47:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    ✓ should exist and be executable (2 ms)
+    ✕ should have all TODO comments removed (1 ms)
+    ✓ should call `new Promise()`
+    ✕ `resolve()` should be called with a one argument (1 ms)
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when the die settles successfully (1 ms)
+    ✓ should reject with an Error when the die rolls off the table (2 ms)
+
+  ● rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● rollDie › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      42 |
+      43 |   test('`resolve()` should be called with a one argument', () => {
+    > 44 |     expect(state.resolve).toBe(1);
+         |                           ^
+      45 |   });
+      46 |
+      47 |   test('`reject()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:44:27)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        0.656 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2022-12-13 02:49:17 info: ---------------------------------------
+2022-12-13 02:49:17 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-13 02:49:17 info: ---------------------------------------
+2022-12-13 02:49:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    ✓ should exist and be executable (1 ms)
+    ✓ should have all TODO comments removed
+    ✓ should call `new Promise()`
+    ✕ `resolve()` should be called with a one argument (2 ms)
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when the die settles successfully (2 ms)
+    ✓ should reject with an Error when the die rolls off the table (1 ms)
+
+  ● rollDie › `resolve()` should be called with a one argument
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 2
+
+      42 |
+      43 |   test('`resolve()` should be called with a one argument', () => {
+    > 44 |     expect(state.resolve).toBe(1);
+         |                           ^
+      45 |   });
+      46 |
+      47 |   test('`reject()` should be called with a one argument', () => {
+
+      at Object.toBe (3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js:44:27)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.507 s, estimated 1 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+2022-12-13 02:53:23 info: ---------------------------------------
+2022-12-13 02:53:23 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-13 02:53:23 info: ---------------------------------------
+2022-12-13 02:53:25 info: All unit tests passed.
+2022-12-13 02:53:28 info: All steps were completed successfully
