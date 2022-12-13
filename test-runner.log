@@ -2317,3 +2317,48 @@ Error: Die 1 rolled off the table.
 2022-12-12 01:40:19 info: --------------------------------------------
 2022-12-12 01:40:21 info: All unit tests passed.
 2022-12-12 01:40:26 info: All steps were completed successfully
+2022-12-12 01:44:30 info: ----------------------------------------------
+2022-12-12 01:44:30 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-12-12 01:44:30 info: ----------------------------------------------
+2022-12-12 01:44:33 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    ✓ should exist and be executable (2 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ `rollDice` should not contain unneeded console.log calls (1 ms)
+    ✓ should resolve when all dice settle successfully (21 ms)
+    ✓ should reject with an Error when a die rolls off the table (28 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        0.677 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+2022-12-12 01:44:46 info: ----------------------------------------------
+2022-12-12 01:44:46 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-12-12 01:44:46 info: ----------------------------------------------
+2022-12-12 01:44:48 info: All unit tests passed.
+2022-12-12 01:44:52 info: All steps were completed successfully
+2022-12-12 06:06:30 info: ---------------------------------------
+2022-12-12 06:06:30 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-12 06:06:30 info: ---------------------------------------
+2022-12-12 06:06:36 info: All unit tests passed.
+2022-12-12 06:06:50 info: All steps were completed successfully
