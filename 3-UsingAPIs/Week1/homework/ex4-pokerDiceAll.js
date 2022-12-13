@@ -51,6 +51,7 @@ module.exports = rollDice;
 Can you explain why? Please add your answer as a comment to the end of the exercise file.
 
 This is happening because the die did not settle down yet to the final result; even if the test has been rejected, the code will continue
-to execute after throwing the error message.
+to execute after throwing the error message because we didn't chain the .catch to anything >> in order to do something after the rejected promise
+we have to chain it to a new promise.
 
 */
