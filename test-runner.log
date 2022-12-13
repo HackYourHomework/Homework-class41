@@ -256,3 +256,8 @@ Ran all test suites matching /ex3-rollDie.test.js/i.
 2022-12-13 02:53:23 info: ---------------------------------------
 2022-12-13 02:53:25 info: All unit tests passed.
 2022-12-13 02:53:28 info: All steps were completed successfully
+2022-12-13 10:21:59 info: --------------------------------------------
+2022-12-13 10:21:59 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-12-13 10:21:59 info: --------------------------------------------
+2022-12-13 10:22:02 info: All unit tests passed.
+2022-12-13 10:22:05 info: All steps were completed successfully
