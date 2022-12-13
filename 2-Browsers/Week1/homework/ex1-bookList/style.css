@@ -1,1 +1,22 @@
 /* Write your style here */
+.ul-style {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.li-style {
+  text-align: center;
+}
+
+.img-style {
+  width: 50%;
+}
+
+.book-read {
+  background-color: green;
+}
+
+.book-not-read {
+  background-color: red;
+}

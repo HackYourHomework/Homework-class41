@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-5-the-cat-walk
 
@@ -22,7 +23,40 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 function catWalk() {
-  // TODO complete this function
+  const catImage = document.querySelector('img');
+  let position = 0;
+
+  const halfImage = catImage.width / 2;
+
+  function positionIncrease() {
+    function changeImageToOriginal() {
+      catImage.src = 'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+      positionIncrease();
+    }
+
+    position += 10;
+    catImage.style.left = position + 'px';
+
+    if (position >= window.innerWidth) {
+      position = 0;
+    }
+
+    if (
+      position + halfImage > window.innerWidth / 2 - 10 &&
+      position + halfImage < window.innerWidth / 2 + 10
+    ) {
+      position += 10;
+      catImage.src =
+        'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+
+      setTimeout(changeImageToOriginal, 3000);
+    } else {
+      setTimeout(positionIncrease, 50);
+    }
+  }
+  positionIncrease();
 }
 
-// TODO execute `catWalk` when the browser has completed loading the page
+window.onload = function () {
+  catWalk();
+};
