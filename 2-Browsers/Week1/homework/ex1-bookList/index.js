@@ -31,7 +31,7 @@ function createBookList(books) {
 
      const bookImage = document.createElement('img');
      bookItem.appendChild(bookImage);
-     bookImage.src = "./assets";  
+     bookImage.src = 'assets/' + book.title.split(' ').join('_').toLowerCase() + '.jpg';
      bookItem.style.background = book.alreadyRead ? 'green' : 'red';
       
 } ) 
