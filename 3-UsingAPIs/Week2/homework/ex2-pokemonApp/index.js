@@ -22,18 +22,61 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function fetchAndPopulatePokemons(data) {
+  const selectList = document.querySelector('.select');
+  const { results } = data;
+
+  results.forEach((result) => {
+    const option = document.createElement('option');
+    option.value = result.url;
+    option.text = result.name;
+
+    selectList.appendChild(option);
+  });
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(url) {
+  const imageDiv = document.querySelector('.image-div');
+  imageDiv.textContent = '';
+
+  const data = await fetchData(url);
+
+  const {
+    sprites: {
+      other: {
+        dream_world: { front_default: imagUrl },
+      },
+    },
+  } = data;
+
+  const image = document.createElement('img');
+  image.src = imagUrl;
+  imageDiv.appendChild(image);
 }
 
-function main() {
-  // TODO complete this function
+async function main() {
+  const selectList = document.querySelector('.select');
+  const btn = document.querySelector('.btn');
+
+  const data = await fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
+
+  btn.addEventListener('click', async () => {
+    fetchAndPopulatePokemons(data);
+    selectList.onchange = (e) => {
+      fetchImage(e.target.value);
+    };
+  });
 }
+
+window.addEventListener('load', main);
