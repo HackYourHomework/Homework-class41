@@ -1,0 +1,1034 @@
+2022-12-15 01:37:01 info: ---------------------------------------------
+2022-12-15 01:37:01 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-15 01:37:01 info: ---------------------------------------------
+2022-12-15 01:37:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js (18.96 s)
+  programmerFun
+    × HTML should be syntactically valid (767 ms)
+    × should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use async/wait (1 ms)
+    × should use try/catch (1 ms)
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● programmerFun › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use try/catch', () => {
+    > 59 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:59:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 2 passed, 5 total
+Snapshots:   0 total
+Time:        19.895 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-15 01:37:50 error: *** Spell Checker Report ***
+
+
+2022-12-15 01:38:57 info: ---------------------------------------------
+2022-12-15 01:38:57 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-15 01:38:57 info: ---------------------------------------------
+2022-12-15 01:39:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    × HTML should be syntactically valid (201 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.203 s, estimated 19 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-15 01:39:10 error: *** Spell Checker Report ***
+
+
+2022-12-15 01:42:14 info: ---------------------------------------------
+2022-12-15 01:42:14 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-15 01:42:14 info: ---------------------------------------------
+2022-12-15 01:42:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    × HTML should be syntactically valid (191 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()`
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.24 s, estimated 5 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-15 01:42:27 error: *** Spell Checker Report ***
+
+
+2022-12-15 01:43:33 info: ---------------------------------------------
+2022-12-15 01:43:33 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-15 01:43:33 info: ---------------------------------------------
+2022-12-15 01:43:40 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    × HTML should be syntactically valid (184 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.135 s, estimated 5 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-15 01:43:45 error: *** Spell Checker Report ***
+
+
+2022-12-15 03:19:53 info: ------------------------------------------
+2022-12-15 03:19:53 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-15 03:19:53 info: ------------------------------------------
+2022-12-15 03:20:34 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (25.042 s)
+  pokemonApp
+    × HTML should be syntactically valid (514 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()` (1 ms)
+    × should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      9:6  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        25.951 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-15 03:20:55 error: *** Spell Checker Report ***
+
+
+2022-12-15 03:22:41 info: ------------------------------------------
+2022-12-15 03:22:41 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-15 03:22:41 info: ------------------------------------------
+2022-12-15 03:22:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (7.858 s)
+  pokemonApp
+    × HTML should be syntactically valid (478 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ should use `fetch()` (3 ms)
+    √ should use `await fetch()` (2 ms)
+    √ should use try/catch (2 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      9:6  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        8.313 s, estimated 26 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-15 03:23:05 error: *** Spell Checker Report ***
+
+
+2022-12-15 03:27:06 info: ------------------------------------------
+2022-12-15 03:27:06 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-15 03:27:06 info: ------------------------------------------
+2022-12-15 03:27:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (5.308 s)
+  pokemonApp
+    × HTML should be syntactically valid (298 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      10:6  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.481 s, estimated 8 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-15 03:27:24 error: *** Spell Checker Report ***
+
+
+2022-12-15 03:36:15 info: ------------------------------------------
+2022-12-15 03:36:15 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-15 03:36:15 info: ------------------------------------------
+2022-12-15 03:36:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (5.018 s)
+  pokemonApp
+    × HTML should be syntactically valid (261 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()` (6 ms)
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      9:6  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.289 s, estimated 6 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-15 03:36:32 error: *** Spell Checker Report ***
+
+
+2022-12-15 03:37:06 info: ------------------------------------------
+2022-12-15 03:37:06 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-15 03:37:06 info: ------------------------------------------
+2022-12-15 03:37:16 info: All unit tests passed.
+2022-12-15 03:37:26 error: *** Spell Checker Report ***
+
+
+2022-12-15 03:38:39 info: ---------------------------------------------
+2022-12-15 03:38:39 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-15 03:38:39 info: ---------------------------------------------
+2022-12-15 03:38:50 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js (5.021 s)
+  programmerFun
+    × HTML should be syntactically valid (301 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch (1 ms)
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.374 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-15 03:38:58 error: *** Spell Checker Report ***
+
+
+2022-12-15 03:40:28 info: ---------------------------------------------
+2022-12-15 03:40:28 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-15 03:40:28 info: ---------------------------------------------
+2022-12-15 03:40:39 info: All unit tests passed.
+2022-12-16 08:20:16 info: -----------------------------------------
+2022-12-16 08:20:16 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-16 08:20:16 info: -----------------------------------------
+2022-12-16 08:20:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    × should not include a recursive call (2 ms)
+    √ should use async/wait
+    √ should use try/catch
+    √ should resolve as soon as a die settles on an ACE (109 ms)
+    √ should reject with an Error when a die rolls off the table (105 ms)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        2.956 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-16 08:20:37 error: *** Spell Checker Report ***
+
+
+2022-12-16 08:23:44 info: -----------------------------------------
+2022-12-16 08:23:44 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-16 08:23:44 info: -----------------------------------------
+2022-12-16 08:23:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (2 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (40 ms)
+    × should reject with an Error when a die rolls off the table (10 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: "QUEEN"
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.059 s, estimated 3 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-16 08:23:54 error: *** Spell Checker Report ***
+
+
+2022-12-16 08:25:02 info: -----------------------------------------
+2022-12-16 08:25:02 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-16 08:25:02 info: -----------------------------------------
+2022-12-16 08:25:07 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (4 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (28 ms)
+    × should reject with an Error when a die rolls off the table (9 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: "QUEEN"
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+       97 |
+       98 |   test('should reject with an Error when a die rolls off the table', async () => {
+    >  99 |     expect.assertions(3);
+          |            ^
+      100 |     expect(exported).toBeDefined();
+      101 |
+      102 |     // This sequence is known to cause the die to roll off the table
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:99:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.069 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-16 08:25:12 error: *** Spell Checker Report ***
+
+
+2022-12-16 08:26:08 info: -----------------------------------------
+2022-12-16 08:26:08 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-16 08:26:08 info: -----------------------------------------
+2022-12-16 08:26:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (3 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE (46 ms)
+    √ should reject with an Error when a die rolls off the table (16 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+
+
+      24 |   while (value !== wantedValue) {
+      25 |     value = await rollDie();
+    > 26 |     throw new Error();
+         |           ^
+      27 |   }
+      28 |   return value;
+      29 | }
+
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:26:11)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:91:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.326 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-16 08:26:19 error: *** Spell Checker Report ***
+
+
+2022-12-16 08:26:51 info: -----------------------------------------
+2022-12-16 08:26:51 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-16 08:26:51 info: -----------------------------------------
+2022-12-16 08:26:56 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (3 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (2 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE (83 ms)
+    √ should reject with an Error when a die rolls off the table (92 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+
+
+      24 |   while (value !== wantedValue) {
+      25 |     value = await rollDie();
+    > 26 |     throw new Error();
+         |           ^
+      27 |   }
+      28 |   return value;
+      29 | }
+
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:26:11)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:91:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.239 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-16 08:27:01 error: *** Spell Checker Report ***
+
+
+2022-12-16 08:27:50 info: -----------------------------------------
+2022-12-16 08:27:50 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-16 08:27:50 info: -----------------------------------------
+2022-12-16 08:27:55 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+Exception in PromiseRejectCallback:
+D:\web development\Homework-class41\3-UsingAPIs\Week2\homework\ex3-rollAnAce.js:30
+  return value;
+
+RangeError: Maximum call stack size exceeded
+Exception in PromiseRejectCallback:
+D:\web development\Homework-class41\3-UsingAPIs\Week2\homework\ex3-rollAnAce.js:26
+    value = await rollDieUntil(wantedValue);
+                  ^
+
+RangeError: Maximum call stack size exceeded
+Exception in PromiseRejectCallback:
+D:\web development\Homework-class41\3-UsingAPIs\Week2\homework\ex3-rollAnAce.js:30
+  return value;
+
+RangeError: Maximum call stack size exceeded
+Exception in PromiseRejectCallback:
+D:\web development\Homework-class41\3-UsingAPIs\Week2\homework\ex3-rollAnAce.js:26
+    value = await rollDieUntil(wantedValue);
+                  ^
+
+RangeError: Maximum call stack size exceeded
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (4 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    × should not include a recursive call (3 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (63 ms)
+    √ should reject with an Error when a die rolls off the table (10 ms)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      53 |
+      54 |   test('should not include a recursive call', () => {
+    > 55 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      56 |   });
+      57 |
+      58 |   test('should use async/wait', () => {
+
+      at Object.toBeUndefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:55:29)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    RangeError: Maximum call stack size exceeded
+
+      13 | const rollDie = require('../../helpers/pokerDiceRoller');
+      14 |
+    > 15 | async function rollDieUntil(wantedValue) {
+         | ^
+      16 |   // return rollDie().then((value) => {
+      17 |   //   if (value !== wantedValue) {
+      18 |   //     return rollDieUntil(wantedValue);
+
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:15:1)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:25:19)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        1.603 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-16 08:28:00 error: *** Spell Checker Report ***
+
+
+2022-12-16 08:29:20 info: -----------------------------------------
+2022-12-16 08:29:20 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-16 08:29:20 info: -----------------------------------------
+2022-12-16 08:29:24 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    × should resolve as soon as a die settles on an ACE (26 ms)
+    √ should reject with an Error when a die rolls off the table (23 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+
+
+      24 |   while (value !== wantedValue) {
+      25 |     value = await rollDie();
+    > 26 |     throw new Error();
+         |           ^
+      27 |   }
+      28 |   return value;
+      29 | }
+
+      at rollDieUntil (3-UsingAPIs/Week2/homework/ex3-rollAnAce.js:26:11)
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:91:22)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+    > 68 |     expect.assertions(3);
+         |            ^
+      69 |
+      70 |     expect(exported).toBeDefined();
+      71 |
+
+      at Object.assertions (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:68:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        0.878 s, estimated 2 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-16 08:29:29 error: *** Spell Checker Report ***
+
+
+2022-12-16 08:30:27 info: -----------------------------------------
+2022-12-16 08:30:27 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-16 08:30:27 info: -----------------------------------------
+2022-12-16 08:30:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (2 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    √ should not include a recursive call
+    √ should use async/wait (1 ms)
+    √ should use try/catch (1 ms)
+    × should resolve as soon as a die settles on an ACE (96 ms)
+    √ should reject with an Error when a die rolls off the table (105 ms)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "ACE"
+    Received: undefined
+
+      90 |       expect(promise).toBeInstanceOf(Promise);
+      91 |       const result = await promise;
+    > 92 |       expect(result).toBe('ACE');
+         |                      ^
+      93 |     } finally {
+      94 |       randomSpy.mockRestore();
+      95 |     }
+
+      at Object.toBe (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:92:22)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.437 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-16 08:30:37 error: *** Spell Checker Report ***
+
+
+2022-12-16 08:31:59 info: -----------------------------------------
+2022-12-16 08:31:59 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-16 08:31:59 info: -----------------------------------------
+2022-12-16 08:32:03 info: All unit tests passed.
+2022-12-16 08:32:08 error: *** Spell Checker Report ***
+
+
+2022-12-16 08:32:36 info: -----------------------------------------
+2022-12-16 08:32:36 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-16 08:32:36 info: -----------------------------------------
+2022-12-16 08:32:41 info: All unit tests passed.
+2022-12-16 08:32:46 error: *** Spell Checker Report ***
+
+
+2022-12-16 08:40:04 info: ----------------------------------------
+2022-12-16 08:40:04 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-12-16 08:40:04 info: ----------------------------------------
+2022-12-16 08:40:08 info: All unit tests passed.
+2022-12-16 08:40:13 error: *** Spell Checker Report ***
+
+
+2022-12-16 10:28:05 info: ----------------------------------------
+2022-12-16 10:28:05 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-12-16 10:28:05 info: ----------------------------------------
+2022-12-16 10:28:05 warn: A unit test file was not provided.
+2022-12-16 10:28:10 error: *** Spell Checker Report ***
+
+
