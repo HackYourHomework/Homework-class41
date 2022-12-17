@@ -1,7 +1,5 @@
 'use strict';
 
-//const { doc } = require('prettier');
-
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-1-programmer-fun
 
