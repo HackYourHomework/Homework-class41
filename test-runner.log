@@ -1071,3 +1071,236 @@ Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
 2022-12-11 01:42:28 info: ----------------------------------------------
 2022-12-11 01:42:32 info: All unit tests passed.
 2022-12-11 01:42:39 info: All steps were completed successfully
+2022-12-18 11:26:55 info: ---------------------------------------------
+2022-12-18 11:26:55 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-18 11:26:55 info: ---------------------------------------------
+2022-12-18 11:27:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (176 ms)
+    × should have all TODO comments removed (2 ms)
+    × should use `fetch()`
+    × should use async/wait (1 ms)
+    × should use try/catch (1 ms)
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● programmerFun › should use `fetch()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      48 |
+      49 |   test('should use `fetch()`', () => {
+    > 50 |     expect(state.fetch).toBeDefined();
+         |                         ^
+      51 |   });
+      52 |
+      53 |   test('should use async/wait', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:50:25)
+
+  ● programmerFun › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      52 |
+      53 |   test('should use async/wait', () => {
+    > 54 |     expect(state.async).toBeDefined();
+         |                         ^
+      55 |     expect(state.await).toBeDefined();
+      56 |   });
+      57 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:54:25)
+
+  ● programmerFun › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use try/catch', () => {
+    > 59 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:59:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 1 passed, 5 total
+Snapshots:   0 total
+Time:        4.995 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-18 11:27:07 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  20:22  error  'url' is defined but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2022-12-18 11:34:54 info: ---------------------------------------------
+2022-12-18 11:34:54 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-18 11:34:54 info: ---------------------------------------------
+2022-12-18 11:35:01 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (215 ms)
+    × should have all TODO comments removed (2 ms)
+    √ should use `fetch()`
+    √ should use async/wait
+    × should use try/catch (1 ms)
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● programmerFun › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use try/catch', () => {
+    > 59 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:59:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        4.61 s, estimated 5 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-19 12:02:04 info: ---------------------------------------------
+2022-12-19 12:02:04 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-19 12:02:04 info: ---------------------------------------------
+2022-12-19 12:02:11 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (203 ms)
+    × should have all TODO comments removed (2 ms)
+    √ should use `fetch()`
+    √ should use async/wait
+    × should use try/catch
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● programmerFun › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use try/catch', () => {
+    > 59 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:59:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        4.097 s, estimated 5 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-19 12:02:56 info: ---------------------------------------------
+2022-12-19 12:02:56 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-19 12:02:56 info: ---------------------------------------------
+2022-12-19 12:03:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  programmerFun
+    √ HTML should be syntactically valid (168 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use async/wait
+    × should use try/catch (2 ms)
+
+  ● programmerFun › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      57 |
+      58 |   test('should use try/catch', () => {
+    > 59 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      60 |   });
+      61 | });
+      62 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:59:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.94 s, estimated 5 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-19 12:07:05 info: ---------------------------------------------
+2022-12-19 12:07:05 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-19 12:07:05 info: ---------------------------------------------
+2022-12-19 12:07:12 info: All unit tests passed.
+2022-12-19 12:07:18 info: All steps were completed successfully
