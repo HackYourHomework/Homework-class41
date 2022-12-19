@@ -32,9 +32,17 @@ function renderLaureate(ul, { knownName, birth, death, gender }) {
   const li = createAndAppend('li', ul);
   const table = createAndAppend('table', li);
   addTableRow(table, 'Name', knownName.en);
-  addTableRow(table, 'Birth', `${birth.date}, ${birth.place.locationString}`);
+  addTableRow(
+    table,
+    'Birth',
+    `${birth.date}, ${birth.place.locationString.en}`
+  );
   if (death) {
-    addTableRow(table, 'Death', `${death.date}, ${death.place.locationString}`);
+    addTableRow(
+      table,
+      'Death',
+      `${death.date}, ${death.place.locationString.en}`
+    );
   } else {
     let adj = 'him';
     if (gender !== 'male') {
