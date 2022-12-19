@@ -62,3 +62,7 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+
+// when using callbacks it does not throw an error and continue to give a success even after the die fallen of the table, 
+// while with promise it catches the error and not give a success result.
