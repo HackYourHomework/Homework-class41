@@ -12,22 +12,29 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/3-Usin
 ------------------------------------------------------------------------------*/
 
 function rollDie() {
-  const randomRollsToDo = Math.floor(Math.random() * 8) + 3;
-  console.log(`Die scheduled for ${randomRollsToDo} rolls...`);
-
   return new Promise(function (resolve, reject) {
-    for (let i = 0; i <= randomRollsToDo; i++) {
+    // Compute a random number of rolls (3-10) that the die MUST complete
+    const randomRollsToDo = Math.floor(Math.random() * 8) + 3;
+    console.log(`Die scheduled for ${randomRollsToDo} rolls...`);
+
+    const rollOnce = (roll) => {
+      // Compute a random die value for the current roll
       const value = Math.floor(Math.random() * 6) + 1;
       console.log(`Die value is now: ${value}`);
-      if (i === randomRollsToDo - 1) {
-        resolve(value);
-        return;
-      }
-      if (i === 5) {
+
+      if (roll > 6) {
         reject(new Error('Oops... Die rolled off the table.'));
-        return;
       }
-    }
+      // Schedule the next roll todo until no more rolls to do
+      if (roll < randomRollsToDo) {
+        setTimeout(() => rollOnce(roll + 1), 500);
+      } else {
+        resolve(value);
+      }
+    };
+
+    // Start the initial roll
+    rollOnce(1);
   });
 }
 
@@ -41,3 +48,7 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
+
+// The problem is not occur again. Because now we use promise-function. With promise-function first decided promise status is final.
+// Meaning: if it rejected first, after when promise-function continue and provide conditions for resolved status, still, it will never
+// be resolved. vice versa.
