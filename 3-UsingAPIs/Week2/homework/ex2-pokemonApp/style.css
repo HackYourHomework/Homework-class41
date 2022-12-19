@@ -1,11 +1,11 @@
 select {
   width: 120px;
   font-size: large;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 10px;
 }
 
 img {
-  width: 100px;
+  width: 120px;
   height: auto;
 }
 div {
