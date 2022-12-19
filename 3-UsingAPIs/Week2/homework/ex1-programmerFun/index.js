@@ -18,14 +18,8 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    should result in a network (DNS) error.
 ------------------------------------------------------------------------------*/
 async function requestData(url) {
-  const promise = await fetch(url);
-  try {
-    if (promise.ok) {
-      return promise.json();
-    }
-  } catch (error) {
-    renderError(error);
-  }
+  const response = await fetch(url);
+  return response.json();
 }
 
 function renderImage(data) {
@@ -44,7 +38,6 @@ function renderError(error) {
 async function main() {
   try {
     const data = await requestData('https://xkcd.now.sh/?comic=latest');
-    console.log(data);
     renderImage(data);
   } catch (error) {
     renderError(error);
