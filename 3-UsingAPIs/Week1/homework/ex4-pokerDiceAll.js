@@ -27,12 +27,13 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const map1 = dice.map((x) => rollDie(x));
+  return Promise.all(map1);
 }
 
 function main() {
+  //here
   rollDice()
     .then((results) => console.log('Resolved!', results))
     .catch((error) => console.log('Rejected!', error.message));
@@ -43,3 +44,7 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+//Why in the case of a rejected promise, dice that have not yet finished their roll continue to do so?
+//  My thoughts: When we reach first or second parameter of promise-function they will just bring some value.
+//  Since they are not function executer like return, code will continue after they bring their values.
