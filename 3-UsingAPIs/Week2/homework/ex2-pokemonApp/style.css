@@ -1,1 +1,16 @@
-/* add your styling here */
+select {
+  width: 160px;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 120px;
+  height: auto;
+  margin-left: 20px;
+}
+div {
+  display: grid;
+  margin-left: 46%;
+  margin-top: 10%;
+}
