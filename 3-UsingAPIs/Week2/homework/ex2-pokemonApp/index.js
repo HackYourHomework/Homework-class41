@@ -51,6 +51,9 @@ async function fetchAndPopulatePokemons() {
     document.body.appendChild(myDiv);
 
     selectElement.addEventListener('change', fetchImage);
+    const option = document.createElement('option');
+    option.textContent = 'Select pokemon';
+    selectElement.appendChild(option);
     pokemons.results.forEach((pokemon) => {
       const option = document.createElement('option');
       option.textContent = pokemon.name;
