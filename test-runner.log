@@ -1304,3 +1304,496 @@ Ran all test suites matching /ex1-programmerFun.test.js/i.
 2022-12-19 12:07:05 info: ---------------------------------------------
 2022-12-19 12:07:12 info: All unit tests passed.
 2022-12-19 12:07:18 info: All steps were completed successfully
+2022-12-19 02:21:18 info: ----------------------------------------------
+2022-12-19 02:21:18 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2022-12-19 02:21:18 info: ----------------------------------------------
+2022-12-19 02:21:22 error: *** Unit Test Error Report ***
+
+✕ giveCompliment should have all TODO comments removed
+✕ giveCompliment should take a single parameter
+✕ giveCompliment should include a `compliments` array inside its function body
+✕ giveCompliment the `compliments` array should be initialized with 10 strings
+✕ giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+
+Command failed: npx jest ex1-giveCompliment.test.js --colors --reporters="C:\Users\Gebruiker\Homework-class41\test-runner\CustomReporter.js"
+2022-12-19 02:22:11 info: ------------------------------------------
+2022-12-19 02:22:11 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:22:11 info: ------------------------------------------
+2022-12-19 02:22:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (225 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use `await fetch()`
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      16:2  error  <img> is missing required \"src\" attribute  element-required-attributes
+      16:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.355 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:23:03 info: ------------------------------------------
+2022-12-19 02:23:03 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:23:03 info: ------------------------------------------
+2022-12-19 02:23:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (232 ms)
+    √ should have all TODO comments removed (4 ms)
+    √ should use `fetch()`
+    √ should use `await fetch()`
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      14:2  error  <img> is missing required \"src\" attribute  element-required-attributes
+      14:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        4.194 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:23:48 info: ------------------------------------------
+2022-12-19 02:23:48 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:23:48 info: ------------------------------------------
+2022-12-19 02:23:54 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (177 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()`
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.969 s, estimated 5 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:24:21 info: ------------------------------------------
+2022-12-19 02:24:21 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:24:21 info: ------------------------------------------
+2022-12-19 02:24:27 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (178 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use `await fetch()`
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.797 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:25:57 info: ------------------------------------------
+2022-12-19 02:25:57 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:25:57 info: ------------------------------------------
+2022-12-19 02:26:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (172 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()`
+    √ should use `await fetch()`
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2  error  <img> is missing required \"src\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.794 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:27:03 info: ------------------------------------------
+2022-12-19 02:27:03 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:27:03 info: ------------------------------------------
+2022-12-19 02:27:10 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (183 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2  error  Attribute \"src\" has invalid value \"\"  attribute-allowed-values·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.919 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:29:17 info: ------------------------------------------
+2022-12-19 02:29:17 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:29:17 info: ------------------------------------------
+2022-12-19 02:29:24 info: All unit tests passed.
+2022-12-19 02:29:31 info: All steps were completed successfully
+2022-12-19 02:37:53 info: ------------------------------------------
+2022-12-19 02:37:53 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:37:53 info: ------------------------------------------
+2022-12-19 02:38:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (245 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10678  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10678  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.87 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:39:51 info: ------------------------------------------
+2022-12-19 02:39:51 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:39:51 info: ------------------------------------------
+2022-12-19 02:39:58 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (242 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()` (2 ms)
+    √ should use try/catch (2 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10678  error  <img> is missing required \"src\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.941 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:41:09 info: ------------------------------------------
+2022-12-19 02:41:09 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:41:09 info: ------------------------------------------
+2022-12-19 02:41:15 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (237 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10678  error  <img> is missing required \"src\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.826 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:43:32 info: ------------------------------------------
+2022-12-19 02:43:32 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:43:32 info: ------------------------------------------
+2022-12-19 02:43:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (227 ms)
+    √ should have all TODO comments removed
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10678  error  <img> is missing required \"src\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.849 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:43:42 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  65:5   error  'imageElement' is not defined  no-undef
+  66:31  error  'imageElement' is not defined  no-undef
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2022-12-19 02:46:07 info: ------------------------------------------
+2022-12-19 02:46:07 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:46:07 info: ------------------------------------------
+2022-12-19 02:46:14 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js
+  pokemonApp
+    × HTML should be syntactically valid (252 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `fetch()` (1 ms)
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10678  error  <img> is missing required \"src\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.851 s, estimated 4 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-19 02:46:47 info: ------------------------------------------
+2022-12-19 02:46:47 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 02:46:47 info: ------------------------------------------
+2022-12-19 02:46:54 info: All unit tests passed.
+2022-12-19 02:47:02 info: All steps were completed successfully
+2022-12-19 03:07:28 info: ------------------------------------------
+2022-12-19 03:07:28 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 03:07:28 info: ------------------------------------------
+2022-12-19 03:07:34 info: All unit tests passed.
+2022-12-19 03:07:41 info: All steps were completed successfully

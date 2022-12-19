@@ -1,1 +1,15 @@
-/* add your styling here */
+select {
+  width: 120px;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+div {
+  display: grid;
+  margin-left: 46%;
+  margin-top: 10%;
+}
