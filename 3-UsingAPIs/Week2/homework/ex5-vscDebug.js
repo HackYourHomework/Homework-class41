@@ -11,10 +11,20 @@ async function getData(url) {
   return response.json();
 }
 
-function renderLaureate({ knownName, birth, death }) {
+function renderLaureate({ knownName, birth, death, gender }) {
   console.log(`\nName: ${knownName.en}`);
-  console.log(`Birth: ${birth.date}, ${birth.place.locationString}`);
-  console.log(`Death: ${death.date}, ${death.place.locationString}`);
+  console.log(`Birth: ${birth.date}, ${birth.place.locationString.en}`);
+  if (death) {
+    console.log(`Death: ${death.date}, ${death.place.locationString.en}`);
+  } else {
+    let adj = 'him';
+    if (gender !== 'male') {
+      adj = 'her';
+    }
+    console.log(
+      `Still with us :) If you are a good kid, you can see ${adj} one day.`
+    );
+  }
 }
 
 function renderLaureates(laureates) {
@@ -23,7 +33,7 @@ function renderLaureates(laureates) {
 
 async function fetchAndRender() {
   try {
-    const laureates = getData(
+    const { laureates } = await getData(
       'http://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
     renderLaureates(laureates);
