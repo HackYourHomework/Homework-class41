@@ -39,7 +39,10 @@ function main() {
     .then((results) => console.log('Resolved!', results))
     .catch((error) => console.log('Rejected!', error.message));
 }
+/* 
+My explanation is : This happens because after the test has rejected the .catch doesnt stop the process but only logs the error. 
 
+*/
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
