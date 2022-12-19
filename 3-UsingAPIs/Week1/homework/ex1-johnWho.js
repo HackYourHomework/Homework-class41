@@ -13,14 +13,16 @@ const getAnonName = (firstName) => {
     if (!firstName) {
       reject(new Error("You didn't pass in a first name!"));
     } else {
-      const fullName = `${firstName} Doe`;
-      resolve(fullName);
+      resolve(`${firstName} Doe`);
     }
   });
 };
 
 function main() {
-  getAnonName('John', console.log);
+  getAnonName('John').then(
+    (fullName) => console.log(fullName),
+    (error) => console.log(error.message)
+  );
 }
 
 // ! Do not change or remove the code below

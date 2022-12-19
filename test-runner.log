@@ -433,3 +433,10 @@ Ran all test suites matching /ex3-rollDie.test.js/i.
 2022-12-13 10:57:08 error: *** Spell Checker Report ***
 
 
+2022-12-19 11:06:15 info: ---------------------------------------
+2022-12-19 11:06:15 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-19 11:06:15 info: ---------------------------------------
+2022-12-19 11:06:26 info: All unit tests passed.
+2022-12-19 11:06:40 error: *** Spell Checker Report ***
+
+
