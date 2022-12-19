@@ -558,3 +558,13 @@ Ran all test suites matching /ex2-pokemonApp.test.js/i.
 2022-12-18 04:26:57 info: ----------------------------------------
 2022-12-18 04:26:58 info: All unit tests passed.
 2022-12-18 04:26:59 info: All steps were completed successfully
+2022-12-19 05:42:54 info: ----------------------------------------
+2022-12-19 05:42:54 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-12-19 05:42:54 info: ----------------------------------------
+2022-12-19 05:42:54 warn: A unit test file was not provided.
+2022-12-19 05:42:57 info: All steps were completed successfully
+2022-12-19 05:43:45 info: ----------------------------------------
+2022-12-19 05:43:45 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-12-19 05:43:45 info: ----------------------------------------
+2022-12-19 05:43:45 warn: A unit test file was not provided.
+2022-12-19 05:43:47 info: All steps were completed successfully
