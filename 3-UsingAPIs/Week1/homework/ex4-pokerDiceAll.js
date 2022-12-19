@@ -27,19 +27,31 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
-  const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+    return new Promise(function(resolve, reject) {
+        const dice = [1, 2, 3, 4, 5];
+        const dicePromise = dice.map((die) => {
+            return rollDie(die);
+        });
+        Promise.all(dicePromise)
+            .then((results) => {
+                resolve(results);
+            })
+            .catch((error) => {
+                reject(error);
+            });
+    });
 }
 
 function main() {
-  rollDice()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+    rollDice()
+        .then((results) => console.log('Resolved!', results))
+        .catch((error) => console.log('Rejected!', error.message));
 }
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
-  main();
+    main();
 }
 module.exports = rollDice;
+
+//This is all due to the asynchronous of the code. And the messages are displayed in the order they were placed in the callback queue

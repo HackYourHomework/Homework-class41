@@ -1,4 +1,5 @@
 'use strict';
+const { Promise } = require('mongoose');
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-4-dice-race
 
@@ -14,19 +15,32 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  const dice = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDie()
+    return new Promise(function(resolve, reject) {
+        const dice = [1, 2, 3, 4, 5];
+        const dicePromise = dice.map((die) => rollDie(die));
+        Promise.race(dicePromise)
+            .then((results) => {
+                resolve(results);
+            })
+            .catch((error) => {
+                reject(error);
+            });
+    });
 }
 
 // Refactor this function to use async/await and try/catch
-function main() {
-  rollDice()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+    try {
+        console.log(`Resolved! ${await rollDice()}`);
+    } catch (error) {
+        console.log(`Rejected! ${error.message}`);
+    }
 }
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
-  main();
+    main();
 }
 module.exports = rollDice;
+
+// because Promise.race() returns the first fulfilled Promise
