@@ -24,13 +24,19 @@ exercise file.
 
 // The line below makes the rollDie() function available to this file.
 // Do not change or remove it.
+// const rollDie = require('../../helpers/pokerDiceRoller');
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+
+  const promisesArr = dice.map((num)=>{
+    return rollDie(num);
+  });
+  return Promise.all(promisesArr);
 }
+ 
 
 function main() {
   rollDice()
@@ -43,3 +49,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// That because promises make it "asynchronous".
