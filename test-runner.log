@@ -140,3 +140,8 @@ ex1-bookList/index.js
 2022-12-13 02:32:58 info: ----------------------------------------------
 2022-12-13 02:33:00 info: All unit tests passed.
 2022-12-13 02:33:04 info: All steps were completed successfully
+2022-12-19 06:44:36 info: ---------------------------------------------
+2022-12-19 06:44:36 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-19 06:44:36 info: ---------------------------------------------
+2022-12-19 06:44:41 info: All unit tests passed.
+2022-12-19 06:44:45 info: All steps were completed successfully
