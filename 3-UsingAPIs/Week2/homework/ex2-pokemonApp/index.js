@@ -39,6 +39,7 @@ async function fetchAndPopulatePokemons() {
     );
     const pokemons = await pokemonData.json();
 
+    //creates elements and adds in body
     const selectElement = document.createElement('select');
     const imageElement = document.createElement('img');
     imageElement.alt = 'pokemon';
@@ -51,9 +52,13 @@ async function fetchAndPopulatePokemons() {
     document.body.appendChild(myDiv);
 
     selectElement.addEventListener('change', fetchImage);
+
+    //add first item in the select element
     const option = document.createElement('option');
     option.textContent = 'Select pokemon';
     selectElement.appendChild(option);
+
+    //adds all pokemons from result of promise
     pokemons.results.forEach((pokemon) => {
       const option = document.createElement('option');
       option.textContent = pokemon.name;

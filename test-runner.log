@@ -1797,3 +1797,13 @@ Ran all test suites matching /ex2-pokemonApp.test.js/i.
 2022-12-19 03:07:28 info: ------------------------------------------
 2022-12-19 03:07:34 info: All unit tests passed.
 2022-12-19 03:07:41 info: All steps were completed successfully
+2022-12-19 06:06:16 info: ------------------------------------------
+2022-12-19 06:06:16 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 06:06:16 info: ------------------------------------------
+2022-12-19 06:06:25 info: All unit tests passed.
+2022-12-19 06:06:32 info: All steps were completed successfully
+2022-12-19 06:18:27 info: ------------------------------------------
+2022-12-19 06:18:27 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-19 06:18:27 info: ------------------------------------------
+2022-12-19 06:18:33 info: All unit tests passed.
+2022-12-19 06:18:39 info: All steps were completed successfully
