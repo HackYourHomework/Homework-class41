@@ -40,7 +40,9 @@ function main() {
     .catch((error) => console.log('Rejected!', error.message));
 }
 /* 
-My explanation is : This happens because after the test has rejected the .catch doesnt stop the process but only logs the error. 
+My explanation is : This happens because after the test has rejected, the only thing rejection does is log the error, but it does not
+ stop the process of rolling the die and the die
+continues to roll further. 
 
 */
 // ! Do not change or remove the code below
