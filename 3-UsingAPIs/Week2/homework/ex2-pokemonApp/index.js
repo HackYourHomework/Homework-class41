@@ -42,6 +42,7 @@ async function fetchAndPopulatePokemons(url) {
 
   const getButton = document.createElement('button');
   getButton.textContent = 'Get Pokemon!';
+  getButton.type = 'button';
   body.appendChild(getButton);
 
   const pokemonSelect = document.createElement('select');
@@ -77,10 +78,8 @@ async function fetchAndPopulatePokemons(url) {
 async function fetchImage(image, url) {
   try {
     const data = await (await fetchData(url)).json();
-
     image.src = data.sprites.front_default; // front view image
     image.alt = data.forms.name;
-    body.appendChild(image);
   } catch (error) {
     renderError(error);
   }
