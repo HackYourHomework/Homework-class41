@@ -30,6 +30,7 @@ async function requestData(url) {
 function renderImage(data) {
   const renderImg = document.createElement('img');
   renderImg.src = data.img;
+  renderImg.alt = 'comic';
   document.body.appendChild(renderImg);
 
   console.log(data);
