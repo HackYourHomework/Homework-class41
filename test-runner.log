@@ -804,3 +804,13 @@ ex4-diceRace.js
 2022-12-20 12:22:53 info: ----------------------------------------
 2022-12-20 12:22:56 info: All unit tests passed.
 2022-12-20 12:22:59 info: All steps were completed successfully
+2022-12-20 09:48:52 info: --------------------------------------------
+2022-12-20 09:48:52 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2022-12-20 09:48:52 info: --------------------------------------------
+2022-12-20 09:48:52 warn: A unit test file was not provided.
+2022-12-20 09:48:58 info: All steps were completed successfully
+2022-12-20 09:50:58 info: ----------------------------------------
+2022-12-20 09:50:58 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-12-20 09:50:58 info: ----------------------------------------
+2022-12-20 09:50:58 warn: A unit test file was not provided.
+2022-12-20 09:51:02 info: All steps were completed successfully
