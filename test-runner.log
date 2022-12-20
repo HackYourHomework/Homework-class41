@@ -121,3 +121,8 @@ npm notice
 2022-12-20 03:48:36 info: -----------------------------------------
 2022-12-20 03:48:38 info: All unit tests passed.
 2022-12-20 03:48:42 info: All steps were completed successfully
+2022-12-20 04:05:45 info: ----------------------------------------
+2022-12-20 04:05:45 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-12-20 04:05:45 info: ----------------------------------------
+2022-12-20 04:05:53 info: All unit tests passed.
+2022-12-20 04:06:02 info: All steps were completed successfully
