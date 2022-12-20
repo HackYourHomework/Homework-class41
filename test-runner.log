@@ -126,3 +126,8 @@ npm notice
 2022-12-20 04:05:45 info: ----------------------------------------
 2022-12-20 04:05:53 info: All unit tests passed.
 2022-12-20 04:06:02 info: All steps were completed successfully
+2022-12-20 04:41:34 info: ----------------------------------------
+2022-12-20 04:41:34 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-12-20 04:41:34 info: ----------------------------------------
+2022-12-20 04:41:34 warn: A unit test file was not provided.
+2022-12-20 04:41:42 info: All steps were completed successfully
