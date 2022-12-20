@@ -22,18 +22,76 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+const POKEMON_API = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+
+async function fetchData(url) {
+  try {
+    const resp = await fetch(url);
+    if (resp.ok) {
+      return resp;
+    } else {
+      throw new Error(resp);
+    }
+  } catch (error) {
+    renderError(error);
+  }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons(url) {
+  const body = document.querySelector('body');
+
+  const getButton = document.createElement('button');
+  getButton.textContent = 'Get Pokemon!';
+  body.appendChild(getButton);
+
+  const pokemonSelect = document.createElement('select');
+  body.appendChild(pokemonSelect);
+
+  try {
+    const data = await (await fetchData(url)).json();
+    data.results.forEach((element) => {
+      const selectOption = document.createElement('option');
+      selectOption.value = element.url;
+      selectOption.textContent = element.name;
+      pokemonSelect.appendChild(selectOption);
+    });
+
+    const imageContainer = document.createElement('img');
+
+    try {
+      const image = await (await fetch(data.results[0].url)).json();
+      imageContainer.src = image.sprites.front_default;
+      imageContainer.alt = image.forms.name;
+      body.appendChild(imageContainer);
+    } catch (error) {
+      renderError(error);
+    }
+    pokemonSelect.addEventListener('change', (elem) => {
+      fetchImage(imageContainer, elem.target.value);
+    });
+  } catch (error) {
+    renderError(error);
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(image, url) {
+  try {
+    const data = await (await fetchData(url)).json();
+
+    image.src = data.sprites.front_default; // front view image
+    image.alt = data.forms.name;
+    body.appendChild(image);
+  } catch (error) {
+    renderError(error);
+  }
+}
+
+function renderError(error) {
+  console.log(error);
 }
 
 function main() {
-  // TODO complete this function
+  fetchAndPopulatePokemons(POKEMON_API);
 }
+
+window.addEventListener('load', main);
