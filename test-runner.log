@@ -131,3 +131,8 @@ npm notice
 2022-12-20 04:41:34 info: ----------------------------------------
 2022-12-20 04:41:34 warn: A unit test file was not provided.
 2022-12-20 04:41:42 info: All steps were completed successfully
+2022-12-20 04:48:38 info: --------------------------------------------
+2022-12-20 04:48:38 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2022-12-20 04:48:38 info: --------------------------------------------
+2022-12-20 04:48:38 warn: A unit test file was not provided.
+2022-12-20 04:48:48 info: All steps were completed successfully
