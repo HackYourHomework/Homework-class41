@@ -35,33 +35,47 @@ async function fetchData(url) {
   return data;
 }
 
-async function fetchAndPopulatePokemons() {
-  const pokemons = await fetchData(
-    'https://pokeapi.co/api/v2/pokemon?limit=151)'
-  );
+async function fetchAndPopulatePokemons(url) {
+  const pokemons = await fetchData(url);
   const pokemonsJson = await pokemons.json();
-  const pokemonsArray = await pokemonsJson.results;
+  const pokemonButton = document.createElement('button');
+  pokemonButton.type = 'button';
+  pokemonButton.textContent = 'Get Pokemon!';
+  document.body.appendChild(pokemonButton);
   const dropDown = document.createElement('select');
   const pokeImg = document.createElement('img');
+  pokeImg.src =
+    'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png';
+  pokeImg.alt = 'Pokemon';
+  document.body.appendChild(dropDown);
   document.body.appendChild(pokeImg);
-  console.log(pokemonsJson);
 
+  pokemonButton.addEventListener('click', () =>
+    dropDownFiller(pokemonsJson, dropDown, pokeImg)
+  );
+}
+const dropDownFiller = async (pokemonsJson, dropDown, pokeImg) => {
+  const pokemonsArray = await pokemonsJson.results;
   pokemonsArray.forEach((pokemon) => {
     const option = document.createElement('option');
     option.textContent = pokemon.name;
+    option.value = pokemon.url;
     dropDown.appendChild(option);
-
-    pokeImg.src = pokemon.url;
   });
+  dropDown.addEventListener('change', (e) => {
+    fetchImage(pokeImg, e.target.value);
+  });
+};
 
-  document.body.append(dropDown);
-}
-fetchAndPopulatePokemons();
-
-async function fetchImage() {
-  // TODO complete this function
+async function fetchImage(img, url) {
+  const src = await fetchData(url);
+  const imgSrc = await src.json();
+  img.src = imgSrc.sprites.front_default;
 }
 
 function main() {
-  // TODO complete this function
+  addEventListener('load', () => {
+    fetchAndPopulatePokemons('https://pokeapi.co/api/v2/pokemon?limit=151');
+  });
 }
+main();

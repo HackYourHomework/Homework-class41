@@ -211,3 +211,49 @@ Ran all test suites matching /ex1-programmerFun.test.js/i.
 2022-12-19 08:08:09 info: ---------------------------------------------
 2022-12-19 08:08:14 info: All unit tests passed.
 2022-12-19 08:08:19 info: All steps were completed successfully
+2022-12-20 10:48:08 info: ------------------------------------------
+2022-12-20 10:48:08 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-20 10:48:08 info: ------------------------------------------
+2022-12-20 10:48:17 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (5.334 s)
+  pokemonApp
+    ✕ HTML should be syntactically valid (167 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ should use `fetch()` (1 ms)
+    ✓ should use `await fetch()` (1 ms)
+    ✓ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:2  error  <button> is missing required \"type\" attribute  element-required-attributes·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        5.52 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-20 10:49:05 info: ------------------------------------------
+2022-12-20 10:49:05 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-20 10:49:05 info: ------------------------------------------
+2022-12-20 10:49:12 info: All unit tests passed.
+2022-12-20 10:49:17 info: All steps were completed successfully
