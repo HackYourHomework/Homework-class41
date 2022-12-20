@@ -74,3 +74,50 @@ ex2-pokemonApp/index.js
 2022-12-20 03:33:44 info: ------------------------------------------
 2022-12-20 03:33:49 info: All unit tests passed.
 2022-12-20 03:33:52 info: All steps were completed successfully
+2022-12-20 03:48:06 info: -----------------------------------------
+2022-12-20 03:48:06 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-20 03:48:06 info: -----------------------------------------
+2022-12-20 03:48:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    ✕ should have all TODO comments removed (8 ms)
+    ✓ `rollDieUntil` should not contain unneeded console.log calls (1 ms)
+    ✓ should not include a recursive call (1 ms)
+    ✓ should use async/wait
+    ✓ should use try/catch
+    ✓ should resolve as soon as a die settles on an ACE (54 ms)
+    ✓ should reject with an Error when a die rolls off the table (12 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.47 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+npm notice 
+npm notice New major version of npm available! 8.15.0 -> 9.2.0
+npm notice Changelog: <https://github.com/npm/cli/releases/tag/v9.2.0>
+npm notice Run `npm install -g npm@9.2.0` to update!
+npm notice
+2022-12-20 03:48:36 info: -----------------------------------------
+2022-12-20 03:48:36 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-20 03:48:36 info: -----------------------------------------
+2022-12-20 03:48:38 info: All unit tests passed.
+2022-12-20 03:48:42 info: All steps were completed successfully
