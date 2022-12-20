@@ -17,7 +17,8 @@ function renderLaureate({ knownName, birth, death }) {
   if (death) {
     console.log(`Death: ${death.date}, ${death.place.locationString.en}`);
   } else {
-  console.log(`He/She is still alive!`);}
+    console.log(`He/She is still alive!`);
+  }
 }
 
 function renderLaureates(laureates) {
@@ -27,7 +28,7 @@ function renderLaureates(laureates) {
 
 async function fetchAndRender() {
   try {
-    const {laureates} = await getData(
+    const { laureates } = await getData(
       'http://api.nobelprize.org/2.0/laureates?birthCountry=Netherlands&format=json&csvLang=en'
     );
     renderLaureates(laureates);

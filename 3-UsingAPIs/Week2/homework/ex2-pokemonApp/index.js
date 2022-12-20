@@ -24,40 +24,41 @@ parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
 async function fetchData(url) {
   try {
-    const data = await fetch(url)
-    .then((response) => response.json());
-    fetchAndPopulatePokemons (data);
-  console.log(data);
-  }
-  catch (error) {
+    const data = await fetch(url).then((response) => response.json());
+    fetchAndPopulatePokemons(data);
+    console.log(data);
+  } catch (error) {
     console.log(error);
-    }
+  }
 }
 
- function fetchAndPopulatePokemons(data) {
+function fetchAndPopulatePokemons(data) {
   const select = document.querySelector('select');
   data.results.forEach((element) => {
     const option = document.createElement('option');
     option.value = element.url;
     option.textContent = element.name;
     select.appendChild(option);
-}
-);
-select.addEventListener('change', (event) => {fetchImage(event)});
+  });
+  select.addEventListener('change', (event) => {
+    fetchImage(event);
+  });
 }
 
 async function fetchImage(event) {
   try {
     const selectUrl = event.target.value;
     const img = document.querySelector('img');
-    const imgData = await fetch(selectUrl)
-    .then((response) => response.json());
+    const imgData = await fetch(selectUrl).then((response) => response.json());
     img.alt = 'Pokemon';
-    img.src = imgData.sprites['versions']['generation-v']['black-white']['animated']['front_default'];
-    console.log((event.target.value));
+    img.src =
+      imgData.sprites['versions']['generation-v']['black-white']['animated'][
+        'front_default'
+      ];
+    console.log(event.target.value);
   } catch (error) {
     console.log(error.message);
-    console.log((event.target.value));
+    console.log(event.target.value);
   }
 }
 
@@ -70,10 +71,12 @@ function main() {
   document.body.appendChild(select);
   const img = document.createElement('img');
   img.alt = null;
-  img.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif';
+  img.src =
+    'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif';
   document.body.appendChild(img);
   button.addEventListener('click', () => {
-    fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');});
+    fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');
+  });
 }
 
 window.addEventListener('load', main);

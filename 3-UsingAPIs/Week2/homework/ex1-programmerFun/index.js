@@ -18,18 +18,16 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    should result in a network (DNS) error.
 ------------------------------------------------------------------------------*/
 function requestData(url) {
-  return fetch(url)
-  .then((response) => response.json());
+  return fetch(url).then((response) => response.json());
 }
 
 function renderImage(data) {
   const image = document.createElement('img');
   image.src = String(data.img);
-  image.alt = 'data.img'
+  image.alt = 'data.img';
   document.body.appendChild(image);
   console.log(data);
-  if(image.src.length === 0)
-  throw new Error(':( No image found');
+  if (image.src.length === 0) throw new Error(':( No image found');
 }
 
 function renderError(error) {
@@ -42,11 +40,10 @@ function renderError(error) {
 async function main() {
   try {
     const data = await requestData('https://xkcd.now.sh/?comic=latest');
-    renderImage (data);
-  }
-  catch (error) {
+    renderImage(data);
+  } catch (error) {
     renderError(error);
-    }
+  }
 }
 
 window.addEventListener('load', main);

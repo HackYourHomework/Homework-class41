@@ -1,9 +1,9 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 button {
   padding: 0.6em 2em;
@@ -22,7 +22,7 @@ button {
 }
 
 button:before {
-  content: "";
+  content: '';
   background: linear-gradient(
     45deg,
     #ff0000,
@@ -63,7 +63,7 @@ button:before {
 
 button:after {
   z-index: -1;
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -74,11 +74,11 @@ button:after {
 }
 
 select {
-    color: rgb(255, 255, 255);
-    background: #111;
-    border: thin solid black;
-    border-radius: 4px;
-    line-height: 1.5em;
-    padding: 0.5em 3.5em 0.5em 1em;
-    margin: 5rem;      
-  }
+  color: rgb(255, 255, 255);
+  background: #111;
+  border: thin solid black;
+  border-radius: 4px;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin: 5rem;
+}

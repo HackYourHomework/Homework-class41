@@ -16,15 +16,15 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
   const diceArray = dice.map((value) => rollDie(value));
-  return new Promise(function(resolve, reject) {
+  return new Promise(function (resolve, reject) {
     Promise.race(diceArray)
-        .then((results) => {
-            resolve(results);
-        })
-        .catch((error) => {
-            reject(error);
-        });
-});
+      .then((results) => {
+        resolve(results);
+      })
+      .catch((error) => {
+        reject(error);
+      });
+  });
 }
 
 // Refactor this function to use async/await and try/catch
