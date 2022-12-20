@@ -22,18 +22,58 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchData(url) {
+  try {
+    const data = await fetch(url)
+    .then((response) => response.json());
+    fetchAndPopulatePokemons (data);
+  console.log(data);
+  }
+  catch (error) {
+    console.log(error);
+    }
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+ function fetchAndPopulatePokemons(data) {
+  const select = document.querySelector('select');
+  data.results.forEach((element) => {
+    const option = document.createElement('option');
+    option.value = element.url;
+    option.textContent = element.name;
+    select.appendChild(option);
+}
+);
+select.addEventListener('change', (event) => {fetchImage(event)});
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(event) {
+  try {
+    const selectUrl = event.target.value;
+    const img = document.querySelector('img');
+    const imgData = await fetch(selectUrl)
+    .then((response) => response.json());
+    img.alt = 'Pokemon';
+    img.src = imgData.sprites['versions']['generation-v']['black-white']['animated']['front_default'];
+    console.log((event.target.value));
+  } catch (error) {
+    console.log(error.message);
+    console.log((event.target.value));
+  }
 }
 
 function main() {
-  // TODO complete this function
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.textContent = 'Get Pokemon!';
+  document.body.appendChild(button);
+  const select = document.createElement('select');
+  document.body.appendChild(select);
+  const img = document.createElement('img');
+  img.alt = null;
+  img.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif';
+  document.body.appendChild(img);
+  button.addEventListener('click', () => {
+    fetchData('https://pokeapi.co/api/v2/pokemon?limit=151');});
 }
+
+window.addEventListener('load', main);
