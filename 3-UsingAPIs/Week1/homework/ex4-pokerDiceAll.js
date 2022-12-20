@@ -27,9 +27,11 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promises = dice.map((die) => {
+    return rollDie(die);
+  });
+  return Promise.all(promises);
 }
 
 function main() {
@@ -37,7 +39,12 @@ function main() {
     .then((results) => console.log('Resolved!', results))
     .catch((error) => console.log('Rejected!', error.message));
 }
+/* 
+My explanation is : This happens because after the test has rejected, the only thing rejection does is log the error, but it does not
+ stop the process of rolling the die and the die
+continues to roll further. 
 
+*/
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
