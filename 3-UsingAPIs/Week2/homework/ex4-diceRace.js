@@ -15,7 +15,8 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDie()
+  const map1 = dice.map((x) => rollDie(x));
+  return Promise.race(map1);
 }
 
 // Refactor this function to use async/await and try/catch
@@ -30,3 +31,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// Promise.race only check for the first outcome. It does not stop racing promise functions.
