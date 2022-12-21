@@ -1842,3 +1842,8 @@ Ran all test suites matching /ex1-programmerFun.test.js/i.
 2022-12-20 10:03:57 info: -----------------------------------------
 2022-12-20 10:04:00 info: All unit tests passed.
 2022-12-20 10:04:04 info: All steps were completed successfully
+2022-12-21 03:17:18 info: ----------------------------------------
+2022-12-21 03:17:18 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-12-21 03:17:18 info: ----------------------------------------
+2022-12-21 03:17:20 info: All unit tests passed.
+2022-12-21 03:17:24 info: All steps were completed successfully
