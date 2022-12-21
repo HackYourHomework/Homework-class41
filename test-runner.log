@@ -1847,3 +1847,33 @@ Ran all test suites matching /ex1-programmerFun.test.js/i.
 2022-12-21 03:17:18 info: ----------------------------------------
 2022-12-21 03:17:20 info: All unit tests passed.
 2022-12-21 03:17:24 info: All steps were completed successfully
+2022-12-21 03:18:48 info: ----------------------------------------
+2022-12-21 03:18:48 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-12-21 03:18:48 info: ----------------------------------------
+2022-12-21 03:18:50 info: All unit tests passed.
+2022-12-21 03:18:54 info: All steps were completed successfully
+2022-12-21 03:19:02 info: -----------------------------------------
+2022-12-21 03:19:02 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-21 03:19:02 info: -----------------------------------------
+2022-12-21 03:19:05 info: All unit tests passed.
+2022-12-21 03:19:08 info: All steps were completed successfully
+2022-12-21 03:19:16 info: ------------------------------------------
+2022-12-21 03:19:16 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-21 03:19:16 info: ------------------------------------------
+2022-12-21 03:19:21 info: All unit tests passed.
+2022-12-21 03:19:24 info: All steps were completed successfully
+2022-12-21 03:19:34 info: ---------------------------------------------
+2022-12-21 03:19:34 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-21 03:19:34 info: ---------------------------------------------
+2022-12-21 03:19:38 info: All unit tests passed.
+2022-12-21 03:19:42 info: All steps were completed successfully
+2022-12-21 05:27:34 info: ----------------------------------------
+2022-12-21 05:27:34 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-12-21 05:27:34 info: ----------------------------------------
+2022-12-21 05:27:34 warn: A unit test file was not provided.
+2022-12-21 05:27:39 info: All steps were completed successfully
+2022-12-21 05:28:36 info: ----------------------------------------
+2022-12-21 05:28:36 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-12-21 05:28:36 info: ----------------------------------------
+2022-12-21 05:28:36 warn: A unit test file was not provided.
+2022-12-21 05:28:39 info: All steps were completed successfully
