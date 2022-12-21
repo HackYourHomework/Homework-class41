@@ -17,29 +17,40 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    url with `.shx`. There is no server at the modified url, therefore this 
    should result in a network (DNS) error.
 ------------------------------------------------------------------------------*/
-function requestData(url) {
-  // TODO return a promise using `fetch()`
+async function requestData(url) {
+  try {
+    const response = await fetch(url);
+    const dataJson = await response.json();
+    return dataJson;
+  } catch (e) {
+    throw new Error(e);
+  }
 }
 
 function renderImage(data) {
-  // TODO render the image to the DOM
+  const renderImg = document.createElement('img');
+  renderImg.src = data.img;
+  renderImg.alt = 'comic';
+  document.body.appendChild(renderImg);
+
   console.log(data);
 }
 
 function renderError(error) {
-  // TODO render the error to the DOM
+  const renderError = document.createElement('h1');
+  renderError.textContent = error;
+  document.body.appendChild(renderError);
+
   console.log(error);
 }
 
-// TODO refactor with async/await and try/catch
-function main() {
-  requestData('https://xkcd.now.sh/?comic=latest')
-    .then((data) => {
-      renderImage(data);
-    })
-    .catch((error) => {
-      renderError(error);
-    });
+async function main() {
+  try {
+    const loadAPI = await requestData('https://xkcd.now.sh/?comic=latest');
+    await renderImage(loadAPI);
+  } catch (e) {
+    renderError(e);
+  }
 }
 
 window.addEventListener('load', main);
