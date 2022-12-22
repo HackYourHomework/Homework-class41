@@ -326,3 +326,8 @@ ex1-programmerFun/index.js
 ✖ 1 problem (1 error, 0 warnings)
 
 
+2022-12-22 11:19:35 info: -----------------------------------------
+2022-12-22 11:19:35 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-22 11:19:35 info: -----------------------------------------
+2022-12-22 11:19:38 info: All unit tests passed.
+2022-12-22 11:19:41 info: All steps were completed successfully
