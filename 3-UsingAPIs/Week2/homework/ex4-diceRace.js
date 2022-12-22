@@ -10,19 +10,27 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    resolves. Do you know why? Add your answer as a comment to the bottom of the 
    file.
 ------------------------------------------------------------------------------*/
-// ! Do not remove this line
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDie()
+  return new Promise((resolve, reject) => {
+    Promise.race(
+      dice.map((number) => {
+        rollDie(number);
+      })
+    )
+      .then((results) => resolve(results))
+      .catch((error) => reject(error));
+  });
 }
 
-// Refactor this function to use async/await and try/catch
-function main() {
-  rollDice()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    console.log('Resolved!', rollDice());
+  } catch (error) {
+    console.log('Rejected!', error.message);
+  }
 }
 
 // ! Do not change or remove the code below
