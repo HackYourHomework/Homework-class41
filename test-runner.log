@@ -266,3 +266,63 @@ Ran all test suites matching /ex3-rollDie.test.js/i.
 2022-12-13 10:35:51 info: ----------------------------------------------
 2022-12-13 10:35:53 info: All unit tests passed.
 2022-12-13 10:35:57 info: All steps were completed successfully
+2022-12-22 12:51:14 info: ---------------------------------------------
+2022-12-22 12:51:14 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-22 12:51:14 info: ---------------------------------------------
+2022-12-22 12:51:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js
+  ● programmerFun › should use async/wait
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      53 |   test('should use async/wait', () => {
+      54 |     expect(state.async).toBeDefined();
+    > 55 |     expect(state.await).toBeDefined();
+         |                         ^
+      56 |   });
+      57 |
+      58 |   test('should use try/catch', () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:55:25)
+
+
+  ● Test suite failed to run
+
+    TypeError: body.appendChild is not a function
+
+      27 |   const errorElement = document.createElement('div');
+      28 |   errorElement.textContent = error;
+    > 29 |   body.appendChild(errorElement);
+         |        ^
+      30 |   console.log(error);
+      31 | }
+      32 |
+
+      at renderError (file:/Users/eminalper/HackYourFuture/Homework-class41/3-UsingAPIs/Week2/homework/ex1-programmerFun/index.js:29:8)
+      at main (file:/Users/eminalper/HackYourFuture/Homework-class41/3-UsingAPIs/Week2/homework/ex1-programmerFun/index.js:38:5)
+      at callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:286:3)
+      at EventTargetImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:233:9)
+      at fireAnEvent (node_modules/jsdom/lib/jsdom/living/helpers/events.js:18:36)
+      at Document.<anonymous> (node_modules/jsdom/lib/jsdom/browser/Window.js:917:9)
+      at Document.callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:350:25)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        3.471 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-22 12:51:21 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  36:17  error  'data' is not defined  no-undef
+
+✖ 1 problem (1 error, 0 warnings)
+
+
