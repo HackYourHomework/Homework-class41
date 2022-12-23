@@ -587,3 +587,9 @@ Error: Die 1 rolled off the table.
     at Timeout._onTimeout (/Users/eminalper/HackYourFuture/Homework-class41/3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
     at listOnTimeout (node:internal/timers:559:17)
     at processTimers (node:internal/timers:502:7)
+2022-12-23 10:31:10 info: --------------------------------------------
+2022-12-23 10:31:10 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2022-12-23 10:31:10 info: --------------------------------------------
+2022-12-23 10:31:10 info: Exercise has not yet been modified
+2022-12-23 10:31:10 warn: A unit test file was not provided.
+2022-12-23 10:31:13 info: All steps were completed successfully
