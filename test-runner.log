@@ -1,0 +1,454 @@
+2022-12-11 11:21:36 info: ---------------------------------------
+2022-12-11 11:21:36 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-11 11:21:36 info: ---------------------------------------
+2022-12-11 11:21:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/homework/ex1-johnWho.js:22
+        reject(new Error("You didn't pass in a first name!"));
+               ^
+
+Error: You didn't pass in a first name!
+    at /Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/homework/ex1-johnWho.js:22:16
+    at new Promise (<anonymous>)
+    at /Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/homework/ex1-johnWho.js:20:12
+    at cb (/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:88:35)
+    at /Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-mock/build/index.js:433:39
+    at /Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-mock/build/index.js:441:13
+    at mockConstructor (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-mock/build/index.js:154:19)
+    at getAnonName (/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/homework/ex1-johnWho.js:14:3)
+    at Object.getAnonName (/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:89:21)
+    at Promise.then.completed (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/run.js:209:3)
+    at _runTestsForDescribeBlock (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/run.js:97:9)
+    at _runTestsForDescribeBlock (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/run.js:91:9)
+    at run (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:136:21)
+    at jestAdapter (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:92:19)
+    at runTestInternal (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-runner/build/runTest.js:407:16)
+    at runTest (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-runner/build/runTest.js:491:34)
+
+Node.js v19.0.1
+2022-12-11 11:21:45 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  12:33  error    'callback' is defined but never used  no-unused-vars
+  27:5   warning  Remove commented-out code             hyf/no-commented-out-code
+
+✖ 2 problems (1 error, 1 warning)
+
+
+2022-12-11 11:23:30 info: ---------------------------------------
+2022-12-11 11:23:30 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-11 11:23:30 info: ---------------------------------------
+2022-12-11 11:23:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/homework/ex1-johnWho.js:22
+        reject(new Error("You didn't pass in a first name!"));
+               ^
+
+Error: You didn't pass in a first name!
+    at /Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/homework/ex1-johnWho.js:22:16
+    at new Promise (<anonymous>)
+    at /Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/homework/ex1-johnWho.js:20:12
+    at cb (/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:88:35)
+    at /Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-mock/build/index.js:433:39
+    at /Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-mock/build/index.js:441:13
+    at mockConstructor (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-mock/build/index.js:154:19)
+    at getAnonName (/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/homework/ex1-johnWho.js:14:3)
+    at Object.getAnonName (/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:89:21)
+    at Promise.then.completed (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/run.js:209:3)
+    at _runTestsForDescribeBlock (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/run.js:97:9)
+    at _runTestsForDescribeBlock (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/run.js:91:9)
+    at run (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:136:21)
+    at jestAdapter (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:92:19)
+    at runTestInternal (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-runner/build/runTest.js:407:16)
+    at runTest (/Users/vladimir/Documents/Homework-class41/Homework-class41/node_modules/jest-runner/build/runTest.js:491:34)
+
+Node.js v19.0.1
+2022-12-11 11:23:34 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  27:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-12-11 11:30:15 info: ---------------------------------------
+2022-12-11 11:30:15 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-11 11:30:15 info: ---------------------------------------
+2022-12-11 11:30:22 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (2 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    ✓ should call `new Promise()` (7 ms)
+    ✓ should take a single argument (1 ms)
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when called with a string argument (2 ms)
+    ✓ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        1.4 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-12-11 11:30:26 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  27:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2022-12-11 11:31:01 info: ---------------------------------------
+2022-12-11 11:31:01 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-11 11:31:01 info: ---------------------------------------
+2022-12-11 11:31:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (1 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    ✓ should call `new Promise()`
+    ✓ should take a single argument
+    ✓ `resolve()` should be called with a one argument (1 ms)
+    ✓ `reject()` should be called with a one argument (6 ms)
+    ✓ should resolve when called with a string argument (2 ms)
+    ✓ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        1.257 s, estimated 2 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-12-11 11:31:45 info: ---------------------------------------
+2022-12-11 11:31:45 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-11 11:31:45 info: ---------------------------------------
+2022-12-11 11:31:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (1 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ `getAnonName` should not contain unneeded console.log calls (1 ms)
+    ✓ should call `new Promise()`
+    ✓ should take a single argument (1 ms)
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument
+    ✓ should resolve when called with a string argument (2 ms)
+    ✓ should reject with an Error object when called without an argument
+
+  ● getAnonName › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 8 passed, 9 total
+Snapshots:   0 total
+Time:        1.078 s, estimated 2 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+2022-12-11 11:32:11 info: ---------------------------------------
+2022-12-11 11:32:11 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-11 11:32:11 info: ---------------------------------------
+2022-12-11 11:32:14 info: All unit tests passed.
+2022-12-11 11:32:20 info: All steps were completed successfully
+2022-12-12 04:44:54 info: ---------------------------------------
+2022-12-12 04:44:54 info: >>> Running Unit Test `ex1-johnWho` <<<
+2022-12-12 04:44:54 info: ---------------------------------------
+2022-12-12 04:45:02 info: All unit tests passed.
+2022-12-12 04:45:10 info: All steps were completed successfully
+2022-12-12 04:45:22 info: -------------------------------------------------
+2022-12-12 04:45:22 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-12-12 04:45:22 info: -------------------------------------------------
+2022-12-12 04:45:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-checkDoubleDigits.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js
+  checkDoubleDigits
+    ✓ should exist and be executable (2 ms)
+    ✓ should have all TODO comments removed (1 ms)
+    ✓ `checkDoubleDigits` should not contain unneeded console.log calls (1 ms)
+    ✓ should call new Promise() (1 ms)
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should be a function that takes a single argument
+    ✓ (9) should return a rejected promise with an Error object (2 ms)
+    ✕ (10) should return a promise that resolves to "This is a double digit number!" (2 ms)
+    ✕ (99) should return a promise that resolves to "This is a double digit number!" (1 ms)
+    ✓ (100) should return a rejected promise with an Error object
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 10]
+
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+    > 75 |     return expect(promise).resolves.toEqual(
+         |            ^
+      76 |       expect.stringContaining('This is a double digit number!')
+      77 |     );
+      78 |   });
+
+      at expect (node_modules/expect/build/index.js:128:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:75:12)
+
+  ● checkDoubleDigits › (10) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received two assertion calls.
+
+      69 |
+      70 |   test('(10) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 71 |     expect.assertions(3);
+         |            ^
+      72 |     expect(exported).toBeDefined();
+      73 |     const promise = checkDoubleDigits(10);
+      74 |     expect(promise).toBeInstanceOf(Promise);
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:71:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect(received).resolves.toEqual()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [Error: Expected a double digit number but got 99]
+
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+    > 84 |     return expect(promise).resolves.toEqual(
+         |            ^
+      85 |       expect.stringContaining('This is a double digit number!')
+      86 |     );
+      87 |   });
+
+      at expect (node_modules/expect/build/index.js:128:15)
+      at Object.expect (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:84:12)
+
+  ● checkDoubleDigits › (99) should return a promise that resolves to "This is a double digit number!"
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      79 |
+      80 |   test('(99) should return a promise that resolves to "This is a double digit number!"', () => {
+    > 81 |     expect.assertions(2);
+         |            ^
+      82 |     const promise = checkDoubleDigits(99);
+      83 |     expect(promise).toBeInstanceOf(Promise);
+      84 |     return expect(promise).resolves.toEqual(
+
+      at Object.assertions (3-UsingAPIs/Week1/unit-tests/ex2-checkDoubleDigits.test.js:81:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 9 passed, 11 total
+Snapshots:   0 total
+Time:        1.396 s
+Ran all test suites matching /ex2-checkDoubleDigits.test.js/i.
+2022-12-12 04:47:20 info: -------------------------------------------------
+2022-12-12 04:47:20 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2022-12-12 04:47:20 info: -------------------------------------------------
+2022-12-12 04:47:28 info: All unit tests passed.
+2022-12-12 04:47:37 info: All steps were completed successfully
+2022-12-12 05:40:23 info: ---------------------------------------
+2022-12-12 05:40:23 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-12 05:40:23 info: ---------------------------------------
+2022-12-12 05:40:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Debugger attached.
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    ✓ should exist and be executable (1 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ should call `new Promise()` (1 ms)
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when the die settles successfully (2 ms)
+    ✓ should reject with an Error when the die rolls off the table (2 ms)
+
+  ● rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        2.035 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-12-12 05:40:38 error: *** ESLint Report ***
+
+ex3-rollDie.js
+  29:7  warning  Remove commented-out code  hyf/no-commented-out-code
+  36:7  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2022-12-12 05:42:34 info: ---------------------------------------
+2022-12-12 05:42:34 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-12 05:42:34 info: ---------------------------------------
+2022-12-12 05:42:41 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDie.test.js --colors
+Debugger attached.
+Debugger attached.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDie.test.js
+  rollDie
+    ✓ should exist and be executable (1 ms)
+    ✕ should have all TODO comments removed (2 ms)
+    ✓ should call `new Promise()`
+    ✓ `resolve()` should be called with a one argument
+    ✓ `reject()` should be called with a one argument (1 ms)
+    ✓ should resolve when the die settles successfully (2 ms)
+    ✓ should reject with an Error when the die rolls off the table (2 ms)
+
+  ● rollDie › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 6 passed, 7 total
+Snapshots:   0 total
+Time:        1.964 s, estimated 2 s
+Ran all test suites matching /ex3-rollDie.test.js/i.
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+2022-12-12 05:43:23 info: ---------------------------------------
+2022-12-12 05:43:23 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-12 05:43:23 info: ---------------------------------------
+2022-12-12 05:43:29 info: All unit tests passed.
+2022-12-12 05:43:41 info: All steps were completed successfully
+2022-12-12 06:05:48 info: ---------------------------------------
+2022-12-12 06:05:48 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-12 06:05:48 info: ---------------------------------------
+2022-12-12 06:05:57 info: All unit tests passed.
+2022-12-12 06:06:09 info: All steps were completed successfully
+2022-12-12 07:14:04 info: ---------------------------------------
+2022-12-12 07:14:04 info: >>> Running Unit Test `ex3-rollDie` <<<
+2022-12-12 07:14:04 info: ---------------------------------------
+2022-12-12 07:14:11 info: All unit tests passed.
+2022-12-12 07:14:23 info: All steps were completed successfully
+2022-12-12 09:13:32 info: --------------------------------------------
+2022-12-12 09:13:32 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-12-12 09:13:32 info: --------------------------------------------
+2022-12-12 09:13:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/helpers/pokerDiceRoller.js:64
+        reject(new Error(`Die ${die} rolled off the table.\n`));
+               ^
+
+Error: Die 1 rolled off the table.
+
+    at rollOnce (/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/helpers/pokerDiceRoller.js:64:16)
+    at Timeout._onTimeout (/Users/vladimir/Documents/Homework-class41/Homework-class41/3-UsingAPIs/helpers/pokerDiceRoller.js:77:26)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+
+Node.js v19.0.1
+2022-12-12 09:14:30 info: --------------------------------------------
+2022-12-12 09:14:30 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2022-12-12 09:14:30 info: --------------------------------------------
+2022-12-12 09:14:33 info: All unit tests passed.
+2022-12-12 09:14:41 info: All steps were completed successfully
+2022-12-12 09:20:02 info: ----------------------------------------------
+2022-12-12 09:20:02 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2022-12-12 09:20:02 info: ----------------------------------------------
+2022-12-12 09:20:05 info: All unit tests passed.
+2022-12-12 09:20:09 info: All steps were completed successfully
