@@ -1,4 +1,5 @@
 'use strict';
+//const { reject } = require('lodash');
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-4-dice-race
 
@@ -15,14 +16,21 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDie()
+
+  const diceMap = dice.map((nr) => {
+    return rollDie(nr);
+  });
+  return Promise.race(diceMap);
 }
 
 // Refactor this function to use async/await and try/catch
-function main() {
-  rollDice()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    const success = await rollDice();
+    console.log('Resolved!', success);
+  } catch (error) {
+    console.log('Rejected!', error.message);
+  }
 }
 
 // ! Do not change or remove the code below
@@ -30,3 +38,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+//Promise.race in this case only gives us the resolved value of the first die to finish rolling, but it doesn't stop the other dices(promises)
+//from continuing rolling

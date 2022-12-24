@@ -1,1 +1,15 @@
 /* add your styling here */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+button,
+select {
+  width: 20%;
+  margin-bottom: 1em;
+}
+
+img {
+  width: 20vw;
+}
