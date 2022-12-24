@@ -17,13 +17,8 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
 
-  const diceMap = dice.map((die) => {
-    return new Promise(function (resolve, reject) {
-      resolve(rollDie(die));
-      reject((error) => {
-        console.error(error);
-      });
-    });
+  const diceMap = dice.map((nr) => {
+    return rollDie(nr);
   });
   return Promise.race(diceMap);
 }

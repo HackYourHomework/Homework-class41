@@ -24,15 +24,13 @@ parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
 
 async function fetchData(url) {
-  const data = await fetch(url);
   try {
-    if (!data.ok) {
-      throw Error(data);
-    }
+    const data = await fetch(url);
+
+    return data;
   } catch (error) {
     console.error(error);
   }
-  return data;
 }
 
 async function fetchAndPopulatePokemons(url) {
@@ -54,8 +52,8 @@ async function fetchAndPopulatePokemons(url) {
     dropDownFiller(pokemonsJson, dropDown, pokeImg)
   );
 }
-const dropDownFiller = async (pokemonsJson, dropDown, pokeImg) => {
-  const pokemonsArray = await pokemonsJson.results;
+const dropDownFiller = (pokemonsJson, dropDown, pokeImg) => {
+  const pokemonsArray = pokemonsJson.results;
   pokemonsArray.forEach((pokemon) => {
     const option = document.createElement('option');
     option.textContent = pokemon.name;

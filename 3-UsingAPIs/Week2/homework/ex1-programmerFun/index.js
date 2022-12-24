@@ -30,7 +30,7 @@ function requestData(url) {
 function renderImage(data) {
   const dataImg = document.createElement('img');
   dataImg.src = data.img;
-  dataImg.alt = 'image';
+  dataImg.alt = data.alt;
 
   document.body.appendChild(dataImg);
 }
