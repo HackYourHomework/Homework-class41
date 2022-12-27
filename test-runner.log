@@ -194,3 +194,205 @@ Ran all test suites matching /ex3-rollAnAce.test.js/i.
 2022-12-21 11:42:22 error: *** Spell Checker Report ***
 
 
+2022-12-27 11:34:55 info: ---------------------------------------------
+2022-12-27 11:34:55 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-27 11:34:55 info: ---------------------------------------------
+2022-12-27 11:35:13 info: All unit tests passed.
+2022-12-27 11:35:27 error: *** Spell Checker Report ***
+
+
+2022-12-28 12:28:40 info: ------------------------------------------
+2022-12-28 12:28:40 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-28 12:28:40 info: ------------------------------------------
+2022-12-28 12:29:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (9.225 s)
+  pokemonApp
+    × HTML should be syntactically valid (947 ms)
+    √ should have all TODO comments removed (3 ms)
+    √ should use `fetch()` (2 ms)
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10699  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10699  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        9.473 s, estimated 10 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-28 12:29:14 error: *** Spell Checker Report ***
+
+
+2022-12-28 12:40:08 info: ------------------------------------------
+2022-12-28 12:40:08 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-28 12:40:08 info: ------------------------------------------
+2022-12-28 12:40:24 info: All unit tests passed.
+2022-12-28 12:40:38 error: *** Spell Checker Report ***
+
+
+2022-12-28 12:41:07 info: -----------------------------------------
+2022-12-28 12:41:07 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-28 12:41:07 info: -----------------------------------------
+2022-12-28 12:41:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    × should have all TODO comments removed (1 ms)
+    × `rollDieUntil` should not contain unneeded console.log calls
+    × should not include a recursive call
+    × should use async/wait
+    × should use try/catch
+    × should resolve as soon as a die settles on an ACE
+    × should reject with an Error when a die rolls off the table
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › `rollDieUntil` should not contain unneeded console.log calls
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › should use async/wait
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+Test Suites: 1 failed, 1 total
+Tests:       7 failed, 7 total
+Snapshots:   0 total
+Time:        1.468 s, estimated 3 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-28 12:41:27 error: *** Spell Checker Report ***
+
+
+2022-12-28 12:42:37 info: -----------------------------------------
+2022-12-28 12:42:37 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-28 12:42:37 info: -----------------------------------------
+2022-12-28 12:42:48 info: All unit tests passed.
+2022-12-28 12:42:59 error: *** Spell Checker Report ***
+
+
+2022-12-28 12:43:21 info: ----------------------------------------
+2022-12-28 12:43:21 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-12-28 12:43:21 info: ----------------------------------------
+2022-12-28 12:43:31 info: All unit tests passed.
+2022-12-28 12:43:46 error: *** Spell Checker Report ***
+
+

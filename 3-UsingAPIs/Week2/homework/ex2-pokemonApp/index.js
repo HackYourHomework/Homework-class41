@@ -35,47 +35,49 @@ async function fetchData(url) {
   }
 }
 
-function fetchAndPopulatePokemons(data) {
+async function fetchAndPopulatePokemons() {
+  const url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
   const select = document.createElement('select');
   select.style.width = '100%';
-  data.results.forEach((element) => {
-    const opt = document.createElement('option');
-    opt.value = element.url;
-    opt.textContent = element.name;
-    select.append(opt);
-  });
   document.body.appendChild(select);
+  try {
+    const data = await fetchData(url);
+    data.results.forEach((element) => {
+      const opt = document.createElement('option');
+      opt.value = element.url;
+      opt.textContent = element.name;
+      select.append(opt);
+    });
+  } catch (error) {
+    console.log(error);
+  }
   select.addEventListener('change', () => {
     fetchImage();
   });
 }
 
-function fetchImage() {
+async function fetchImage() {
+  const select = document.getElementsByTagName('select')[0];
   const prevImage = document.getElementsByTagName('img')[0];
   prevImage?.remove();
-  const select = document.getElementsByTagName('select')[0];
-
+  const img = document.createElement('img');
+  document.body.appendChild(img);
   const selected = select.selectedIndex;
   const url = select.options[selected].value;
-  fetchData(url)
-    .then((data) => {
-      const img = document.createElement('img');
-      img.src = data.sprites.front_default;
-      img.alt = 'Unknown Image';
-      document.body.appendChild(img);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  try {
+    const data = await fetchData(url);
+    img.src = data.sprites.front_default;
+    img.alt = data.species.name;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function main() {
-  fetchData('https://pokeapi.co/api/v2/pokemon?limit=151')
-    .then((data) => {
-      fetchAndPopulatePokemons(data);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+async function main() {
+  try {
+    await fetchAndPopulatePokemons();
+  } catch (error) {
+    console.log(error);
+  }
 }
 window.addEventListener('load', main);

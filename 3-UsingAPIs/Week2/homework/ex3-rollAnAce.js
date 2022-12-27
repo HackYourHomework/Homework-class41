@@ -20,11 +20,10 @@ async function rollDieUntil(wantedValue) {
   return outCome;
 }
 
-function main() {
+async function main() {
   try {
-    rollDieUntil('ACE')
-      .then((results) => console.log('Resolved!', results))
-      .catch((error) => console.log('Rejected!', error.message));
+    const results = await rollDieUntil('ACE');
+    console.log('Resolved!', results);
   } catch (error) {
     console.log('Rejected!', error.message);
   }
