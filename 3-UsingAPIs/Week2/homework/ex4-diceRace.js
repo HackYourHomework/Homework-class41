@@ -21,7 +21,8 @@ function rollDice() {
 
 async function main() {
   try {
-    await rollDice().then((results) => console.log('Resolved!', results));
+    await rollDice();
+    (results) => console.log('Resolved!', results);
   } catch (error) {
     (error) => console.log('Rejected!', error.message);
   }
