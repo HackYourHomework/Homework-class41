@@ -15,14 +15,17 @@ const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
   const dice = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDie()
+  const diceRes = dice.map((die) => rollDie(die));
+  return Promise.race(diceRes);
 }
 
-// Refactor this function to use async/await and try/catch
-function main() {
-  rollDice()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    await rollDice();
+    (results) => console.log('Resolved!', results);
+  } catch (error) {
+    (error) => console.log('Rejected!', error.message);
+  }
 }
 
 // ! Do not change or remove the code below
@@ -30,3 +33,9 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/*-----------------------------------------------------------------------------
+After the promise returned by `Promise.race()` resolves 
+the other dice continue rolling 
+because they was invoked asynchronously before the promise was resolved.
+*/
