@@ -1,0 +1,398 @@
+2022-12-21 06:43:07 info: ---------------------------------------------
+2022-12-21 06:43:07 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-21 06:43:07 info: ---------------------------------------------
+2022-12-21 06:43:24 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-programmerFun.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js (8.5 s)
+  programmerFun
+    × HTML should be syntactically valid (442 ms)
+    × should have all TODO comments removed (3 ms)
+    √ should use `fetch()` (2 ms)
+    √ should use async/wait (3 ms)
+    √ should use try/catch (2 ms)
+
+  ● programmerFun › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:2  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 1 problem (1 error, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex1-programmerFun.test.js:45:5)
+
+  ● programmerFun › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 3 passed, 5 total
+Snapshots:   0 total
+Time:        8.729 s
+Ran all test suites matching /ex1-programmerFun.test.js/i.
+2022-12-21 06:43:37 error: *** Spell Checker Report ***
+
+
+2022-12-21 06:47:33 info: ---------------------------------------------
+2022-12-21 06:47:34 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-21 06:47:34 info: ---------------------------------------------
+2022-12-21 06:47:49 info: All unit tests passed.
+2022-12-21 06:48:02 error: *** Spell Checker Report ***
+
+
+2022-12-21 08:50:02 info: ------------------------------------------
+2022-12-21 08:50:02 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-21 08:50:02 info: ------------------------------------------
+2022-12-21 08:50:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (9.272 s)
+  pokemonApp
+    √ HTML should be syntactically valid (509 ms)
+    √ should have all TODO comments removed (2 ms)
+    √ should use `fetch()`
+    √ should use `await fetch()` (1 ms)
+    × should use try/catch (3 ms)
+
+  ● pokemonApp › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      51 |
+      52 |   test('should use try/catch', () => {
+    > 53 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      54 |   });
+      55 | });
+      56 |
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:53:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        9.476 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-21 08:50:32 error: *** Spell Checker Report ***
+
+
+2022-12-21 09:18:04 info: ------------------------------------------
+2022-12-21 09:18:04 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-21 09:18:04 info: ------------------------------------------
+2022-12-21 09:18:20 info: All unit tests passed.
+2022-12-21 09:18:34 error: *** Spell Checker Report ***
+
+
+2022-12-21 11:01:10 info: -----------------------------------------
+2022-12-21 11:01:10 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-21 11:01:10 info: -----------------------------------------
+2022-12-21 11:01:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    × should have all TODO comments removed (10 ms)
+    √ `rollDieUntil` should not contain unneeded console.log calls (2 ms)
+    √ should not include a recursive call (1 ms)
+    √ should use async/wait (2 ms)
+    × should use try/catch (1 ms)
+    √ should resolve as soon as a die settles on an ACE (53 ms)
+    √ should reject with an Error when a die rolls off the table (22 ms)
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      62 |
+      63 |   test('should use try/catch', () => {
+    > 64 |     expect(state.tryCatch).toBeDefined();
+         |                            ^
+      65 |   });
+      66 |
+      67 |   test('should resolve as soon as a die settles on an ACE', async () => {
+
+      at Object.toBeDefined (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:64:28)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        2.228 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-21 11:01:34 error: *** Spell Checker Report ***
+
+
+2022-12-21 11:06:17 info: -----------------------------------------
+2022-12-21 11:06:17 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-21 11:06:17 info: -----------------------------------------
+2022-12-21 11:06:27 info: All unit tests passed.
+2022-12-21 11:06:41 error: *** Spell Checker Report ***
+
+
+2022-12-21 11:10:43 info: ----------------------------------------
+2022-12-21 11:10:43 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-12-21 11:10:43 info: ----------------------------------------
+2022-12-21 11:10:54 info: All unit tests passed.
+2022-12-21 11:11:07 error: *** Spell Checker Report ***
+
+
+2022-12-21 11:39:53 info: ----------------------------------------
+2022-12-21 11:39:53 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2022-12-21 11:39:53 info: ----------------------------------------
+2022-12-21 11:39:53 warn: A unit test file was not provided.
+2022-12-21 11:40:07 error: *** Spell Checker Report ***
+
+
+2022-12-21 11:42:06 info: --------------------------------------------
+2022-12-21 11:42:06 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2022-12-21 11:42:06 info: --------------------------------------------
+2022-12-21 11:42:06 warn: A unit test file was not provided.
+2022-12-21 11:42:22 error: *** Spell Checker Report ***
+
+
+2022-12-27 11:34:55 info: ---------------------------------------------
+2022-12-27 11:34:55 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2022-12-27 11:34:55 info: ---------------------------------------------
+2022-12-27 11:35:13 info: All unit tests passed.
+2022-12-27 11:35:27 error: *** Spell Checker Report ***
+
+
+2022-12-28 12:28:40 info: ------------------------------------------
+2022-12-28 12:28:40 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-28 12:28:40 info: ------------------------------------------
+2022-12-28 12:29:00 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-pokemonApp.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js (9.225 s)
+  pokemonApp
+    × HTML should be syntactically valid (947 ms)
+    √ should have all TODO comments removed (3 ms)
+    √ should use `fetch()` (2 ms)
+    √ should use `await fetch()` (1 ms)
+    √ should use try/catch (1 ms)
+
+  ● pokemonApp › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      12:10699  error  <img> is missing required \"src\" attribute  element-required-attributes
+      12:10699  error  <img> is missing required \"alt\" attribute  wcag/h37·
+    ✖ 2 problems (2 errors, 0 warnings)
+    "
+
+      44 |   const { results } = htmlValidate.validateString(htmlText);
+      45 |   const validationReport = stylish(results);
+    > 46 |   expect(validationReport).toBe('');
+         |                            ^
+      47 | }
+      48 |
+      49 | module.exports = {
+
+      at toBe (test-runner/jsdom-helpers.js:46:28)
+      at Object.validateHTML (3-UsingAPIs/Week2/unit-tests/ex2-pokemonApp.test.js:40:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        9.473 s, estimated 10 s
+Ran all test suites matching /ex2-pokemonApp.test.js/i.
+2022-12-28 12:29:14 error: *** Spell Checker Report ***
+
+
+2022-12-28 12:40:08 info: ------------------------------------------
+2022-12-28 12:40:08 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2022-12-28 12:40:08 info: ------------------------------------------
+2022-12-28 12:40:24 info: All unit tests passed.
+2022-12-28 12:40:38 error: *** Spell Checker Report ***
+
+
+2022-12-28 12:41:07 info: -----------------------------------------
+2022-12-28 12:41:07 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-28 12:41:07 info: -----------------------------------------
+2022-12-28 12:41:16 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    × should have all TODO comments removed (1 ms)
+    × `rollDieUntil` should not contain unneeded console.log calls
+    × should not include a recursive call
+    × should use async/wait
+    × should use try/catch
+    × should resolve as soon as a die settles on an ACE
+    × should reject with an Error when a die rolls off the table
+
+  ● ex3-rollAnAce › should have all TODO comments removed
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › `rollDieUntil` should not contain unneeded console.log calls
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › should use async/wait
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › should use try/catch
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › should resolve as soon as a die settles on an ACE
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+  ● ex3-rollAnAce › should reject with an Error when a die rolls off the table
+
+    ENOENT: no such file or directory, open 'C:\Users\User\Desktop\H Y F\Homework-class41\3-UsingAPIs\Week2\3\ex3-rollAnAce.js'
+
+      42 |   }
+      43 |
+    > 44 |   result.source = fs.readFileSync(exercisePath, 'utf8');
+         |                      ^
+      45 |
+      46 |   if (options.parse) {
+      47 |     try {
+
+      at readFileSync (test-runner/unit-test-helpers.js:44:22)
+      at Object.beforeAllHelper (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:15:39)
+
+Test Suites: 1 failed, 1 total
+Tests:       7 failed, 7 total
+Snapshots:   0 total
+Time:        1.468 s, estimated 3 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+2022-12-28 12:41:27 error: *** Spell Checker Report ***
+
+
+2022-12-28 12:42:37 info: -----------------------------------------
+2022-12-28 12:42:37 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2022-12-28 12:42:37 info: -----------------------------------------
+2022-12-28 12:42:48 info: All unit tests passed.
+2022-12-28 12:42:59 error: *** Spell Checker Report ***
+
+
+2022-12-28 12:43:21 info: ----------------------------------------
+2022-12-28 12:43:21 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-12-28 12:43:21 info: ----------------------------------------
+2022-12-28 12:43:31 info: All unit tests passed.
+2022-12-28 12:43:46 error: *** Spell Checker Report ***
+
+
