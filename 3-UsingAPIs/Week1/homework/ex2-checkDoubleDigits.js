@@ -12,8 +12,15 @@ Complete the function called `checkDoubleDigits` such that:
   "Expected a double digit number but got `number`", where `number` is the 
   number that was passed as an argument.
 ------------------------------------------------------------------------------*/
-function checkDoubleDigits(/* TODO add parameter(s) here */) {
-  // TODO complete this function
+function checkDoubleDigits(input) {
+  const promise2 = new Promise((resolve, reject) => {
+    if (input.toString().length === 2) {
+      resolve('This is a double digit number!');
+    } else {
+      reject(new Error(`Expected a double digit number but got ${input}`));
+    }
+  });
+  return promise2;
 }
 
 function main() {
@@ -33,6 +40,8 @@ function main() {
     .then((message) => console.log(message))
     .catch((error) => console.log(error.message));
 }
+
+main();
 
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {

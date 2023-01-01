@@ -22,18 +22,51 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+const URL = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+
+async function fetchData(url) {
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons(url) {
+  const pokeContainer = document.getElementById('poke-list');
+  const jsonData = await fetchData(url);
+  const arr = jsonData.results;
+  console.log(jsonData);
+  console.log(arr);
+  for (let index = 0; index < arr.length; index++) {
+    const element = document.createElement('option');
+
+    element.value = arr[index].url;
+    element.textContent = `${index + 1} -  ${arr[index].name}`;
+    pokeContainer.appendChild(element);
+  }
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage() {
+  const selected = document.getElementById('poke-list');
+  selected.addEventListener('change', async (event) => {
+    const grabApi = event.target.value;
+    const pokeImg = document.getElementById('poke-img');
+    const imgFetch = await (await fetch(grabApi)).json();
+    console.log(imgFetch);
+    pokeImg.src = imgFetch.sprites.other.home.front_default;
+    pokeImg.alt = imgFetch.forms[0].name;
+  });
 }
 
-function main() {
-  // TODO complete this function
+async function main() {
+  try {
+    await fetchData(URL);
+    await fetchAndPopulatePokemons(URL);
+    await fetchImage();
+  } catch (error) {
+    console.log(error);
+  }
 }
+
+//main();
+
+window.addEventListener('load', main);
