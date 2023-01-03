@@ -1,5 +1,0 @@
-
-*** Spell Checker Report ***
-
-ex3-rollDie.js:67:27 - Unknown word (husse)
-ex3-rollDie.js:68:37 - Unknown word (husse)

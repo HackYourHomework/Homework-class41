@@ -21,7 +21,7 @@ function rollDie() {
       console.log(`Die value is now: ${value}`);
 
       if (roll > 6) {
-        reject(Error('Oops... Die rolled off the table.'));
+        reject(new Error('Oops... Die rolled off the table.'));
       }
       if (roll === randomRollsToDo) {
         resolve(`Success! Die settled on ${value}.`);
@@ -51,31 +51,3 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDie;
-
-/*
->>>>> First i am having this error:
-
-Die scheduled for 10 rolls...
-Die value is now: 2
-Die value is now: 5
-Die value is now: 4
-Die value is now: 4
-Die value is now: 3
-Die value is now: 3
-Die value is now: 5
-Error: Oops... Die rolled off the table.
-    at rollOnce (c:\Users\husse\HYF\MODULE_2\Homework-class41\3-UsingAPIs\Week1\homework\ex3-rollDie.js:24:16)
-    at Timeout._onTimeout (c:\Users\husse\HYF\MODULE_2\Homework-class41\3-UsingAPIs\Week1\homework\ex3-rollDie.js:31:26)
-    at listOnTimeout (node:internal/timers:559:17)
-    at processTimers (node:internal/timers:502:7)
-Die value is now: 4
-Die value is now: 4
-Die value is now: 2
-
->>>>> The problem is still occurring and this is because whenever the randomRollsToDo is > 6,
-both following conditions will apply at a certain point:
-      if (roll > 6) {}
-      and
-      if (roll < randomRollsToDo)
-
-*/
