@@ -27,9 +27,10 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+
+  const throwFiveDice = dice.map((dice) => rollDie(dice));
+  return Promise.all(throwFiveDice);
 }
 
 function main() {
@@ -43,3 +44,12 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+/* You may also notice that, in the case of a rejected promise, dice that have not yet finished their roll continue to do so.
+Can you explain why? Please add your answer as a comment to the end of the exercise file.
+
+This is happening because the die did not settle down yet to the final result; even if the test has been rejected, the code will continue
+to execute after throwing the error message because we didn't chain the .catch to anything >> in order to do something after the rejected promise
+we have to chain it to a new promise.
+
+*/
