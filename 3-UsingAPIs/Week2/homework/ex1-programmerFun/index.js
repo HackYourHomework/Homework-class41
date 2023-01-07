@@ -1,7 +1,6 @@
 'use strict';
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-1-programmer-fun
-
 1. Complete the function `requestData()` using `fetch()` to make a request to 
    the url passed to it as an argument. The function should return a promise. 
    Make sure that the promise is rejected in case of HTTP or network errors.
@@ -18,28 +17,34 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    should result in a network (DNS) error.
 ------------------------------------------------------------------------------*/
 function requestData(url) {
-  // TODO return a promise using `fetch()`
+    return fetch(url)
+        .then((res) => res.json())
+        .catch((err) => renderError(err));
 }
 
 function renderImage(data) {
-  // TODO render the image to the DOM
-  console.log(data);
+    const body = document.querySelector('body');
+    const img = document.createElement('img');
+    img.src = data.img;
+    img.alt = data.alt;
+    body.appendChild(img);
 }
 
 function renderError(error) {
-  // TODO render the error to the DOM
-  console.log(error);
+    const body = document.querySelector('body');
+    const title = document.createElement('h1');
+    title.textContent = error;
+    body.appendChild(title);
 }
 
-// TODO refactor with async/await and try/catch
-function main() {
-  requestData('https://xkcd.now.sh/?comic=latest')
-    .then((data) => {
-      renderImage(data);
-    })
-    .catch((error) => {
-      renderError(error);
-    });
+async function main() {
+    try {
+        const image = await requestData('https://xkcd.now.sh/?comic=latest');
+        renderImage(image);
+    } catch (error) {
+        renderError(error);
+        return;
+    }
 }
 
 window.addEventListener('load', main);
